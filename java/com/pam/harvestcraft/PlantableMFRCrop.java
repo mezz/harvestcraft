@@ -26,19 +26,26 @@ public class PlantableMFRCrop implements IFactoryPlantable
 	    @Override
 	    public boolean canBePlantedHere (World world, int x, int y, int z, ItemStack stack)
 	    {
-	        Block groundId = world.getBlock(x, y - 1, z);
-	        if (!world.isAirBlock(x, y, z))
-	        {
-	            return false;
-	        }
-	        return (_plantedBlockId.canPlaceBlockAt(world, x, y, z) && _plantedBlockId.canBlockStay(world, x, y, z))
-	                || (_plantedBlockId instanceof IPlantable &&  groundId != null &&  groundId.canSustainPlant(world, x, y, z, ForgeDirection.UP,
-	                        ((IPlantable)  _plantedBlockId)));
+			if(!world.isAirBlock(x, y, z))
+				return false;
+			
+			Block ground = world.getBlock(x, y - 1, z);
+			return ((ground.equals(Blocks.farmland)) ||
+					(ground.equals(Blocks.grass)) ||
+					(ground.equals(Blocks.dirt)) ||
+					(_plantedBlockId.canPlaceBlockAt(world, x, y, z) && _plantedBlockId.canReplace(world, x, y, z, 0, stack)) ||
+					(_plantedBlockId instanceof IPlantable && ground != null && ground.canSustainPlant(world, x, y, z, ForgeDirection.UP, (IPlantable)_plantedBlockId))
+					);
 	    }
 
 	    @Override
 	    public void prePlant (World world, int x, int y, int z, ItemStack stack)
 	    {
+			Block ground = world.getBlock(x, y - 1, z);
+			if (ground.equals(Blocks.grass) || ground.equals(Blocks.dirt))
+			{
+				world.setBlock(x, y - 1, z, Blocks.farmland);
+			}
 	        return;
 	    }
 

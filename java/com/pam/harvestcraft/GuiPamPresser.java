@@ -23,7 +23,7 @@ public class GuiPamPresser extends GuiContainer {
 	      int var5 = (super.width - super.xSize) / 2;
 	      int var6 = (super.height - super.ySize) / 2;
 	      this.drawTexturedModalRect(var5, var6, 0, 0, super.xSize, super.ySize);
-	      if(this.combPresserInventory.isBurning()) {
+	      if(this.combPresserInventory.isRunning()) {
 	         ;
 	      }
 

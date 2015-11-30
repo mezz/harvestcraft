@@ -1,0 +1,246 @@
+1.7.10La - The Missing Link (part a)
+- Change: Over 50 new textures by MCThe_Paragon
+- Change: Presser now has two output slots again by ErdrickXLII, Presser recipes have changed, see the Recipe.txt
+- Fix: MFR Crop planting fix by wilkemeyer
+- Fix: Presser and Oven textures fixed by ErdrickXLII
+
+
+1.7.10k - I'm Back Baby!
+- Absolute Massive Change: Grapes are now found in Berry Bushes instead of Tropical
+- Added: Water Chestnut, Green Heart Fish (can't be cooked) drops to Water Gardens
+- Added: Curry Leaf, Sesame Seeds drops to Tropical Gardens
+- Added: Curry Leaf, Sesame Seeds, and Water Chestnut crops
+- Added: Gooseberry Trees as a temperate tree spawn
+- Added: Added de_DE (German) and pt_BR (Portuguese) language files (Thanks LorenzoDCC, ReneMuetti, Yulife) 
+- Change: Gardens should no longer generate in dead biomes (Thanks Lawremi)
+- Change: Fruit Trees should no longer generate in dead biomes (Thanks Lawremi)
+- Change: Several recipes now use "listAllspice" instead of "cropSpiceleaf" to allow for Curry Powder use
+- Change: Shepard's Pie now requires "listAllmuttonraw" instead of using any raw meat
+- Change: Fish recipes named Whatever Salmon now use "foodSalmonraw" instead of "listAllfish"
+- Fix: Water Buckets should return to same slot (Thanks blay09 and others)
+- Fix: Shift-clicking in my tile entities should now work! (Thanks blay09)
+- Fix: Water crops should stop popping out of the ground (Thanks Lareitaia)
+- Fix: Chocolate Sprinkle Cake now known as Chocolate Sprinkles Cake (Thanks LorenzoDCC)
+- Fix: Candleberries now registered as cropCandleberry (Thanks bogatyr-n)
+- Fix: Config option freshwaterfrombucket should now work (Default: 1) (Thanks xsi93)
+- Config Option: You can disable listAllwater OreDictionary for vanilla Water Buckets - enablelistAllwatervanillawaterbucket - Default: True (Thanks TheQuantumGeneral)
+- Config Option: You can disable listAllwater OreDictionary for Fresh Water - enablelistAllwaterfreshwater- Default: True (Thanks TheQuantumGeneral)
+- Recipe: Combine Plain Yogurt and Milk to get 2 Plain Yogurt (Thanks AngleWyrm3)
+- Recipe: Sesame Seeds ---> Cooking Oil in Presser
+- Recipe: Curry Powder (mortar pestle/quern)
+- Recipe: Toasted Sesame Seeds (furnace/oven/Mr.C's oven/Mr.C's microwave)
+- Recipe Changes: All jelly sandwichs can be made with all types of nut butters
+- Recipe Change: Pistachio Baked Salmon now accepts all fish (Thanks kotoroshinoto)
+- New Foods: Almond Butter, Cashew Butter, Chestnut Butter, Cornish Pasty, Cottage Pie, Croissant, Curry Powder, Dim Sum, Fried Pecan Okra, Gooseberry Jelly, Gooseberry Jelly Sandwich, Gooseberry Milkshake, Gooseberry Pie, Gooseberry Smoothie, Gooseberry Yogurt, Green Heart Fish, Ham & Sweet Pickle Sandwich, Hushpuppies, Kimchi, Mochi, Museli, Naan, Okra Chips, Okra Creole, Pistachio Butter, Ploughman's Lunch, Pork Lo Mein, Salmon Patties, Sausage, Sausage Roll, Sesame Ball, Sesame Snaps, Shrimp Pork Okra Hushpuppies, Soy Sauce, Sweet Pickle, Veggie Strips, Vindaloo
+
+
+1.7.10j - Bug Fix or Bust
+
+- Major Change: All previously Palm tree-style fruit trees have been re-coded to act like/look like normal fruit trees.  This fixes sapling issues, bonemeal issues, and spawning issues.  Previously generated Palm trees will exsist fine but newly generated and/or bonemealed trees will take the new normal tree shape.  RIP Palm trees
+- Change: Candied Lemon recipe now requires Bakeware instead of Saucepan
+- Config Option: You can change the amount of Baits gained from recipes - fishtrapbaitrecipeamount, grainbaitrecipeamount, veggiebaitrecipeamount, fruitbaitrecipeamount - Default: 4
+- Config Option: You can change the amount of Fresh Water from buckets again - freshwaterfrombucket - Default: 1
+- Config Option: You can now disable special farmland needs of water crops - enablecropspecialplanting - Default: true  (If true, seed planting doesn't work on farmland.  If false, crop planting doesn't work on water.  No matter how it's set, previously planted crops on water *only* will stay)
+- Fix: You can now correctly turn off/on HarvestCraft fish with enableharvestcraftfish
+- Fix: Juicer and Saucepan can now be crafted in any part of the crafting grid instead of just in the middle
+- Fix: Config option cropsdropSeeds now works BUT you need to set rightclickharvestCrop to false, else the game uses the dropped crop item to re-plant the crop, leaving you only seeds.
+
+1.7.10i - Amazing Content Update
+- Added: Churn Block; uses Salt as fuel to turn Fresh Milk into Butter; Known Bug: Does not have second slot working
+- Added: Quern Block; uses Stone Pressure Plates to grind items normally made with Mortar and Pestle
+- Added: Animal Trap; uses grain bait, veggie bait, or fruit bait to trap and gather animal items (including new meats like turkey!)
+- Added: Fish Trap; uses fish bait to trap and farm fish and water garden foods
+- NOTE: Animal Traps need to be surrounded at the same Y level with at least five dirt or grass covered dirt blocks
+- NOTE: Fish Traps need to be surrounded at the same Y level with at least five still water blocks
+- Added: Wheat Seeds, Pumpkin Seeds, and Melon Seeds to Market Block under Seeds (there is a Wheat for Wheat trade, I know)
+- Added: Oak Saplings, Birch Saplings, and Dark Oak Saplings to Market Block under Temperate Saplings (there is a Oak for Oak trade, I know)
+- Added: Jungle Saplings and Acacia Saplings to Market Block under Tropical Saplings (there is a Jungle for Jungle trade, I know)
+- Added: Spruce Saplings to Market Block under Coniferous Saplings (there is a Spruce for Spruce trade, I know)
+- Change: Chili Chocolate recipe now requires Mixing Bowl instead of Mortar and Pestle
+- Change: Manjuu recipe now requires Mixing Bowl instead of Mortar and Pestle
+- Fix: Listed Raw Salmon, Pufferfish, Clownfish, and Cooked Salmon under the correct Ore Dictionary terms
+- Added: Pumpkin, Potato, Carrot listed as "cropBlah" in Ore Dictionary
+- Added: Torches and Candles listed as "blockTorch" in Ore Dictionary
+- Added: Recipe to make Lit Pumpkins with "cropPumpkin" and "blockTorch"
+- Fix: Candle textures are now correctly centered (thanks jecowa)
+- Change: Removed config option to change amount of Fresh Water gained from recipe
+- Config Option: You can now disable using crop items to plant with enablecropitemsasseeds under "miscellaneous recipes" - Default: True
+- Change: Crops should now use IPlantable correctly
+- Change: Mocha Ice Cream now uses "toolMixingbowl" like other ice cream recipes (thanks Geethebluesky)
+- Fix: Various recipes now use "toolMixingbowl" instead of toolMixingbow (thanks Geethebluesky)
+- Fix: Shepard's Pie now renamed Shepherd's Pie and recipe fixed to use right Ore Dictionary (thanks MisfitAngel)
+- Added: Raw Turkey, Rabbit, and Venison - Find using Animal Trap
+- Added: Cooked Turkey, Rabbit, and Venison - Cook the raw versions
+- Fix: Pot block can now be properly placed on the Oven
+- Added: Strawberry Milkshake, Chocolate Milkshake, Banana Milkeshake, Cornflakes, Coleslaw Burger, Roast Chicken Dinner,
+Roast Potatoes, Sunday Roast, BBQ Pulled Pork, Lamb with Mint Sauce, Steak and Chips, Cherry Ice Cream, Pistachio Ice Cream, Neapolitan Ice Cream, Spumoni Ice Cream
+- Fix: You can now buy items with metadata from the Market Block (spawn eggs, bonemeal, etc) (thanks Mr. Crayfish)
+- Fix: Apiary code cleaned up and being surrounded by flowers, crops, or grass-based gardens actually makes the Apiary produce faster! (thanks Java Matrix)
+
+1.7.10h - Random Fixes Update
+- Fix: Pot block can now be placed on Oven block
+- Fix: Orange Chicken now only needs Saucepan
+- Added: Recipe to turn any listAllfishraw into Minecraft fish
+- Fix: Made a lot of recipes use the Ore Dictionary even more
+- Fix: Sausage in Bread name typo
+- Fix: Cranberry Sauce now needs Pot to avoid recipe conflict
+- Fix: MFR Planter will now plant Seaweed seeds
+- Added: Recipe to turn listAllwater into my Fresh Water
+- Fix: Crop to Seed config option should now work
+- Config Option: You can now turn off new fishing with enableharvestcraftfish - Default: True
+- Added: Pumpkin Cheese Cake item and block
+- Added: Pumpkin Muffins, Suadero, and Random Taco items
+- Added: Compressed Salt Block and conversion recipes
+
+1.7.10g - Config Explosion Update
+NOTE: You'll need to re-generate your config file in order for most of these changes to take effect.
+-----Food-----
+- All food recipes now require only a single tool (too many changes to list)
+- Chocolate ice cream now requires Mixing Bowl
+- Spagetti and Meatballs now requires Mixing Bowl
+- Taco and Fish Taco now require Cutting Board
+- Lemon Smoothie now requires Juicer
+- Soft Pretzel and Mustard now requires no tools to make
+- Banana Split now requires Mixing Bowl
+- Sunflower Broccoli Salad now requires Cutting Board instead of Mixing Bowl
+-----Candles-----
+- Config Option: Change candle recipe amount with candlerecipeAmount - Default: 4
+- Added: Candles now use OreDictionary for dyes in recipe
+- Config Option: Change candle light amount with candlelightLevel - Default: 0.9375F (equal to torch)
+-----Fruit Trees-----
+- Fix: Re-wrote Fruit Tree spawning algorithim; No more fruit tree swarms
+- Config Change: Split fruittreeRarity into temperate, tropical, and coniferious versions
+- Config Option: Change temperate fruit tree rarity with temperatefruittreeRarity - Default: 15
+- Config Option: Change tropical fruit tree rarity with tropical fruittreeRarity - Default: 10
+- Config Option: Change coniferious fruit tree rarity with coniferiousfruittreeRarity - Default: 15
+- Tropical fruit trees now spawn in Hot/Not Plains/Not Dry or Wet/Not Plains/Not Dry areas (jungles and swamps in Vanilla)
+-----Gardens-----
+- Added Savanna biome tag for Ground gardens
+- Changed Swamp biome tags to Wet for gardens
+-----Beekeeping-----
+- Queen bees will now always produce one grub before they die
+-----Market Block-----
+Config Change: Changed capitalization for some config options
+Config Change: Split marketsellSaplings into temperate, tropical, and coniferious versions - Default: True
+Config Change: Split marketsellfarmAnimals into Pig, Sheep, Cow, Chicken, and Horse versions - Default: True
+Config Added: Customize currency item used to buy specific items with marketcurreny(Item) options - Default: 0 (emeralds)
+>>>>Assign market currency as follows 0:Emerald, 1:Diamond, 2:Gold Ingot, 3:Gold Nugget, 4:Iron Ingot (available option for all)
+      5:Wheat Seeds (seeds), 5:Oak Sapling (temperate fruit tree), 5:Jungle Sapling (tropical fruit tree), 5:Spruce Sapling (coniferous fruit tree), 5:Egg (animals)
+      6:Apple (temperate/tropical fruit tree)
+      7:Cocoa Beans (tropical fruit tree)
+Config Added: Customize middle item used to make Market block - Default: 0 (emerald)
+>>>>Assign custom middle item as follows 0:Emerald, 1:Diamond, 2:Gold Ingot, 3:Gold Nugget, 4:Iron Ingot
+-----Recipe.txt File-----
+- Updated recipe file completely and attempted to make some things easier to read
+-----Config File-----
+- Made the Config file read-able and added comments
+-----Other Dimension Spawning-----
+NOTE: Twilight Forest config options assume the default Dimension ID of 7.  If you changed the ID in Twilight Forest's config, these will not work.
+- Config Option: Allow fruit trees to gen in Twilight Forest with enabletwilightforestfruittreeGen - Default: False
+- Config Option: Allow gardens to gen in Twilight Forest with enabletwilightforestgardenGen - Default: False
+NOTE: Aroma1997's Dimensional World config options assume the defaul Dimension ID of 6. If you changed the ID in the Dimensional World config, these will not work.
+- Config Option: Allow fruit trees to gen in Aroma1997's Dimensional World with enableAroma1997sdimensionalworldfruittreeGen- Default: False
+- Config Option: Allow gardens to gen in Aroma1997's Dimensional World with enableAroma1997sdimensionalworldgardenGen- Default: False
+
+1.7.10f - F this Update
+- Added Config Option: Enable tofu as meat in recipes - Default: True
+- Added Config Option: Enable tofu as milk/cream in recipes - Default: True
+- Removed salt 'oreSalt' registry to stop issues with other mods
+- Added Spinach to MFR compatibility and Thaumcraft compatibility stuff
+- Added Thaumcraft aspects and Ore Dictionary 'grubBee' for bee grubs
+- Added Thaumcraft aspects for all new fishing items
+- Added Holiday cake block, item, and recipe
+- Added recipes for cooking all other fish into vanilla MC cooked fish
+- Added cooked clam, crab, crayfish, frog, octopus, scallop, shrimp, snail, and turtle items and recipes
+- Added Apple Cider, Bangers and Mash, Battered Sausage, Batter, Chorizo, Coleslaw, Energy Drink, Fried Onions, Meat Feast Pizza, Mince Pie, Onion Hamburger, Pepperoni, Pickled Onions, Pork Sausage, and Rasperry Trifle items and recipes
+
+1.7.10e - Quick Cake Update
+- Added all my cakes as blocks you can place down and eat using their respective item
+- Each cake has a number of slices based on their food value when eaten as an item
+- All cakes now give an even number of food points to have slices make sense
+-- Known Bug: Cake block rendering still assumes six slices
+
+1.7.10d - Fishing n' Stuff Update
+- Config option: Gardens spreading in the world - Default: True
+- Config option: Garden spread rate (now set to taking 4x as long - set back to 25 if you liked the old rate) - Default: 25
+- Added a better? graphic for water gardens
+- Right-click garden blocks to pick them up and move them (all garden blocks can be placed on grass for decoration)
+-- Known BugBug: Water Garden blocks cannot be placed back onto water blocks
+- Fixed mcmod.info file
+- Donation Items: Ceasar Salad, Chaos Cookie, Chocolate Bacon, Lamb Kebab, Nutella, Snickers Bar, Spinach Pie, Steamed Spinach, Vegemite on Toast
+- New Fish (catch with normal fishing rod): Anchovy, Bass, Carp, Catfish, Charr, Eel, Grouper, Herring, Jellyfish, Mudfish, Octopus, Perch, Tilapia, Trout, Tuna, Walleye
+- New Water Garden Items: Clam, Crab, Crayfish, Frog, Scallop, Shrimp, Snail, Turtle
+- Not Yet Added: Cannot cook any new fishing/water garden items (all items can be eaten raw, however)
+- Recipe Change: Coconut Shrimp now only uses Raw Shrimp instead of any raw fish
+- Recipe Added: Raw Jellyfish into Slime Ball
+- New Block: Oven (cooks only food, uses cooking oil, very fast)
+-- Oven Recipe: Furnace center, iron bars top center, iron ingots all other spots
+- New Block: Market (buy seeds, saplings, farm animal spawn eggs, and bonemeal for emeralds)
+-- Market Recipe: Emerald center, wool top center, both sides, and under emerald, wooden planks all other spots
+- Config Options: Sell Seeds/Sell Saplings/Sell each farm animal spawn egg/Sell Bonemeal - Default for all: True
+- Config Options: Price for Seeds/Price for Saplings/Price for each farm animal spawn egg/Price for Bonemeal - Default: 1/3/6/6/9/3/12/3
+- Compatibility: Mr. Crayfish's Furniture mod - Oven recipes, Microwave recipes, and toasting bread in the toaster
+- New Crop: Spinach!  Found in the leafy garden and can be used in all green veggie recipes.
+
+1.7.10c - Config Update
+NOTE: YOU NEED TO DELETE AND REGENERATE YOUR CONFIG FILE FOR THIS TO WORK
+NOTE: DO NOT ENABLE RIGHT-CLICK CROP HARVEST AND SEEDS DROPPING FROM CROPS ELSE YOU'LL ONLY EVER GET SEEDS
+- Config option: Crops dropping seeds and crop item - Default: False
+- Config option: Show hearts on right click when mature (Crops) - Default: False
+- Config option: Show hearts on right click when mature (Fruits) - Default: False
+- Config option: Harvest crop on right click, set growth to stage 0 - Default: True (will drop one less crop since you're auto-planting it)
+- Config option: Harvest fruit on right click, set growth to stage 0 - Default: True
+- Config option: Enable crafting crops into seeds - Default: True
+- Config option: Gardens drop seeds (removes red/brown mushroom from mushroom garden and carrot/potato from ground garden) - Default: False
+- Added NEI Presser and Apiary support by iTitus
+- Added ru_RU.lang file - Russian translation for HarvestCraft by VeryBigBro
+- Fixed Kiwi crop's texture issue while growing
+- Changed all drinks to have drinking sound/animation instead of eating
+- Fixed Seaweed crop/seed/item not working with MFR machines
+- Split HarvestCraft creative tab into Misc, Crops, and Food tabs for easier searching
+- Pressers can now be made with Bronze and Steel ingots
+- Wells can now be made with Copper, Tin, Bronze, or Steel ingots
+- Metal cooking tools can now be made with Copper or Steel ingots
+- Bakeware can now be made with Nether bricks
+- All tools now use Ore Dictionary names for planks, stone, sticks, bricks, ingots, and nether bricks
+- Added Chicken Gumbo, General Tso's Chicken, California Roll, Futo Maki, Beans on Toast, Vegemite, Honeycomb Chocolate Bar, Cherry Coconut Chocolate Bar, Fairy Bread, Lamington, Tim Tam, Meat Pie, Chiko Roll, Damper, Beet Burger, Pavlova, Gherkin, and the McPam
+
+------------------
+
+1.7.10b - Compatibility Update
+- Trees and gardens now should ONLY spawn in the Overworld: will add spawning to Twilight Forest and MystCraft once I figure it out  
+- Trees and gardens now spawn using the new MCF biome categories (see list below)  
+- Salt Ore now spawns using the isOreGenReplaceable function  
+- Listed my salt under dustSalt, itemSalt Ore Dict labels; added those labels to my recipes as well  
+- Bees now SPAWN! They now replace the leaves or log block of a tree replicating the fact that bees inhabit any part of a tree they can  
+- Deleted test recipes for my guide books that were causing issues: I will be replacing these guide books later  
+- MineFactory Reloaded and Thaumcraft compatibility added on my end!
+- MineFactory Reloaded harvester, planter, fertilizer, and fruit picker now work on everything they should
+- Thuamcraft Aspects, Golems now plant/harvest 
+- Contacted Magical Crops, Mariculture, and MegaPlantPack mod authors to have them change their Ore Dict labels to mine  
+- Seaweed should now lay flat on the surface of the water  
+BIOME LIST  
+Oak Fruit Trees 
+- Forests that aren't Cold, Spooky, or Mountainous 
+Jungle Fruit Trees - Wet, Hot, or Swamp biomes 
+Coconut Trees - Oceans 
+All Palm Trees - Wet, Sparse biomes that aren't Plains and Hot, Sparse biomes that aren't Plains 
+Cinnamon Tree - Wet, Dense biomes that aren't Plains and Hot, Dense biomes that aren't Plains 
+Paperbark Tree -Wet, Dense biomes that aren't Plains and Hot, Dense biomes that aren't Plains 
+Maple Trees - Coniferous biomes  
+Berry Garden - Forest, Hills, Cold, or Swamps 
+Desert Garden - Sandy Grass Garden - Plains that aren't Cold 
+Gourd Garden - Plains or Forest 
+Ground Garden - Mountain, Hills, or Mesa 
+Herb Garden - Forests that aren't Cold or Swamps 
+Leafy Garden - Forests that aren't Cold or Swamps 
+Mushroom Gardens - Forests that aren't Cold, Mountain or Swamps 
+Stalk Gardens - Forests that aren't Cold, Plains that aren't Cold, Swamps 
+Textile Gardens - Cold, Hills, or Swamp 
+Tropical Gardens - Wet, Hot, or Swamp 
+Water Gardens - Oceans that aren't Cold, Rivers that aren't Cold
+
+-------------------
+
+1.7.10a
+- Updated to 1.7.10

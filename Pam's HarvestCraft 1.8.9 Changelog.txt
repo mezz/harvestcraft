@@ -1,0 +1,6 @@
+1.8.9a - The Most Annoying Update
+- Removed: Market, Churn, Quern, Presser, Apiary, Beehives, Candles, Hardened Leather, Wax, Oven, Cake Blocks, Fish Trap, Animal Trap, Tool Blocks, Salt Ore/Blocks
+- Removed: Thaumcraft, MFR, Mr. Crayfish, and other compatibility files
+- Changed: Six gardens generate across biomes; use Config file to change drops (use at your own risk)
+- Changed Tofu recipes: Silken Tofu (saucepan, soybean), Firm Tofu (skillet, silken tofu), Soymilk (pot, soybean)
+- Changed Sapling recipes: Now require three fruits instead of one

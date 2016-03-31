@@ -42,7 +42,7 @@ public class AridGardenBlock extends BlockBush
     //    ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     //}
 
-	int AMOUNT = BlockRegistry.gardendropAmount;
+	int AMOUNT = 3;
 
 	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
 	{

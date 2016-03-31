@@ -4,3 +4,4 @@
 - Changed: Six gardens generate across biomes; use Config file to change drops (use at your own risk)
 - Changed Tofu recipes: Silken Tofu (saucepan, soybean), Firm Tofu (skillet, silken tofu), Soymilk (pot, soybean)
 - Changed Sapling recipes: Now require three fruits instead of one
+- Known Bug: Several config options are broke.  Will be fixed soon.

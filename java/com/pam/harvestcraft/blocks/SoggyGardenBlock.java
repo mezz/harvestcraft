@@ -1,6 +1,7 @@
 package com.pam.harvestcraft.blocks;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -31,14 +32,17 @@ public class SoggyGardenBlock extends BlockBush
 		setCreativeTab(harvestcraft.modTab);
 	}
 
+	int AMOUNT = 3;
+
 	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
-    {
-        List<ItemStack> newStack = new ArrayList<ItemStack>(drops.size());
-        for (ItemStack prototype:drops) {
-            newStack.add(prototype.copy());
-        }
-        return newStack;
-    }
+	{
+	    List<ItemStack> newStack = new ArrayList<ItemStack>(AMOUNT);
+	    Collections.shuffle(drops);
+	    for (int i = 0; i < AMOUNT; i++) {
+	        newStack.add(drops.get(i).copy());
+	    }
+	    return newStack;
+	}
 	
 	@Override
 	protected boolean canPlaceBlockOn(Block ground)

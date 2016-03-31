@@ -32,7 +32,7 @@ public class FrostGardenBlock extends BlockBush
 		setCreativeTab(harvestcraft.modTab);
 	}
 
-	int AMOUNT = BlockRegistry.gardendropAmount;
+	int AMOUNT = 3;
 
 	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
 	{

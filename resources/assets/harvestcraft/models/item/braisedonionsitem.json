@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/braisedonionsitem"
+		"layer0": "harvestcraft:items/braisedonionsItem"
 	},
 	"display": {
 		"thirdperson": {

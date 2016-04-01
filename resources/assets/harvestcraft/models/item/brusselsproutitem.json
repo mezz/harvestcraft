@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/brusselsproutitem"
+		"layer0": "harvestcraft:items/brusselsproutItem"
 	},
 	"display": {
 		"thirdperson": {

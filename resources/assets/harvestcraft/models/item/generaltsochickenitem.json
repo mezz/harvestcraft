@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/generaltsochickenitem"
+		"layer0": "harvestcraft:items/generaltsochickenItem"
 	},
 	"display": {
 		"thirdperson": {

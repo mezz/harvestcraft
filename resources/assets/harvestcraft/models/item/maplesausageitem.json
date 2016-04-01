@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/maplesausageitem"
+		"layer0": "harvestcraft:items/maplesausageItem"
 	},
 	"display": {
 		"thirdperson": {

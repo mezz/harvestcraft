@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/friesitem"
+		"layer0": "harvestcraft:items/friesItem"
 	},
 	"display": {
 		"thirdperson": {

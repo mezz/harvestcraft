@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/friedeggitem"
+		"layer0": "harvestcraft:items/friedeggItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/pistachiobakedsalmonitem"
+		"layer0": "harvestcraft:items/pistachiobakedsalmonItem"
 	},
 	"display": {
 		"thirdperson": {

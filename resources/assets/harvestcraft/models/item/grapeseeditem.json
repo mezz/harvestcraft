@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/grapeseeditem"
+		"layer0": "harvestcraft:items/grapeseedItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/beetsaladitem"
+		"layer0": "harvestcraft:items/beetsaladItem"
 	},
 	"display": {
 		"thirdperson": {

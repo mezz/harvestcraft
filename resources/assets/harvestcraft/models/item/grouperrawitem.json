@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/grouperrawitem"
+		"layer0": "harvestcraft:items/grouperrawItem"
 	},
 	"display": {
 		"thirdperson": {

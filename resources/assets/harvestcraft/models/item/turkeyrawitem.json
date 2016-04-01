@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/turkeyrawitem"
+		"layer0": "harvestcraft:items/turkeyrawItem"
 	},
 	"display": {
 		"thirdperson": {

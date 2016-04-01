@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/turnipitem"
+		"layer0": "harvestcraft:items/turnipItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/octopuscookeditem"
+		"layer0": "harvestcraft:items/octopuscookedItem"
 	},
 	"display": {
 		"thirdperson": {

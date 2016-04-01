@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/mustardseedsitem"
+		"layer0": "harvestcraft:items/mustardseedsItem"
 	},
 	"display": {
 		"thirdperson": {

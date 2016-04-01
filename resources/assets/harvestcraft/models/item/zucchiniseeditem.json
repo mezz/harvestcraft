@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/zucchiniseeditem"
+		"layer0": "harvestcraft:items/zucchiniseedItem"
 	},
 	"display": {
 		"thirdperson": {

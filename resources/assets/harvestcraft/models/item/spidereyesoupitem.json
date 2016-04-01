@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/spidereyesoupitem"
+		"layer0": "harvestcraft:items/spidereyesoupItem"
 	},
 	"display": {
 		"thirdperson": {

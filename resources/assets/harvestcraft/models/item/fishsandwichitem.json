@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/fishsandwichitem"
+		"layer0": "harvestcraft:items/fishsandwichItem"
 	},
 	"display": {
 		"thirdperson": {

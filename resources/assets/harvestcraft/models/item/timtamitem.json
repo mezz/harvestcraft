@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/timtamitem"
+		"layer0": "harvestcraft:items/timtamItem"
 	},
 	"display": {
 		"thirdperson": {

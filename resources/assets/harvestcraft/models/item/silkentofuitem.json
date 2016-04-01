@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/silkentofuitem"
+		"layer0": "harvestcraft:items/silkentofuItem"
 	},
 	"display": {
 		"thirdperson": {

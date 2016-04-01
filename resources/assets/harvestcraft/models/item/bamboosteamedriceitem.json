@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/bamboosteamedriceitem"
+		"layer0": "harvestcraft:items/bamboosteamedriceItem"
 	},
 	"display": {
 		"thirdperson": {

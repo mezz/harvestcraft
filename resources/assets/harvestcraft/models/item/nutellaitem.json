@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/nutellaitem"
+		"layer0": "harvestcraft:items/nutellaItem"
 	},
 	"display": {
 		"thirdperson": {

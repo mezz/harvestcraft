@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/cantaloupeitem"
+		"layer0": "harvestcraft:items/cantaloupeItem"
 	},
 	"display": {
 		"thirdperson": {

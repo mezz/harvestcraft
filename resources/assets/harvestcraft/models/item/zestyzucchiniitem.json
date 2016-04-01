@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/zestyzucchiniitem"
+		"layer0": "harvestcraft:items/zestyzucchiniItem"
 	},
 	"display": {
 		"thirdperson": {

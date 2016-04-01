@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/softpretzelandmustarditem"
+		"layer0": "harvestcraft:items/softpretzelandmustardItem"
 	},
 	"display": {
 		"thirdperson": {

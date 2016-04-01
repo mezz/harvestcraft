@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/baconwrappeddatesitem"
+		"layer0": "harvestcraft:items/baconwrappeddatesItem"
 	},
 	"display": {
 		"thirdperson": {

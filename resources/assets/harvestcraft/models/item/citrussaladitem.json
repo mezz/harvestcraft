@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/citrussaladitem"
+		"layer0": "harvestcraft:items/citrussaladItem"
 	},
 	"display": {
 		"thirdperson": {

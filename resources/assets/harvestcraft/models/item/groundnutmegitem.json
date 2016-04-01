@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/groundnutmegitem"
+		"layer0": "harvestcraft:items/groundnutmegItem"
 	},
 	"display": {
 		"thirdperson": {

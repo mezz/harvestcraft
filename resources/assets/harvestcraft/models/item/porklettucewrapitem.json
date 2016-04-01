@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/porklettucewrapitem"
+		"layer0": "harvestcraft:items/porklettucewrapItem"
 	},
 	"display": {
 		"thirdperson": {

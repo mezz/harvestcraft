@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/candiedwalnutsitem"
+		"layer0": "harvestcraft:items/candiedwalnutsItem"
 	},
 	"display": {
 		"thirdperson": {

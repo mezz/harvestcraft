@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/gingeredrhubarbtartitem"
+		"layer0": "harvestcraft:items/gingeredrhubarbtartItem"
 	},
 	"display": {
 		"thirdperson": {

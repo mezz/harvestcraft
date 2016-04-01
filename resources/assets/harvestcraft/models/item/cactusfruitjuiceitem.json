@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/cactusfruitjuiceitem"
+		"layer0": "harvestcraft:items/cactusfruitjuiceItem"
 	},
 	"display": {
 		"thirdperson": {

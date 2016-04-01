@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/candiedgingeritem"
+		"layer0": "harvestcraft:items/candiedgingerItem"
 	},
 	"display": {
 		"thirdperson": {

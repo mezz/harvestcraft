@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/persimmonitem"
+		"layer0": "harvestcraft:items/persimmonItem"
 	},
 	"display": {
 		"thirdperson": {

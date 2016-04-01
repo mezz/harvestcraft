@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/hamsweetpicklesandwichitem"
+		"layer0": "harvestcraft:items/hamsweetpicklesandwichItem"
 	},
 	"display": {
 		"thirdperson": {

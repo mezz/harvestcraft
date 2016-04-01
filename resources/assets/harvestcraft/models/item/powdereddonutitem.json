@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/powdereddonutitem"
+		"layer0": "harvestcraft:items/powdereddonutItem"
 	},
 	"display": {
 		"thirdperson": {

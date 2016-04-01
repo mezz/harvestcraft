@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/cabbageitem"
+		"layer0": "harvestcraft:items/cabbageItem"
 	},
 	"display": {
 		"thirdperson": {

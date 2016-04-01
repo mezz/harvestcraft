@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/grilledasparagusitem"
+		"layer0": "harvestcraft:items/grilledasparagusItem"
 	},
 	"display": {
 		"thirdperson": {

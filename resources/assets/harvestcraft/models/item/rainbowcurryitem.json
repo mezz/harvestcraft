@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/rainbowcurryitem"
+		"layer0": "harvestcraft:items/rainbowcurryItem"
 	},
 	"display": {
 		"thirdperson": {

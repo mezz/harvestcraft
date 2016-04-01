@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/honeysandwichitem"
+		"layer0": "harvestcraft:items/honeysandwichItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/apricotjuiceitem"
+		"layer0": "harvestcraft:items/apricotjuiceItem"
 	},
 	"display": {
 		"thirdperson": {

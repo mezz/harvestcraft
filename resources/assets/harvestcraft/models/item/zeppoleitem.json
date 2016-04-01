@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/zeppoleitem"
+		"layer0": "harvestcraft:items/zeppoleItem"
 	},
 	"display": {
 		"thirdperson": {

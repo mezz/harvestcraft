@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/watermelonjellysandwichitem"
+		"layer0": "harvestcraft:items/watermelonjellysandwichItem"
 	},
 	"display": {
 		"thirdperson": {

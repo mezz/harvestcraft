@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/trailmixitem"
+		"layer0": "harvestcraft:items/trailmixItem"
 	},
 	"display": {
 		"thirdperson": {

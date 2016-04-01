@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/rhubarbseeditem"
+		"layer0": "harvestcraft:items/rhubarbseedItem"
 	},
 	"display": {
 		"thirdperson": {

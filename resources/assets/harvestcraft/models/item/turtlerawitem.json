@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/turtlerawitem"
+		"layer0": "harvestcraft:items/turtlerawItem"
 	},
 	"display": {
 		"thirdperson": {

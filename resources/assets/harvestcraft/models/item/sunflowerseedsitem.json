@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/sunflowerseedsitem"
+		"layer0": "harvestcraft:items/sunflowerseedsItem"
 	},
 	"display": {
 		"thirdperson": {

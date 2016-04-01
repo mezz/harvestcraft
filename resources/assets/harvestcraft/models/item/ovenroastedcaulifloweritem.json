@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/ovenroastedcaulifloweritem"
+		"layer0": "harvestcraft:items/ovenroastedcauliflowerItem"
 	},
 	"display": {
 		"thirdperson": {

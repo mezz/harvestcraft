@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/anchovyrawitem"
+		"layer0": "harvestcraft:items/anchovyrawItem"
 	},
 	"display": {
 		"thirdperson": {

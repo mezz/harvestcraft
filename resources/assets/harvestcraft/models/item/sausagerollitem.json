@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/sausagerollitem"
+		"layer0": "harvestcraft:items/sausagerollItem"
 	},
 	"display": {
 		"thirdperson": {

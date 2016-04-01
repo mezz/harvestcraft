@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/pumpkinoatsconesitem"
+		"layer0": "harvestcraft:items/pumpkinoatsconesItem"
 	},
 	"display": {
 		"thirdperson": {

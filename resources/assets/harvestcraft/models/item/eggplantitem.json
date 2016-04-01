@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/eggplantitem"
+		"layer0": "harvestcraft:items/eggplantItem"
 	},
 	"display": {
 		"thirdperson": {

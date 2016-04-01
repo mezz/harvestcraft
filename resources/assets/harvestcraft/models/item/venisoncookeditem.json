@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/venisoncookeditem"
+		"layer0": "harvestcraft:items/venisoncookedItem"
 	},
 	"display": {
 		"thirdperson": {

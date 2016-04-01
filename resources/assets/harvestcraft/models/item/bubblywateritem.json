@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/bubblywateritem"
+		"layer0": "harvestcraft:items/bubblywaterItem"
 	},
 	"display": {
 		"thirdperson": {

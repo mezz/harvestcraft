@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/epicbaconitem"
+		"layer0": "harvestcraft:items/epicbaconItem"
 	},
 	"display": {
 		"thirdperson": {

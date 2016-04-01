@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/limeitem"
+		"layer0": "harvestcraft:items/limeItem"
 	},
 	"display": {
 		"thirdperson": {

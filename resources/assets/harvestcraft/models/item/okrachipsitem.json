@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/okrachipsitem"
+		"layer0": "harvestcraft:items/okrachipsItem"
 	},
 	"display": {
 		"thirdperson": {

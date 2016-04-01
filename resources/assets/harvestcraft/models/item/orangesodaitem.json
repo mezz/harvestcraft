@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/orangesodaitem"
+		"layer0": "harvestcraft:items/orangesodaItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/almondbutteritem"
+		"layer0": "harvestcraft:items/almondbutterItem"
 	},
 	"display": {
 		"thirdperson": {

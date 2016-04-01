@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/spagettiandmeatballsitem"
+		"layer0": "harvestcraft:items/spagettiandmeatballsItem"
 	},
 	"display": {
 		"thirdperson": {

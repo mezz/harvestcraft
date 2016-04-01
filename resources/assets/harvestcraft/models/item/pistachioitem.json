@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/pistachioitem"
+		"layer0": "harvestcraft:items/pistachioItem"
 	},
 	"display": {
 		"thirdperson": {

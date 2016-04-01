@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/boiledeggitem"
+		"layer0": "harvestcraft:items/boiledeggItem"
 	},
 	"display": {
 		"thirdperson": {

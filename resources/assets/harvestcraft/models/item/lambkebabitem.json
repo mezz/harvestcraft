@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/lambkebabitem"
+		"layer0": "harvestcraft:items/lambkebabItem"
 	},
 	"display": {
 		"thirdperson": {

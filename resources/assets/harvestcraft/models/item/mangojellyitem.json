@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/mangojellyitem"
+		"layer0": "harvestcraft:items/mangojellyItem"
 	},
 	"display": {
 		"thirdperson": {

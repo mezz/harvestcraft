@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/ricecakeitem"
+		"layer0": "harvestcraft:items/ricecakeItem"
 	},
 	"display": {
 		"thirdperson": {

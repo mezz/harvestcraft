@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/delightedmealitem"
+		"layer0": "harvestcraft:items/delightedmealItem"
 	},
 	"display": {
 		"thirdperson": {

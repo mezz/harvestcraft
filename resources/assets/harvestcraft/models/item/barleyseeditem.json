@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/barleyseeditem"
+		"layer0": "harvestcraft:items/barleyseedItem"
 	},
 	"display": {
 		"thirdperson": {

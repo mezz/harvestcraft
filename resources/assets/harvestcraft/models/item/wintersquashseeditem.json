@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/wintersquashseeditem"
+		"layer0": "harvestcraft:items/wintersquashseedItem"
 	},
 	"display": {
 		"thirdperson": {

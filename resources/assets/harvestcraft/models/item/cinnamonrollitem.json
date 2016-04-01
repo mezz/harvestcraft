@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/cinnamonrollitem"
+		"layer0": "harvestcraft:items/cinnamonrollItem"
 	},
 	"display": {
 		"thirdperson": {

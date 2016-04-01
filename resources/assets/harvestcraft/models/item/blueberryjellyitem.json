@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/blueberryjellyitem"
+		"layer0": "harvestcraft:items/blueberryjellyItem"
 	},
 	"display": {
 		"thirdperson": {

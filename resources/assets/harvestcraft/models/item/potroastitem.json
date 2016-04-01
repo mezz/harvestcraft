@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/potroastitem"
+		"layer0": "harvestcraft:items/potroastItem"
 	},
 	"display": {
 		"thirdperson": {

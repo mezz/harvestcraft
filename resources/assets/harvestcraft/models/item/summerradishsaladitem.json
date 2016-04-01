@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/summerradishsaladitem"
+		"layer0": "harvestcraft:items/summerradishsaladItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/snickersbaritem"
+		"layer0": "harvestcraft:items/snickersbarItem"
 	},
 	"display": {
 		"thirdperson": {

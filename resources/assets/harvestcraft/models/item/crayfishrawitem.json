@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/crayfishrawitem"
+		"layer0": "harvestcraft:items/crayfishrawItem"
 	},
 	"display": {
 		"thirdperson": {

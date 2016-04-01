@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/manjuuitem"
+		"layer0": "harvestcraft:items/manjuuItem"
 	},
 	"display": {
 		"thirdperson": {

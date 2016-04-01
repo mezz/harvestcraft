@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/oldworldveggiesoupitem"
+		"layer0": "harvestcraft:items/oldworldveggiesoupItem"
 	},
 	"display": {
 		"thirdperson": {

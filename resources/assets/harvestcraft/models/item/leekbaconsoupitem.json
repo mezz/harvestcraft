@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/leekbaconsoupitem"
+		"layer0": "harvestcraft:items/leekbaconsoupItem"
 	},
 	"display": {
 		"thirdperson": {

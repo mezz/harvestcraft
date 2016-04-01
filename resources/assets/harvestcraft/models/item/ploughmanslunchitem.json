@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/ploughmanslunchitem"
+		"layer0": "harvestcraft:items/ploughmanslunchItem"
 	},
 	"display": {
 		"thirdperson": {

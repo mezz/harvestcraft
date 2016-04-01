@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/museliitem"
+		"layer0": "harvestcraft:items/museliItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/mortarandpestleitem"
+		"layer0": "harvestcraft:items/mortarandpestleItem"
 	},
 	"display": {
 		"thirdperson": {

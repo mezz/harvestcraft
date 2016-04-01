@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/extremechiliitem"
+		"layer0": "harvestcraft:items/extremechiliItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/beansontoastitem"
+		"layer0": "harvestcraft:items/beansontoastItem"
 	},
 	"display": {
 		"thirdperson": {

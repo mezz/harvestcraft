@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/frogcookeditem"
+		"layer0": "harvestcraft:items/frogcookedItem"
 	},
 	"display": {
 		"thirdperson": {

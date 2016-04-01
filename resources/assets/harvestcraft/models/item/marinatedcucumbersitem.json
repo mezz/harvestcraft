@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/marinatedcucumbersitem"
+		"layer0": "harvestcraft:items/marinatedcucumbersItem"
 	},
 	"display": {
 		"thirdperson": {

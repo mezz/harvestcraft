@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/firmtofuitem"
+		"layer0": "harvestcraft:items/firmtofuItem"
 	},
 	"display": {
 		"thirdperson": {

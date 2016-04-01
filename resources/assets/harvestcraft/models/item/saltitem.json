@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/saltitem"
+		"layer0": "harvestcraft:items/saltItem"
 	},
 	"display": {
 		"thirdperson": {

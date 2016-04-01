@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/coconutshrimpitem"
+		"layer0": "harvestcraft:items/coconutshrimpItem"
 	},
 	"display": {
 		"thirdperson": {

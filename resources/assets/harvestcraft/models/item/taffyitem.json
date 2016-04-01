@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/taffyitem"
+		"layer0": "harvestcraft:items/taffyItem"
 	},
 	"display": {
 		"thirdperson": {

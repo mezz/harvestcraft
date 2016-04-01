@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/grilledmushroomitem"
+		"layer0": "harvestcraft:items/grilledmushroomItem"
 	},
 	"display": {
 		"thirdperson": {

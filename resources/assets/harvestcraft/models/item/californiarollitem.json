@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/californiarollitem"
+		"layer0": "harvestcraft:items/californiarollItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/oliveoilitem"
+		"layer0": "harvestcraft:items/oliveoilItem"
 	},
 	"display": {
 		"thirdperson": {

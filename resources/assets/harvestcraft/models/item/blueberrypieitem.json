@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/blueberrypieitem"
+		"layer0": "harvestcraft:items/blueberrypieItem"
 	},
 	"display": {
 		"thirdperson": {

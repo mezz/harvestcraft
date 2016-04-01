@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/bananasplititem"
+		"layer0": "harvestcraft:items/bananasplitItem"
 	},
 	"display": {
 		"thirdperson": {

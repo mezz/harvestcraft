@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/crabrawitem"
+		"layer0": "harvestcraft:items/crabrawItem"
 	},
 	"display": {
 		"thirdperson": {

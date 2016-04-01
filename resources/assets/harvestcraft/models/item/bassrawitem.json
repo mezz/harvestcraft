@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/bassrawitem"
+		"layer0": "harvestcraft:items/bassrawItem"
 	},
 	"display": {
 		"thirdperson": {

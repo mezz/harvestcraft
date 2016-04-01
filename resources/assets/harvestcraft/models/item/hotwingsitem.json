@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/hotwingsitem"
+		"layer0": "harvestcraft:items/hotwingsItem"
 	},
 	"display": {
 		"thirdperson": {

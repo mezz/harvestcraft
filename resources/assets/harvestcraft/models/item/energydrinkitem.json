@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/energydrinkitem"
+		"layer0": "harvestcraft:items/energydrinkItem"
 	},
 	"display": {
 		"thirdperson": {

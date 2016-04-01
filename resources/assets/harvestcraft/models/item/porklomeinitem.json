@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/porklomeinitem"
+		"layer0": "harvestcraft:items/porklomeinItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/bellpepperseeditem"
+		"layer0": "harvestcraft:items/bellpepperseedItem"
 	},
 	"display": {
 		"thirdperson": {

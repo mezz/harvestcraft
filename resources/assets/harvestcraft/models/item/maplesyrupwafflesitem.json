@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/maplesyrupwafflesitem"
+		"layer0": "harvestcraft:items/maplesyrupwafflesItem"
 	},
 	"display": {
 		"thirdperson": {

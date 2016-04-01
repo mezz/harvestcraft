@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/bambooshootseeditem"
+		"layer0": "harvestcraft:items/bambooshootseedItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/cornonthecobitem"
+		"layer0": "harvestcraft:items/cornonthecobItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/wovencottonitem"
+		"layer0": "harvestcraft:items/wovencottonItem"
 	},
 	"display": {
 		"thirdperson": {

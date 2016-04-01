@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/kimchiitem"
+		"layer0": "harvestcraft:items/kimchiItem"
 	},
 	"display": {
 		"thirdperson": {

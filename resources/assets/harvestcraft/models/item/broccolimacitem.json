@@ -1,7 +1,7 @@
 {
 	"parent": "builtin/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/broccolimacitem"
+		"layer0": "harvestcraft:items/broccolimacItem"
 	},
 	"display": {
 		"thirdperson": {

@@ -9,7 +9,6 @@ import com.pam.harvestcraft.item.PamFoodOreDictionaryRegistry;
 import com.pam.harvestcraft.item.PamFoodRecipes;
 import com.pam.harvestcraft.item.PamOtherOreDictionaryRegistry;
 import com.pam.harvestcraft.item.PamOtherRecipes;
-import com.pam.harvestcraft.item.PamSheepDrops;
 import com.pam.harvestcraft.item.PamSquidDrops;
 import com.pam.harvestcraft.proxy.CommonProxy;
 import com.pam.harvestcraft.worldgen.BushWorldWorldGen;
@@ -58,10 +57,6 @@ public class harvestcraft {
         PamOtherOreDictionaryRegistry.getRegistry();
         PamCropSeedDropRegistry.getSeedDrops();
         FishRegistry.registerItems();
-        if (ItemRegistry.sheepdropMutton)
-        {
-        MinecraftForge.EVENT_BUS.register(new PamSheepDrops());
-        }
         if (ItemRegistry.squiddropCalamari)
         {
         MinecraftForge.EVENT_BUS.register(new PamSquidDrops());

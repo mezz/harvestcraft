@@ -56,9 +56,9 @@ public static Item freshmilkItem;
 
 //public static ItemArmor.ArmorMaterial armorHardenedLeather = EnumHelper.addArmorMaterial("HARDENEDLEATHER", 15, new int[] { 2, 6, 5, 2 }, 9);
 
-public static Item muttonrawItem;
+//public static Item muttonrawItem;
 public static Item calamarirawItem;
-public static Item muttoncookedItem;
+//public static Item muttoncookedItem;
 public static Item calamaricookedItem;
 public static Item sunflowerseedsItem;
 public static Item blackberryItem;
@@ -725,8 +725,8 @@ public static Item suaderoItem;
 public static Item randomtacoItem;
 public static Item turkeyrawItem;
 public static Item turkeycookedItem;
-public static Item rabbitrawItem;
-public static Item rabbitcookedItem;
+//public static Item rabbitrawItem;
+//public static Item rabbitcookedItem;
 public static Item venisonrawItem;
 public static Item venisoncookedItem;
 public static Item strawberrymilkshakeItem;
@@ -1031,8 +1031,8 @@ GameRegistry.registerItem(wovencottonItem = new Item().setUnlocalizedName("woven
 //GameRegistry.registerItem(hardenedleatherchestItem = new ItemPamArmor(armorHardenedLeather, 1).setUnlocalizedName("hardenedleatherchestItem"), "hardenedleatherchestItem");
 //GameRegistry.registerItem(hardenedleatherleggingsItem = new ItemPamArmor(armorHardenedLeather, 2).setUnlocalizedName("hardenedleatherleggingsItem"), "hardenedleatherleggingsItem");
 //GameRegistry.registerItem(hardenedleatherbootsItem = new ItemPamArmor(armorHardenedLeather, 3).setUnlocalizedName("hardenedleatherbootsItem"), "hardenedleatherbootsItem");
-GameRegistry.registerItem(muttonrawItem = new ItemFood(3, snacksaturation, true).setUnlocalizedName("muttonrawItem").setCreativeTab(harvestcraft.modTab), "muttonrawItem");
-GameRegistry.registerItem(muttoncookedItem = new ItemFood(8, meatymealsaturation, true).setUnlocalizedName("muttoncookedItem").setCreativeTab(harvestcraft.modTab), "muttoncookedItem");
+//GameRegistry.registerItem(muttonrawItem = new ItemFood(3, snacksaturation, true).setUnlocalizedName("muttonrawItem").setCreativeTab(harvestcraft.modTab), "muttonrawItem");
+//GameRegistry.registerItem(muttoncookedItem = new ItemFood(8, meatymealsaturation, true).setUnlocalizedName("muttoncookedItem").setCreativeTab(harvestcraft.modTab), "muttoncookedItem");
 GameRegistry.registerItem(calamarirawItem = new ItemFood(2, snacksaturation, false).setUnlocalizedName("calamarirawItem").setCreativeTab(harvestcraft.modTab), "calamarirawItem");
 GameRegistry.registerItem(calamaricookedItem = new ItemFood(5, meatymealsaturation, false).setUnlocalizedName("calamaricookedItem").setCreativeTab(harvestcraft.modTab), "calamaricookedItem");
 GameRegistry.registerItem(sunflowerseedsItem = new ItemFood(cropfoodRestore, cropsaturationRestore, false).setUnlocalizedName("sunflowerseedsItem").setCreativeTab(harvestcraft.modTab), "sunflowerseedsItem");
@@ -1702,8 +1702,8 @@ GameRegistry.registerItem(suaderoItem = new ItemFood(10, mealsaturation, false).
 GameRegistry.registerItem(randomtacoItem = new ItemFood(16, mealsaturation, false).setUnlocalizedName("randomtacoItem").setCreativeTab(harvestcraft.modTab), "randomtacoItem");
 GameRegistry.registerItem(turkeyrawItem = new ItemFood(2, snacksaturation, true).setUnlocalizedName("turkeyrawItem").setCreativeTab(harvestcraft.modTab), "turkeyrawItem");
 GameRegistry.registerItem(turkeycookedItem = new ItemFood(5, meatymealsaturation, true).setUnlocalizedName("turkeycookedItem").setCreativeTab(harvestcraft.modTab), "turkeycookedItem");
-GameRegistry.registerItem(rabbitrawItem = new ItemFood(2, snacksaturation, true).setUnlocalizedName("rabbitrawItem").setCreativeTab(harvestcraft.modTab), "rabbitrawItem");
-GameRegistry.registerItem(rabbitcookedItem = new ItemFood(5, meatymealsaturation, true).setUnlocalizedName("rabbitcookedItem").setCreativeTab(harvestcraft.modTab), "rabbitcookedItem");
+//GameRegistry.registerItem(rabbitrawItem = new ItemFood(2, snacksaturation, true).setUnlocalizedName("rabbitrawItem").setCreativeTab(harvestcraft.modTab), "rabbitrawItem");
+//GameRegistry.registerItem(rabbitcookedItem = new ItemFood(5, meatymealsaturation, true).setUnlocalizedName("rabbitcookedItem").setCreativeTab(harvestcraft.modTab), "rabbitcookedItem");
 GameRegistry.registerItem(venisonrawItem = new ItemFood(3, snacksaturation, true).setUnlocalizedName("venisonrawItem").setCreativeTab(harvestcraft.modTab), "venisonrawItem");
 GameRegistry.registerItem(venisoncookedItem = new ItemFood(8, meatymealsaturation, true).setUnlocalizedName("venisoncookedItem").setCreativeTab(harvestcraft.modTab), "venisoncookedItem");
 GameRegistry.registerItem(strawberrymilkshakeItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("strawberrymilkshakeItem").setCreativeTab(harvestcraft.modTab), "strawberrymilkshakeItem");

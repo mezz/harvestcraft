@@ -42,13 +42,11 @@ public class AridGardenBlock extends BlockBush
     //    ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     //}
 
-	int AMOUNT = 3;
-
 	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
 	{
-	    List<ItemStack> newStack = new ArrayList<ItemStack>(AMOUNT);
+	    List<ItemStack> newStack = new ArrayList<ItemStack>();
 	    Collections.shuffle(drops);
-	    for (int i = 0; i < Math.min(AMOUNT, drops.size()); i++) {
+	    for (int i = 0; i < Math.min(BlockRegistry.gardendropAmount, drops.size()); i++) {
 	        newStack.add(drops.get(i).copy());
 	    }
 	    return newStack;

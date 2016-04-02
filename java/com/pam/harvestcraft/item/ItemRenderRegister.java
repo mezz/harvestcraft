@@ -28,9 +28,9 @@ public final class ItemRenderRegister {
 		reg(ItemRegistry.wovencottonItem);
 		reg(ItemRegistry.freshwaterItem);
 		reg(ItemRegistry.freshmilkItem);
-		reg(ItemRegistry.muttonrawItem);
+		//reg(ItemRegistry.muttonrawItem);
 		reg(ItemRegistry.calamarirawItem);
-		reg(ItemRegistry.muttoncookedItem);
+		//reg(ItemRegistry.muttoncookedItem);
 		reg(ItemRegistry.calamaricookedItem);
 		reg(ItemRegistry.sunflowerseedsItem);
 		reg(ItemRegistry.blackberryItem);
@@ -697,8 +697,8 @@ public final class ItemRenderRegister {
 		reg(ItemRegistry.randomtacoItem);
 		reg(ItemRegistry.turkeyrawItem);
 		reg(ItemRegistry.turkeycookedItem);
-		reg(ItemRegistry.rabbitrawItem);
-		reg(ItemRegistry.rabbitcookedItem);
+		//reg(ItemRegistry.rabbitrawItem);
+		//reg(ItemRegistry.rabbitcookedItem);
 		reg(ItemRegistry.venisonrawItem);
 		reg(ItemRegistry.venisoncookedItem);
 		reg(ItemRegistry.strawberrymilkshakeItem);

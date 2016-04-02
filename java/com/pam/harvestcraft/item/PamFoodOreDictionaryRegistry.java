@@ -37,9 +37,9 @@
 /*   37 */     OreDictionary.registerOre("listAllmeatraw", Items.beef);
 /*   38 */     OreDictionary.registerOre("listAllmeatraw", Items.chicken);
 /*   39 */     OreDictionary.registerOre("listAllmeatraw", Items.porkchop);
-/*   40 */     OreDictionary.registerOre("listAllmeatraw", ItemRegistry.muttonrawItem);
+/*   40 */     OreDictionary.registerOre("listAllmeatraw", Items.mutton);
 /*   41 */     OreDictionary.registerOre("listAllmeatraw", ItemRegistry.turkeyrawItem);
-/*   42 */     OreDictionary.registerOre("listAllmeatraw", ItemRegistry.rabbitrawItem);
+/*   42 */     OreDictionary.registerOre("listAllmeatraw", Items.rabbit);
 /*   43 */     OreDictionary.registerOre("listAllmeatraw", ItemRegistry.venisonrawItem);
 /*   44 */     if (ItemRegistry.enabletofuasmeatinRecipes)
 /*      */     {
@@ -50,9 +50,9 @@
 /*   50 */     OreDictionary.registerOre("listAllmeatcooked", Items.cooked_beef);
 /*   51 */     OreDictionary.registerOre("listAllmeatcooked", Items.cooked_chicken);
 /*   52 */     OreDictionary.registerOre("listAllmeatcooked", Items.cooked_porkchop);
-/*   53 */     OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.muttoncookedItem);
+/*   53 */     OreDictionary.registerOre("listAllmeatcooked", Items.cooked_mutton);
 /*   54 */     OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.turkeycookedItem);
-/*   55 */     OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.rabbitcookedItem);
+/*   55 */     OreDictionary.registerOre("listAllmeatcooked", Items.cooked_rabbit);
 /*   56 */     OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.venisoncookedItem);
 /*   57 */     if (ItemRegistry.enabletofuasmeatinRecipes)
 /*      */     {
@@ -138,12 +138,12 @@
 /*  138 */       OreDictionary.registerOre("listAllbeefcooked", ItemRegistry.firmtofuItem);
 /*      */     }
 /*      */     
-/*  141 */     OreDictionary.registerOre("listAllmuttonraw", ItemRegistry.muttonrawItem);
+/*  141 */     OreDictionary.registerOre("listAllmuttonraw", Items.mutton);
 /*  142 */     if (ItemRegistry.enabletofuasmeatinRecipes)
 /*      */     {
 /*  144 */       OreDictionary.registerOre("listAllmuttonraw", ItemRegistry.firmtofuItem);
 /*      */     }
-/*  146 */     OreDictionary.registerOre("listAllmuttoncooked", ItemRegistry.muttoncookedItem);
+/*  146 */     OreDictionary.registerOre("listAllmuttoncooked", Items.cooked_mutton);
 /*  147 */     if (ItemRegistry.enabletofuasmeatinRecipes)
 /*      */     {
 /*  149 */       OreDictionary.registerOre("listAllmuttoncooked", ItemRegistry.firmtofuItem);
@@ -160,12 +160,12 @@
 /*  160 */       OreDictionary.registerOre("listAllturkeycooked", ItemRegistry.firmtofuItem);
 /*      */     }
 /*      */     
-/*  163 */     OreDictionary.registerOre("listAllrabbitraw", ItemRegistry.rabbitrawItem);
+/*  163 */     OreDictionary.registerOre("listAllrabbitraw", Items.rabbit);
 /*  164 */     if (ItemRegistry.enabletofuasmeatinRecipes)
 /*      */     {
 /*  166 */       OreDictionary.registerOre("listAllrabbitraw", ItemRegistry.firmtofuItem);
 /*      */     }
-/*  168 */     OreDictionary.registerOre("listAllrabbitcooked", ItemRegistry.rabbitcookedItem);
+/*  168 */     OreDictionary.registerOre("listAllrabbitcooked", Items.cooked_rabbit);
 /*  169 */     if (ItemRegistry.enabletofuasmeatinRecipes)
 /*      */     {
 /*  171 */       OreDictionary.registerOre("listAllrabbitcooked", ItemRegistry.firmtofuItem);
@@ -940,8 +940,10 @@
 /*  940 */     OreDictionary.registerOre("foodSushi", ItemRegistry.sushiItem);
 /*  941 */     OreDictionary.registerOre("foodGardensoup", ItemRegistry.gardensoupItem);
 /*      */     
-/*  943 */     OreDictionary.registerOre("foodMuttonraw", ItemRegistry.muttonrawItem);
-/*  944 */     OreDictionary.registerOre("foodMuttoncooked", ItemRegistry.muttoncookedItem);
+/*  943 */     OreDictionary.registerOre("foodMuttonraw", Items.mutton);
+/*  944 */    OreDictionary.registerOre("foodMuttoncooked", Items.cooked_mutton);
+				//OreDictionary.registerOre("foodMuttonraw", ItemRegistry.muttonrawItem);
+				// OreDictionary.registerOre("foodMuttoncooked", ItemRegistry.muttoncookedItem);
 /*  945 */     OreDictionary.registerOre("foodCalamariraw", ItemRegistry.calamarirawItem);
 /*  946 */     OreDictionary.registerOre("foodCalamaricooked", ItemRegistry.calamaricookedItem);
 /*      */     
@@ -1153,8 +1155,10 @@
 /*      */     
 /* 1154 */     OreDictionary.registerOre("foodTurkeyraw", ItemRegistry.turkeyrawItem);
 /* 1155 */     OreDictionary.registerOre("foodTurkeycooked", ItemRegistry.turkeycookedItem);
-/* 1156 */     OreDictionary.registerOre("foodRabbitraw", ItemRegistry.rabbitrawItem);
-/* 1157 */     OreDictionary.registerOre("foodRabbitcooked", ItemRegistry.rabbitcookedItem);
+/* 1156 */     OreDictionary.registerOre("foodRabbitraw", Items.rabbit);
+/* 1157 */     OreDictionary.registerOre("foodRabbitcooked", Items.cooked_rabbit);
+/* 1156 */     //OreDictionary.registerOre("foodRabbitraw", ItemRegistry.rabbitrawItem);
+/* 1157 */     //OreDictionary.registerOre("foodRabbitcooked", ItemRegistry.rabbitcookedItem);
 /* 1158 */     OreDictionary.registerOre("foodVenisonraw", ItemRegistry.venisonrawItem);
 /* 1159 */     OreDictionary.registerOre("foodVenisoncooked", ItemRegistry.venisoncookedItem);
 /*      */     

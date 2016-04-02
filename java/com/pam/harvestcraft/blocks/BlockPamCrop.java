@@ -129,7 +129,7 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
         {
             int i = ((Integer)state.getValue(AGE)).intValue();
 
-            if (i < 7)
+            if (i < 3)
             {
                 float f = getGrowthChance(this, worldIn, pos);
 
@@ -236,7 +236,7 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ)
 	{
-		if (((Integer) state.getValue(AGE)).intValue() == 2)
+		if (((Integer) state.getValue(AGE)).intValue() == 3)
 		{
 			if (worldIn.isRemote)
 			{
@@ -249,181 +249,181 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
 			 
             if(currentBlock == BlockRegistry.pamblackberryCrop){
                 savedStack = new ItemStack(ItemRegistry.blackberryItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamblueberryCrop){
                 savedStack = new ItemStack(ItemRegistry.blueberryItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcandleberryCrop){
                 savedStack = new ItemStack(ItemRegistry.candleberryItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamraspberryCrop){
                 savedStack = new ItemStack(ItemRegistry.raspberryItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamstrawberryCrop){
                 savedStack = new ItemStack(ItemRegistry.strawberryItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcactusfruitCrop){
                 savedStack = new ItemStack(ItemRegistry.cactusfruitItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamasparagusCrop){
                 savedStack = new ItemStack(ItemRegistry.asparagusItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pambarleyCrop){
                 savedStack = new ItemStack(ItemRegistry.barleyItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamoatsCrop){
                 savedStack = new ItemStack(ItemRegistry.oatsItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamryeCrop){
                 savedStack = new ItemStack(ItemRegistry.ryeItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcornCrop){
                 savedStack = new ItemStack(ItemRegistry.cornItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pambambooshootCrop){
                 savedStack = new ItemStack(ItemRegistry.bambooshootItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcantaloupeCrop){
                 savedStack = new ItemStack(ItemRegistry.cantaloupeItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcucumberCrop){
                 savedStack = new ItemStack(ItemRegistry.cucumberItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamwintersquashCrop){
                 savedStack = new ItemStack(ItemRegistry.wintersquashItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamzucchiniCrop){
                 savedStack = new ItemStack(ItemRegistry.zucchiniItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pambeetCrop){
                 savedStack = new ItemStack(ItemRegistry.beetItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamonionCrop){
                 savedStack = new ItemStack(ItemRegistry.onionItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamparsnipCrop){
                 savedStack = new ItemStack(ItemRegistry.parsnipItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pampeanutCrop){
                 savedStack = new ItemStack(ItemRegistry.peanutItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamradishCrop){
                 savedStack = new ItemStack(ItemRegistry.radishItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamrutabagaCrop){
                 savedStack = new ItemStack(ItemRegistry.rutabagaItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamsweetpotatoCrop){
                 savedStack = new ItemStack(ItemRegistry.sweetpotatoItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamturnipCrop){
                 savedStack = new ItemStack(ItemRegistry.turnipItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamrhubarbCrop){
                 savedStack = new ItemStack(ItemRegistry.rhubarbItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamceleryCrop){
                 savedStack = new ItemStack(ItemRegistry.celeryItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamgarlicCrop){
                 savedStack = new ItemStack(ItemRegistry.garlicItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamgingerCrop){
                 savedStack = new ItemStack(ItemRegistry.gingerItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamspiceleafCrop){
                 savedStack = new ItemStack(ItemRegistry.spiceleafItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamtealeafCrop){
                 savedStack = new ItemStack(ItemRegistry.tealeafItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcoffeebeanCrop){
                 savedStack = new ItemStack(ItemRegistry.coffeebeanItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pammustardseedsCrop){
                 savedStack = new ItemStack(ItemRegistry.mustardseedsItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pambroccoliCrop){
                 savedStack = new ItemStack(ItemRegistry.broccoliItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcauliflowerCrop){
                 savedStack = new ItemStack(ItemRegistry.cauliflowerItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamleekCrop){
                 savedStack = new ItemStack(ItemRegistry.leekItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamlettuceCrop){
                 savedStack = new ItemStack(ItemRegistry.lettuceItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamscallionCrop){
                 savedStack = new ItemStack(ItemRegistry.scallionItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamartichokeCrop){
                 savedStack = new ItemStack(ItemRegistry.artichokeItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pambrusselsproutCrop){
                 savedStack = new ItemStack(ItemRegistry.brusselsproutItem);
-            }
+            } else
             
             if(currentBlock == BlockRegistry.pamcabbageCrop){
                 savedStack = new ItemStack(ItemRegistry.cabbageItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamspinachCrop){
                 savedStack = new ItemStack(ItemRegistry.spinachItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pambeanCrop){
                 savedStack = new ItemStack(ItemRegistry.beanItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamsoybeanCrop){
                 savedStack = new ItemStack(ItemRegistry.soybeanItem);
-            }
+            } else
             
             if(currentBlock == BlockRegistry.pambellpepperCrop){
                 savedStack = new ItemStack(ItemRegistry.bellpepperItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamchilipepperCrop){
                 savedStack = new ItemStack(ItemRegistry.chilipepperItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pameggplantCrop){
                 savedStack = new ItemStack(ItemRegistry.eggplantItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamokraCrop){
                 savedStack = new ItemStack(ItemRegistry.okraItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pampeasCrop){
                 savedStack = new ItemStack(ItemRegistry.peasItem);
-            }
+            } else
             
             if(currentBlock == BlockRegistry.pamtomatoCrop){
                 savedStack = new ItemStack(ItemRegistry.tomatoItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcottonCrop){
                 savedStack = new ItemStack(ItemRegistry.cottonItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pampineappleCrop){
                 savedStack = new ItemStack(ItemRegistry.pineappleItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamgrapeCrop){
                 savedStack = new ItemStack(ItemRegistry.grapeItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamkiwiCrop){
                 savedStack = new ItemStack(ItemRegistry.kiwiItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcranberryCrop){
                 savedStack = new ItemStack(ItemRegistry.cranberryItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamriceCrop){
                 savedStack = new ItemStack(ItemRegistry.riceItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamseaweedCrop){
                 savedStack = new ItemStack(ItemRegistry.seaweedItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamcurryleafCrop){
                 savedStack = new ItemStack(ItemRegistry.curryleafItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamsesameseedsCrop){
                 savedStack = new ItemStack(ItemRegistry.sesameseedsItem);
-            }
+            } else
             if(currentBlock == BlockRegistry.pamwaterchestnutCrop){
                 savedStack = new ItemStack(ItemRegistry.waterchestnutItem);
             }
@@ -451,12 +451,7 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
 	@Override
     public net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess world, BlockPos pos)
     {
-        if (this == BlockRegistry.pamcactusfruitCrop)       return net.minecraftforge.common.EnumPlantType.Desert;
-        if (this == BlockRegistry.pamseaweedCrop)      return net.minecraftforge.common.EnumPlantType.Water;
-        if (this == BlockRegistry.pamwaterchestnutCrop)      return net.minecraftforge.common.EnumPlantType.Water;
-        if (this == BlockRegistry.pamriceCrop)      return net.minecraftforge.common.EnumPlantType.Water;
-        if (this == BlockRegistry.pamcranberryCrop)      return net.minecraftforge.common.EnumPlantType.Water;
-        return net.minecraftforge.common.EnumPlantType.Crop;
+		return net.minecraftforge.common.EnumPlantType.Crop;
     }
 
     @Override

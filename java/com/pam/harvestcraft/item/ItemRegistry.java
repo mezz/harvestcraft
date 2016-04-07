@@ -815,7 +815,7 @@ public static Item yorkshirepuddingItem;
 
 public static int cropfoodRestore;
 public static float cropsaturationRestore;
-public static boolean sheepdropMutton;
+//public static boolean sheepdropMutton;
 public static boolean squiddropCalamari;
 public static float snacksaturation;
 public static float mealsaturation;
@@ -901,7 +901,7 @@ public static void initItems(FMLPreInitializationEvent event, Configuration conf
 {
 cropfoodRestore = config.get("crops", "cropfoodRestore", 1).getInt();
 cropsaturationRestore = (float)config.get("crops", "cropsaturationRestore", 0.6000000238418579D).getDouble(0.6000000238418579D);
-sheepdropMutton = config.get("general", "sheepdropMutton", true).getBoolean(true);
+//sheepdropMutton = config.get("general", "sheepdropMutton", true).getBoolean(true);
 squiddropCalamari = config.get("general", "squiddropCalamari", true).getBoolean(true);
 snacksaturation = (float)config.get("crops", "snacksaturation", 0.6000000238418579D).getDouble(0.6000000238418579D);
 mealsaturation = (float)config.get("crops", "mealsaturation", 1.2000000476837158D).getDouble(1.2000000476837158D);

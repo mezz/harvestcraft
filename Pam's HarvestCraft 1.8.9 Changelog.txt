@@ -1,3 +1,6 @@
+1.8.9c
+- Fixed: More config options not working
+
 1.8.9b
 - Removed: HC versions of mutton/cooked mutton, rabbit/cooked rabbit
 - Fixed: Garden drop amount config option now works again

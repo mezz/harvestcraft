@@ -37,13 +37,19 @@ public class Config
 	public static final String CATEGORY_SEEDS = "seeds";
 	public static final String CATEGORY_MISC_RECIPES = "miscellaneous recipes";
 	
-	public void load(FMLPreInitializationEvent event)
-	{
-	Configuration config = new Configuration(event.getSuggestedConfigurationFile());
-	config.load();
-	BlockRegistry.initBlocks(event, config);
-	ItemRegistry.initItems(event, config);
+	public void load(FMLPreInitializationEvent event) {
+		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
+		config.load();
+		BlockRegistry.initBlocks(event, config);
+		ItemRegistry.initItems(event, config);
+	}
 
+	/**
+	 * Configures drops from the various gardens; this needs to happen after the item registries are updated
+	 * @param event	The server's pre-init event
+     */
+	public void configureGardenDrops(FMLPreInitializationEvent event) {
+		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		final Pattern ITEM_STACK_PATTERN = Pattern.compile("(?:([0-9]+)x)?([\\w:]+)(?:[@:]([0-9]+))?");
 		final Matcher ITEM_STACK_MATCHER = ITEM_STACK_PATTERN.matcher("");
 		 

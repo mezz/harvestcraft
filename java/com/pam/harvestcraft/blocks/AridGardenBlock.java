@@ -24,14 +24,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class AridGardenBlock extends BlockBush
+public class AridGardenBlock extends BlockBaseGarden
 {
 	private final String name = "aridgarden";
-	public static List<ItemStack> drops;
-	
+
 	public AridGardenBlock()
 	{	
-		super(Material.grass);
+		super("aridGarden", Material.grass);
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(name);
 		setCreativeTab(harvestcraft.modTab);
@@ -41,16 +40,6 @@ public class AridGardenBlock extends BlockBush
     //public void initModel() {
     //    ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     //}
-
-	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
-	{
-	    List<ItemStack> newStack = new ArrayList<ItemStack>();
-	    Collections.shuffle(drops);
-	    for (int i = 0; i < Math.min(BlockRegistry.gardendropAmount, drops.size()); i++) {
-	        newStack.add(drops.get(i).copy());
-	    }
-	    return newStack;
-	}
 	
 	@Override
 	protected boolean canPlaceBlockOn(Block ground)

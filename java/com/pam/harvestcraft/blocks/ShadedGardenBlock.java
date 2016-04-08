@@ -19,27 +19,17 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ShadedGardenBlock extends BlockBush
+public class ShadedGardenBlock extends BlockBaseGarden
 {
 	private final String name = "shadedgarden";
 	public static List<ItemStack> drops;
 	
 	public ShadedGardenBlock()
 	{	
-		super(Material.grass);
+		super("shadedGarden", Material.grass);
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(name);
 		setCreativeTab(harvestcraft.modTab);
-	}
-
-	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
-	{
-	    List<ItemStack> newStack = new ArrayList<ItemStack>();
-	    Collections.shuffle(drops);
-	    for (int i = 0; i < Math.min(BlockRegistry.gardendropAmount, drops.size()); i++) {
-	        newStack.add(drops.get(i).copy());
-	    }
-	    return newStack;
 	}
 	
 	@Override

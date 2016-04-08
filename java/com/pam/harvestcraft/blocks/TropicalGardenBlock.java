@@ -19,27 +19,17 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class TropicalGardenBlock extends BlockBush
+public class TropicalGardenBlock extends BlockBaseGarden
 {
 	private final String name = "tropicalgarden";
 	public static List<ItemStack> drops;
 	
 	public TropicalGardenBlock()
 	{	
-		super(Material.grass);
+		super("tropicalGarden", Material.grass);
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(name);
 		setCreativeTab(harvestcraft.modTab);
-	}
-
-	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
-	{
-	    List<ItemStack> newStack = new ArrayList<ItemStack>();
-	    Collections.shuffle(drops);
-	    for (int i = 0; i < Math.min(BlockRegistry.gardendropAmount, drops.size()); i++) {
-	        newStack.add(drops.get(i).copy());
-	    }
-	    return newStack;
 	}
 	
 	@Override

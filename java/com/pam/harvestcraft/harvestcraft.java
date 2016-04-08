@@ -48,9 +48,10 @@ public class harvestcraft {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-    	Config.instance.load(event);
+        Config.instance.load(event);
     	this.proxy.preInit(event);
-    	
+        Config.instance.configureGardenDrops();
+
         PamFoodRecipes.getRecipes();
         PamOtherRecipes.getRecipes();
         PamFoodOreDictionaryRegistry.getRegistry();

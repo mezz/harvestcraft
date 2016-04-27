@@ -61,7 +61,49 @@ public class PamOtherRecipes
 		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(ItemRegistry.bakewareItem, true, new Object[]{
 	 	 		"@@@", "@ @", "@@@", Character.valueOf('@'), "ingotBrickNether"}));
 		
-		
+		//Market Recipe
+		if (BlockRegistry.marketblockrecipeItem == 0)
+		{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
+                {
+                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.emerald
+                }));
+		}
+		if (BlockRegistry.marketblockrecipeItem == 1)
+		{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
+                {
+                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.diamond
+                }));
+		}
+		if (BlockRegistry.marketblockrecipeItem == 2)
+		{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
+                {
+                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.gold_ingot
+                }));
+		}
+		if (BlockRegistry.marketblockrecipeItem == 3)
+		{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
+                {
+                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.gold_nugget
+                }));
+		}
+		if (BlockRegistry.marketblockrecipeItem == 4)
+		{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
+                {
+                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.iron_ingot
+                }));
+		}
+		if (BlockRegistry.marketblockrecipeItem == 5)
+		{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
+                {
+                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.apple
+                }));
+		}
 		
 		//Cotton Seed & Switch Recipes
 				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.cottonseedItem, ItemRegistry.cottonItem));
@@ -93,7 +135,9 @@ public class PamOtherRecipes
 		                }));
 		        
 		        CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.candleberryseedItem, ItemRegistry.candleberryItem));
-
+		      
+		        //Random Recipes
+				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.slime_ball, 1), "foodJellyfishraw"));
 				
 				//Pumpkin Lanterns
 				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Blocks.lit_pumpkin, 1), "cropPumpkin", "blockTorch"));

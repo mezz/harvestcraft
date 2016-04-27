@@ -158,6 +158,8 @@ public class BlockRegistry
 	public static Block pamWalnut;
 	public static Block pamwalnutSapling;
 	
+	public static Block pamMarket;
+	
 	public static int gardenRarity;
 	public static int gardendropAmount;
 	public static boolean enablegardenSpread;
@@ -213,8 +215,38 @@ public class BlockRegistry
 	//public static boolean gardensdropSeeds;
 	public static boolean enablecropspecialplanting;
 	
+	public static boolean marketsellSeeds;
+	public static boolean marketselltemperateSaplings;
+	public static boolean marketselltropicalSaplings;
+	public static boolean marketsellconiferousSaplings;
+	public static boolean marketsellPig;
+	public static boolean marketsellSheep;
+	public static boolean marketsellCow;
+	public static boolean marketsellChicken;
+	public static boolean marketsellHorse;
+	public static boolean marketsellBonemeal;
+	public static int marketblockrecipeItem;
+	public static int marketseedPrice;
+	public static int marketsaplingPrice;
+	public static int marketpigPrice;
+	public static int marketsheepPrice;
+	public static int marketcowPrice;
+	public static int marketchickenPrice;
+	public static int markethorsePrice;
+	public static int marketbonemealPrice;
+	public static int marketcurrencySeeds;
+	public static int marketcurrencytemperateSaplings;
+	public static int marketcurrencytropicalSaplings;
+	public static int marketcurrencyconiferousSaplings;
+	public static int marketcurrencyPig;
+	public static int marketcurrencySheep;
+	public static int marketcurrencyCow;
+	public static int marketcurrencyChicken;
+	public static int marketcurrencyHorse;
+	public static int marketcurrencyBonemeal;
+	
 	public static void initBlocks(FMLPreInitializationEvent event, Configuration config)
-	/*     */   {
+	{
 	/* 358 */     gardenRarity = config.get("gardens", "gardenRarity", 2).getInt();
 	/* 359 */     gardendropAmount = config.get("gardens", "gardendropAmount", 3).getInt();
 	/* 360 */     enablegardenSpread = config.get("gardens", "enablegardenSpread", true).getBoolean(true);
@@ -264,12 +296,41 @@ public class BlockRegistry
 	/* 410 */     vanillabeantreeGeneration = config.get("fruit trees", "vanillabeantreeGeneration", true).getBoolean(true);
 	/* 411 */     walnuttreeGeneration = config.get("fruit trees", "walnuttreeGeneration", true).getBoolean(true);
 	/* 412 */     gooseberrytreeGeneration = config.get("fruit trees", "gooseberrytreeGeneration", true).getBoolean(true);
-	/*     */     
+	  
 	/* 414 */     //cropsdropSeeds = config.get("crops", "cropsdropSeeds", false).getBoolean(false);
 				  rightclickharvestCrop = config.get("crops", "rightclickharvestCrop", true).getBoolean(true);
 	/* 418 */     rightclickharvestFruit = config.get("fruit trees", "rightclickharvestFruit", true).getBoolean(true);
 	/* 419 */     //gardensdropSeeds = config.get("gardens", "gardensdropSeeds", false).getBoolean(false);
 	/* 420 */     enablecropspecialplanting = config.get("crops", "enablecropspecialplanting", true).getBoolean(true);
+	marketsellSeeds = config.get("market sales", "marketsellSeeds", true).getBoolean(true);
+	/* 330 */     marketselltemperateSaplings = config.get("market sales", "marketselltemperateSaplings", true).getBoolean(true);
+	/* 331 */     marketselltropicalSaplings = config.get("market sales", "marketselltropicalSaplings", true).getBoolean(true);
+	/* 332 */     marketsellconiferousSaplings = config.get("market sales", "marketsellconiferousSaplings", true).getBoolean(true);
+	/* 333 */     marketsellPig = config.get("market sales", "marketsellPig", true).getBoolean(true);
+	/* 334 */     marketsellSheep = config.get("market sales", "marketsellSheep", true).getBoolean(true);
+	/* 335 */     marketsellCow = config.get("market sales", "marketsellCow", true).getBoolean(true);
+	/* 336 */     marketsellChicken = config.get("market sales", "marketsellChicken", true).getBoolean(true);
+	/* 337 */     marketsellHorse = config.get("market sales", "marketsellHorse", true).getBoolean(true);
+	/* 338 */     marketsellBonemeal = config.get("market sales", "marketsellBonemeal", true).getBoolean(true);
+	/* 339 */     marketblockrecipeItem = config.get("miscellaneous recipes", "marketblockrecipeItem", 0).getInt();
+	/* 340 */     marketseedPrice = config.get("market prices", "marketseedPrice", 1).getInt();
+	/* 341 */     marketsaplingPrice = config.get("market prices", "marketsaplingPrice", 3).getInt();
+	/* 342 */     marketpigPrice = config.get("market prices", "marketpigPrice", 6).getInt();
+	/* 343 */     marketsheepPrice = config.get("market prices", "marketsheepPrice", 6).getInt();
+	/* 344 */     marketcowPrice = config.get("market prices", "marketcowPrice", 9).getInt();
+	/* 345 */     marketchickenPrice = config.get("market prices", "marketchickenPrice", 3).getInt();
+	/* 346 */     markethorsePrice = config.get("market prices", "markethorsePrice", 12).getInt();
+	/* 347 */     marketbonemealPrice = config.get("market prices", "marketbonemealPrice", 3).getInt();
+	/* 348 */     marketcurrencySeeds = config.get("market currency", "marketcurrencySeeds", 0).getInt();
+	/* 349 */     marketcurrencytemperateSaplings = config.get("market currency", "marketcurrencytemperateSaplings", 0).getInt();
+	/* 350 */     marketcurrencytropicalSaplings = config.get("market currency", "marketcurrencytropicalSaplings", 0).getInt();
+	/* 351 */     marketcurrencyconiferousSaplings = config.get("market currency", "marketcurrencyconiferousSaplings", 0).getInt();
+	/* 352 */     marketcurrencyPig = config.get("market currency", "marketcurrencyPig", 0).getInt();
+	/* 353 */     marketcurrencySheep = config.get("market currency", "marketcurrencySheep", 0).getInt();
+	/* 354 */     marketcurrencyCow = config.get("market currency", "marketcurrencyCow", 0).getInt();
+	/* 355 */     marketcurrencyChicken = config.get("market currency", "marketcurrencyChicken", 0).getInt();
+	/* 356 */     marketcurrencyHorse = config.get("market currency", "marketcurrencyHorse", 0).getInt();
+	/* 357 */     marketcurrencyBonemeal = config.get("market currency", "marketcurrencyBonemeal", 0).getInt();
 }
 	private static Block registerBlock(String name, Class<? extends ItemBlock> itemblock, Block block)
 	{
@@ -421,6 +482,9 @@ public class BlockRegistry
 		pamvanillabeanSapling = new BlockPamSapling("vanillabean_sapling");
 		pamWalnut = registerBlock("pamWalnut", ItemBlockFruit.class, new BlockPamFruit());
 		pamwalnutSapling = new BlockPamSapling("walnut_sapling");
+		
+		pamMarket = new BlockPamMarket(Material.wood).setHardness(1.0F).setResistance(1.0F);
+		GameRegistry.registerBlock(pamMarket, "market");
 		
 		PamTemperateSaplings = new Block[] { pamappleSapling, pamavocadoSapling, pamcherrySapling, pamchestnutSapling, pamnutmegSapling, pampearSapling, pamplumSapling, pamwalnutSapling, pamgooseberrySapling };
 		PamWarmSaplings = new Block[] { pamalmondSapling, pamapricotSapling, pambananaSapling, pamcashewSapling, pamcoconutSapling, pamdateSapling, pamdragonfruitSapling, pamdurianSapling, pamfigSapling, pamgrapefruitSapling, pamlemonSapling, pamlimeSapling, pammangoSapling, pamoliveSapling, pamorangeSapling, pampapayaSapling, pampeachSapling, pampecanSapling, pampeppercornSapling, pampersimmonSapling, pampistachioSapling, pampomegranateSapling, pamstarfruitSapling, pamvanillabeanSapling };

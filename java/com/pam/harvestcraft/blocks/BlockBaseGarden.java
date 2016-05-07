@@ -4,14 +4,15 @@ import net.minecraft.block.BlockBush;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 
 import java.util.*;
 
-/**
- * Created by Matt on 4/8/2016.
- */
+import com.pam.harvestcraft.HarvestCraft;
+
 public abstract class BlockBaseGarden extends BlockBush {
     public static Map<String, List<ItemStack>> drops = new HashMap<String, List<ItemStack>>();
     private final String type;
@@ -19,10 +20,20 @@ public abstract class BlockBaseGarden extends BlockBush {
     public BlockBaseGarden(String type, Material grass) {
         super(grass);
         this.type = type;
+        this.setCreativeTab(HarvestCraft.modTab);
     }
 
-    public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
-    {
+    @Override
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        return new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+    }
+
+    @Override
+    public AxisAlignedBB getSelectedBoundingBox(IBlockState blockState, World worldIn, BlockPos pos) {
+        return NULL_AABB;
+    }
+
+    public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
         List<ItemStack> newStack = new ArrayList<ItemStack>();
         List<ItemStack> ourDrops = drops.get(type);
         Collections.shuffle(ourDrops);
@@ -34,7 +45,7 @@ public abstract class BlockBaseGarden extends BlockBush {
             ItemStack drop = ourDrops.get(i);
 
             // This should never happen, but check it anyway...
-            if(drop == null) {
+            if (drop == null) {
                 System.err.println("Tried to get a null item for garden '" + type + "'.");
                 continue;
             }
@@ -44,5 +55,4 @@ public abstract class BlockBaseGarden extends BlockBush {
         }
         return newStack;
     }
-
 }

@@ -16,7 +16,7 @@ sink_3.name=Brick Well
 harvestcraft.tile.salt.name=Salt Ore
 harvestcraft.tile.pamcompressedsaltBlock.name=Compressed Salt Block
 
-harvestcraft.tile.market.name=Market
+tile.market.name=Market
 
 harvestcraft.tile.oven.name=Oven
 
@@ -828,7 +828,7 @@ item.rootbeersodaItem.name=Root Beer
 item.strawberrysodaItem.name=Strawberry Soda
         
 item.caramelicecreamItem.name=Caramel Ice Cream
-item.mintchocolatechipicemcreamItem.name=Mint Chocolate Chip Ice Cream
+item.mintchocolatechipicecreamItem.name=Mint Chocolate Chip Ice Cream
 item.strawberryicecreamItem.name=Strawberry Ice Cream
 item.vanillaicecreamItem.name=Vanilla Ice Cream
         

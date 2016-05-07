@@ -95,15 +95,15 @@ public class GuiMarket extends GuiContainer
                                                 if (buySlot.stackSize == price)
                                                 {
                      
-                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord, true));
+                                                        PacketHandler.network.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.getPos().getX(), this.tileEntityMarket.getPos().getY(), this.tileEntityMarket.getPos().getZ(), true));
                                                 }
                                                 else if (buySlot.stackSize > price && buySlot.stackSize > 1)
                                                 {
-                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord, false));
+                                                        PacketHandler.network.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.getPos().getX(), this.tileEntityMarket.getPos().getY(), this.tileEntityMarket.getPos().getZ(), false));
                                                 }
                                                 if (buySlot.stackSize == 0 && price == 1)
                                                 {
-                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord, true));
+                                                        PacketHandler.network.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.getPos().getX(), this.tileEntityMarket.getPos().getY(), this.tileEntityMarket.getPos().getZ(), true));
                                                 }
                                         }
                                 }
@@ -114,7 +114,7 @@ public class GuiMarket extends GuiContainer
         @Override
         public void onGuiClosed()
         {
-                PacketHandler.INSTANCE.sendToServer(new MessageMarketClosed(this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord));
+                PacketHandler.network.sendToServer(new MessageMarketClosed(this.tileEntityMarket.getPos().getX(), this.tileEntityMarket.getPos().getY(), this.tileEntityMarket.getPos().getZ()));
                 super.onGuiClosed();
         }
  
@@ -134,11 +134,11 @@ public class GuiMarket extends GuiContainer
                
                 ItemStack item = data.getItem();
                 itemRender.renderItemAndEffectIntoGUI(item, 73, 16);
-                itemRender.renderItemOverlayIntoGUI(this.fontRendererObj, this.mc.getTextureManager(), item, 73, 16);
- 
+                itemRender.renderItemOverlayIntoGUI(fontRendererObj, item, 73, 16, "");
+
                 ItemStack currency = data.getCurrency();
                 itemRender.renderItemAndEffectIntoGUI(currency, 100, 16);
-                itemRender.renderItemOverlayIntoGUI(this.fontRendererObj, this.mc.getTextureManager(), currency, 100, 16);
+                itemRender.renderItemOverlayIntoGUI(fontRendererObj, currency, 100, 16, "");
                 itemRender.zLevel = 0.0F;
                 GL11.glDisable(GL11.GL_LIGHTING);
  
@@ -155,7 +155,8 @@ public class GuiMarket extends GuiContainer
         {
                 super.drawScreen(par1, par2, par3);
                 ItemStack item = MarketItems.getData(itemNum).getItem();
-                if (this.func_146978_c(73, 16, 16, 16, par1, par2))
+
+                if (this.isPointInRegion(73, 16, 16, 16, par1, par2))
                 {
                         this.renderToolTip(item, par1, par2);
                 }

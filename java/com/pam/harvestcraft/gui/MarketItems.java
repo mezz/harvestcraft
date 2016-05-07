@@ -5,8 +5,15 @@ import java.util.ArrayList;
 import com.pam.harvestcraft.blocks.BlockRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
 
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.passive.EntityChicken;
+import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.passive.EntityHorse;
+import net.minecraft.entity.passive.EntityPig;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.item.ItemStack;
 
 
@@ -301,140 +308,152 @@ public class MarketItems
       }
     }
     
+ItemStack pigegg = new ItemStack(Items.spawn_egg, 1);
+ItemMonsterPlacer.applyEntityIdToItemStack(pigegg, EntityList.classToStringMapping.get(EntityPig.class));
+ItemStack sheepegg = new ItemStack(Items.spawn_egg, 1);
+ItemMonsterPlacer.applyEntityIdToItemStack(sheepegg, EntityList.classToStringMapping.get(EntitySheep.class));
+ItemStack cowegg = new ItemStack(Items.spawn_egg, 1);
+ItemMonsterPlacer.applyEntityIdToItemStack(cowegg, EntityList.classToStringMapping.get(EntityCow.class));
+ItemStack chickenegg = new ItemStack(Items.spawn_egg, 1);
+ItemMonsterPlacer.applyEntityIdToItemStack(chickenegg, EntityList.classToStringMapping.get(EntityChicken.class));
+ItemStack horseegg = new ItemStack(Items.spawn_egg, 1);
+ItemMonsterPlacer.applyEntityIdToItemStack(horseegg, EntityList.classToStringMapping.get(EntityHorse.class));
+
+
 
 /* 301 */     if (BlockRegistry.marketsellPig)
     {
 /* 303 */       if (BlockRegistry.marketcurrencyPig == 0)
       {
-/* 305 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 90), new ItemStack(Items.emerald), BlockRegistry.marketpigPrice));
+/* 305 */         registerItems(new MarketData(pigegg, new ItemStack(Items.emerald), BlockRegistry.marketpigPrice));
       }
 /* 307 */       if (BlockRegistry.marketcurrencyPig == 1)
       {
-/* 309 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 90), new ItemStack(Items.diamond), BlockRegistry.marketpigPrice));
+/* 309 */         registerItems(new MarketData(pigegg, new ItemStack(Items.diamond), BlockRegistry.marketpigPrice));
       }
 /* 311 */       if (BlockRegistry.marketcurrencyPig == 2)
       {
-/* 313 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 90), new ItemStack(Items.gold_ingot), BlockRegistry.marketpigPrice));
+/* 313 */         registerItems(new MarketData(pigegg, new ItemStack(Items.gold_ingot), BlockRegistry.marketpigPrice));
       }
 /* 315 */       if (BlockRegistry.marketcurrencyPig == 3)
       {
-/* 317 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 90), new ItemStack(Items.gold_nugget), BlockRegistry.marketpigPrice));
+/* 317 */         registerItems(new MarketData(pigegg, new ItemStack(Items.gold_nugget), BlockRegistry.marketpigPrice));
       }
 /* 319 */       if (BlockRegistry.marketcurrencyPig == 4)
       {
-/* 321 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 90), new ItemStack(Items.iron_ingot), BlockRegistry.marketpigPrice));
+/* 321 */         registerItems(new MarketData(pigegg, new ItemStack(Items.iron_ingot), BlockRegistry.marketpigPrice));
       }
 /* 323 */       if (BlockRegistry.marketcurrencyPig == 5)
       {
-/* 325 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 90), new ItemStack(Items.egg), BlockRegistry.marketpigPrice));
+/* 325 */         registerItems(new MarketData(pigegg, new ItemStack(Items.egg), BlockRegistry.marketpigPrice));
       }
     }
 /* 328 */     if (BlockRegistry.marketsellSheep)
     {
 /* 330 */       if (BlockRegistry.marketcurrencySheep == 0)
       {
-/* 332 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 91), new ItemStack(Items.emerald), BlockRegistry.marketsheepPrice));
+/* 332 */         registerItems(new MarketData(sheepegg, new ItemStack(Items.emerald), BlockRegistry.marketsheepPrice));
       }
 /* 334 */       if (BlockRegistry.marketcurrencySheep == 1)
       {
-/* 336 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 91), new ItemStack(Items.diamond), BlockRegistry.marketsheepPrice));
+/* 336 */         registerItems(new MarketData(sheepegg, new ItemStack(Items.diamond), BlockRegistry.marketsheepPrice));
       }
 /* 338 */       if (BlockRegistry.marketcurrencySheep == 2)
       {
-/* 340 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 91), new ItemStack(Items.gold_ingot), BlockRegistry.marketsheepPrice));
+/* 340 */         registerItems(new MarketData(sheepegg, new ItemStack(Items.gold_ingot), BlockRegistry.marketsheepPrice));
       }
 /* 342 */       if (BlockRegistry.marketcurrencySheep == 3)
       {
-/* 344 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 91), new ItemStack(Items.gold_nugget), BlockRegistry.marketsheepPrice));
+/* 344 */         registerItems(new MarketData(sheepegg, new ItemStack(Items.gold_nugget), BlockRegistry.marketsheepPrice));
       }
 /* 346 */       if (BlockRegistry.marketcurrencySheep == 4)
       {
-/* 348 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 91), new ItemStack(Items.iron_ingot), BlockRegistry.marketsheepPrice));
+/* 348 */         registerItems(new MarketData(sheepegg, new ItemStack(Items.iron_ingot), BlockRegistry.marketsheepPrice));
       }
 /* 350 */       if (BlockRegistry.marketcurrencySheep == 5)
       {
-/* 352 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 91), new ItemStack(Items.egg), BlockRegistry.marketsheepPrice));
+/* 352 */         registerItems(new MarketData(sheepegg, new ItemStack(Items.egg), BlockRegistry.marketsheepPrice));
       }
     }
 /* 355 */     if (BlockRegistry.marketsellCow)
     {
 /* 357 */       if (BlockRegistry.marketcurrencyCow == 0)
       {
-/* 359 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 92), new ItemStack(Items.emerald), BlockRegistry.marketcowPrice));
+/* 359 */         registerItems(new MarketData(cowegg, new ItemStack(Items.emerald), BlockRegistry.marketcowPrice));
       }
 /* 361 */       if (BlockRegistry.marketcurrencyCow == 1)
       {
-/* 363 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 92), new ItemStack(Items.diamond), BlockRegistry.marketcowPrice));
+/* 363 */         registerItems(new MarketData(cowegg, new ItemStack(Items.diamond), BlockRegistry.marketcowPrice));
       }
 /* 365 */       if (BlockRegistry.marketcurrencyCow == 2)
       {
-/* 367 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 92), new ItemStack(Items.gold_ingot), BlockRegistry.marketcowPrice));
+/* 367 */         registerItems(new MarketData(cowegg, new ItemStack(Items.gold_ingot), BlockRegistry.marketcowPrice));
       }
 /* 369 */       if (BlockRegistry.marketcurrencyCow == 3)
       {
-/* 371 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 92), new ItemStack(Items.gold_nugget), BlockRegistry.marketcowPrice));
+/* 371 */         registerItems(new MarketData(cowegg, new ItemStack(Items.gold_nugget), BlockRegistry.marketcowPrice));
       }
 /* 373 */       if (BlockRegistry.marketcurrencyCow == 4)
       {
-/* 375 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 92), new ItemStack(Items.iron_ingot), BlockRegistry.marketcowPrice));
+/* 375 */         registerItems(new MarketData(cowegg, new ItemStack(Items.iron_ingot), BlockRegistry.marketcowPrice));
       }
 /* 377 */       if (BlockRegistry.marketcurrencyCow == 5)
       {
-/* 379 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 92), new ItemStack(Items.egg), BlockRegistry.marketcowPrice));
+/* 379 */         registerItems(new MarketData(cowegg, new ItemStack(Items.egg), BlockRegistry.marketcowPrice));
       }
     }
 /* 382 */     if (BlockRegistry.marketsellChicken)
     {
 /* 384 */       if (BlockRegistry.marketcurrencyChicken == 0)
       {
-/* 386 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 93), new ItemStack(Items.emerald), BlockRegistry.marketchickenPrice));
+/* 386 */         registerItems(new MarketData(chickenegg, new ItemStack(Items.emerald), BlockRegistry.marketchickenPrice));
       }
 /* 388 */       if (BlockRegistry.marketcurrencyChicken == 1)
       {
-/* 390 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 93), new ItemStack(Items.diamond), BlockRegistry.marketchickenPrice));
+/* 390 */         registerItems(new MarketData(chickenegg, new ItemStack(Items.diamond), BlockRegistry.marketchickenPrice));
       }
 /* 392 */       if (BlockRegistry.marketcurrencyChicken == 2)
       {
-/* 394 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 93), new ItemStack(Items.gold_ingot), BlockRegistry.marketchickenPrice));
+/* 394 */         registerItems(new MarketData(chickenegg, new ItemStack(Items.gold_ingot), BlockRegistry.marketchickenPrice));
       }
 /* 396 */       if (BlockRegistry.marketcurrencyChicken == 3)
       {
-/* 398 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 93), new ItemStack(Items.gold_nugget), BlockRegistry.marketchickenPrice));
+/* 398 */         registerItems(new MarketData(chickenegg, new ItemStack(Items.gold_nugget), BlockRegistry.marketchickenPrice));
       }
 /* 400 */       if (BlockRegistry.marketcurrencyChicken == 4)
       {
-/* 402 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 93), new ItemStack(Items.iron_ingot), BlockRegistry.marketchickenPrice));
+/* 402 */         registerItems(new MarketData(chickenegg, new ItemStack(Items.iron_ingot), BlockRegistry.marketchickenPrice));
       }
 /* 404 */       if (BlockRegistry.marketcurrencyChicken == 5)
       {
-/* 406 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 93), new ItemStack(Items.egg), BlockRegistry.marketchickenPrice));
+/* 406 */         registerItems(new MarketData(chickenegg, new ItemStack(Items.egg), BlockRegistry.marketchickenPrice));
       }
     }
 /* 409 */     if (BlockRegistry.marketsellHorse)
     {
 /* 411 */       if (BlockRegistry.marketcurrencyHorse == 0)
       {
-/* 413 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 100), new ItemStack(Items.emerald), BlockRegistry.markethorsePrice));
+/* 413 */         registerItems(new MarketData(horseegg, new ItemStack(Items.emerald), BlockRegistry.markethorsePrice));
       }
 /* 415 */       if (BlockRegistry.marketcurrencyHorse == 1)
       {
-/* 417 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 100), new ItemStack(Items.diamond), BlockRegistry.markethorsePrice));
+/* 417 */         registerItems(new MarketData(horseegg, new ItemStack(Items.diamond), BlockRegistry.markethorsePrice));
       }
 /* 419 */       if (BlockRegistry.marketcurrencyHorse == 2)
       {
-/* 421 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 100), new ItemStack(Items.gold_ingot), BlockRegistry.markethorsePrice));
+/* 421 */         registerItems(new MarketData(horseegg, new ItemStack(Items.gold_ingot), BlockRegistry.markethorsePrice));
       }
 /* 423 */       if (BlockRegistry.marketcurrencyHorse == 3)
       {
-/* 425 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 100), new ItemStack(Items.gold_nugget), BlockRegistry.markethorsePrice));
+/* 425 */         registerItems(new MarketData(horseegg, new ItemStack(Items.gold_nugget), BlockRegistry.markethorsePrice));
       }
 /* 427 */       if (BlockRegistry.marketcurrencyHorse == 4)
       {
-/* 429 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 100), new ItemStack(Items.iron_ingot), BlockRegistry.markethorsePrice));
+/* 429 */         registerItems(new MarketData(horseegg, new ItemStack(Items.iron_ingot), BlockRegistry.markethorsePrice));
       }
 /* 431 */       if (BlockRegistry.marketcurrencyHorse == 5)
       {
-/* 433 */         registerItems(new MarketData(new ItemStack(Items.spawn_egg, 1, 100), new ItemStack(Items.egg), BlockRegistry.markethorsePrice));
+/* 433 */         registerItems(new MarketData(horseegg, new ItemStack(Items.egg), BlockRegistry.markethorsePrice));
       }
     }
     

@@ -1,4 +1,4 @@
-//HARVESTCRAFT RECIPES 1.8.9a
+//HARVESTCRAFT RECIPES 1.9a
 ANY RECIPE NOT SHOWING A FULL CRAFTING GRID IS A SHAPELESS RECIPE
 
 //TOOL RECIPES
@@ -52,6 +52,7 @@ ANY RECIPE NOT SHOWING A FULL CRAFTING GRID IS A SHAPELESS RECIPE
 //Fresh Milk (Default 4)
 [Milk Bucket----]
 
+bubblywaterItem, toolPot, freshwaterItem
 
 //ALTERNATE CAKE RECIPES
 The vanille Cake block can be crafted with flour replacing wheat and/or fresh milk replacing milk buckets.

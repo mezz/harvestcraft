@@ -1,0 +1,7 @@
+1.9a - The Thank You leber_tran Update
+- This update builds off the 1.8.9e code
+- Added: Market Block
+- Changed: You can make bubbly water with fresh water and a pot
+- Added: Rabbit meat, beets from MC should work with HC recipes
+- Added: MC Beets listAllveggie, MC chorus fruit listAllfruit
+

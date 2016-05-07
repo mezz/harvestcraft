@@ -1,48 +1,62 @@
 package com.pam.harvestcraft.blocks;
-import java.io.PrintStream;
 
-import com.pam.harvestcraft.harvestcraft;
+import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.tileentity.TileEntityMarket;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class BlockPamMarket extends BlockContainer
-{
-
-  
-  public BlockPamMarket(Material par2Material)
-  {
-	super(par2Material);
-	setStepSound(Block.soundTypeWood);
-	this.setCreativeTab(harvestcraft.modTab);
-  }
-  
-  public TileEntity createNewTileEntity(World world)
-  {
-	return new TileEntityMarket();
-  }
-  
-
-
-  public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float xCoord, float yCoord, float zCoord)
-  {
-	  TileEntity tile = world.getTileEntity(x, y, z);
-	  if ((tile == null) || (player.isSneaking()))
-    {
-		  return false;
+public class BlockPamMarket extends BlockContainer {
+    @Override
+    public BlockRenderLayer getBlockLayer() {
+        return BlockRenderLayer.SOLID;
     }
-	  System.out.println("Trying to open");
-	  player.openGui(harvestcraft.instance, 0, world, x, y, z);
-	  return true;
-  }
 
-  public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_)
-  {
-	return new TileEntityMarket();
-  }
+    @Override
+    public EnumBlockRenderType getRenderType(IBlockState state) {
+        return EnumBlockRenderType.MODEL;
+    }
+
+    public BlockPamMarket(Material par2Material) {
+        super(par2Material);
+        setStepSound(SoundType.WOOD);
+        this.setCreativeTab(HarvestCraft.modTab);
+    }
+
+    @Override
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
+        final TileEntity tile = worldIn.getTileEntity(pos);
+        if ((tile == null) || (playerIn.isSneaking())) {
+            return false;
+        }
+        System.out.println("Trying to open");
+        playerIn.openGui(HarvestCraft.instance, 0, worldIn, pos.getX(), pos.getY(), pos.getZ());
+        return true;
+    }
+
+    @Override
+    public boolean hasTileEntity(IBlockState state) {
+        return true;
+    }
+
+    @Override
+    public TileEntity createTileEntity(World world, IBlockState state) {
+        return new TileEntityMarket();
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World worldIn, int meta) {
+        return createTileEntity(worldIn, getStateFromMeta(meta));
+    }
 }

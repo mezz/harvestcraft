@@ -1,0 +1,7 @@
+HarvestCraft 1.9.4c
+- Fixed: Conflict with soy items and stock recipe issue (use Presser from now on)
+- Fixed: Dupe bug with Market
+- Added: Cotton now drops from all but Arid gardens
+- Fixed: Queen bees of all durability can be crafted into Royal Jelly
+- Reminder: Sneak and left-click to pick up gardens
+- Fixed: Cranberry Juice no longer requires Sugar

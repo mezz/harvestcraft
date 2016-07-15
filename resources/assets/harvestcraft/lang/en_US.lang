@@ -4,9 +4,9 @@ itemGroup.harvestcraft=HarvestCraft
 harvestcraft.harvestcraft.tile.cuttingboard.name=Cutting Board
 harvestcraft.tile.pot.name=Pot
 
-harvestcraft.tile.beehive.name=Beehive
-harvestcraft.tile.apiary.name=Apiary
-harvestcraft.tile.presser.name=Presser
+tile.beehive.name=Beehive
+tile.apiary.name=Apiary
+tile.presser.name=Presser
 
 sink_0.name=Water Barrel
 sink_1.name=Stone Basin
@@ -33,6 +33,10 @@ tile.windygarden.name=Windy Garden
 tile.shadedgarden.name=Shaded Garden
 tile.soggygarden.name=Soggy Garden
 
+item.desc.snack=Snack
+item.desc.lightmeal=Light meal
+item.desc.largemeal=Large meal
+item.desc.potionspeed=Speed (0:03)
 
 harvestcraft.tile.pamAlmond.name=Almond
 harvestcraft.tile.pamApple.name=Apple
@@ -1081,4 +1085,19 @@ item.potatoandleeksoupItem.name=Potato and Leek Soup
 item.toadintheholeItem.name=Toad in the Hole
 item.tunapotatoItem.name=Tuna Potato
 item.yorkshirepuddingItem.name=Yorkshire Pudding
+
+item.sesameoilItem.name=Sesame Oil
+item.hotandsoursoupItem.name=Hot and Sour Soup
+item.noodlesItem.name=Noodles
+item.chickenchowmeinItem.name=Chicken Chow Mein
+item.kungpaochickenItem.name=Kung Pao Chicken
+item.hoisinsauceItem.name=Hoisin Sauce
+item.fivespiceItem.name=Five Spice
+item.charsiuItem.name=Char Siu
+item.sweetandsoursauceItem.name=Sweet and Sour Sauce
+item.sweetandsourchickenItem.name=Sweet and Sour Chicken
+item.baconandeggsItem.name=Bacon and Eggs
+item.biscuitsandgravyItem.name=Biscuits and Gravy
+item.applefritterItem.name=Apple Fritter
+item.sweetteaItem.name=Sweet Tea
 

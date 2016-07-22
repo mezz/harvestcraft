@@ -620,6 +620,8 @@ public final class ItemRegistry {
     public static Item biscuitsandgravyItem;
     public static Item applefritterItem;
     public static Item sweetteaItem;
+    public static Item creepercookieItem;
+    public static Item patreonpieItem;
 
     public static Item queenbeeItem;
     public static Item grubItem;
@@ -1244,21 +1246,24 @@ public final class ItemRegistry {
         potatoandleeksoupItem = registerItemFood("potatoandleeksoupItem", 6, config.mealsaturation);
         yorkshirepuddingItem = registerItemFood("yorkshirepuddingItem", 5, config.mealsaturation);
         toadintheholeItem = registerItemFood("toadintheholeItem", 10, config.meatymealsaturation);
-        
-        /*sesameoilItem
-        hotandsoursoupItem
-        noodlesItem
-        chickenchowmeinItem
-        kungpaochickenItem
-        hoisinsauceItem
-        fivespiceItem
-        charsiuItem
-        sweetandsoursauceItem
-        sweetandsourchickenItem
-        baconandeggsItem
-        biscuitsandgravyItem
-        applefritterItem
-        sweetteaItem*/
+
+        sesameoilItem = registerGenericItem("sesameoilItem");
+        hotandsoursoupItem = registerItemFood("hotandsoursoupItem", 12, config.mealsaturation);
+        noodlesItem = registerGenericItem("noodlesItem");
+        chickenchowmeinItem = registerItemFood("chickenchowmeinItem", 10, config.meatymealsaturation);
+        kungpaochickenItem = registerItemFood("kungpaochickenItem", 12, config.meatymealsaturation);
+        hoisinsauceItem = registerGenericItem("hoisinsauceItem");
+        fivespiceItem = registerGenericItem("fivespiceItem");
+        charsiuItem = registerItemFood("charsiuItem", 12, config.meatymealsaturation);
+        sweetandsoursauceItem = registerGenericItem("sweetandsoursauceItem");
+        sweetandsourchickenItem = registerItemFood("sweetandsourchickenItem", 10, config.meatymealsaturation);
+        baconandeggsItem = registerItemFood("baconandeggsItem", 10, config.meatymealsaturation);
+        biscuitsandgravyItem = registerItemFood("biscuitsandgravyItem", 8, config.mealsaturation);
+        applefritterItem = registerItemFood("applefritterItem", 6, config.mealsaturation);
+        sweetteaItem = registerItemFood("sweetteaItem", 6, config.mealsaturation);
+        creepercookieItem = registerItemFood("creepercookieItem", 4, config.snacksaturation);
+        patreonpieItem = registerItemFood("patreonpieItem", 8, config.mealsaturation);
+
     }
 
     private static void registerTools() {

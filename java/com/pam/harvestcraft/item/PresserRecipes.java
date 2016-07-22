@@ -51,7 +51,7 @@ public class PresserRecipes {
         registerItemRecipe(FruitRegistry.getFood(FruitRegistry.GRAPEFRUIT), ItemRegistry.grapefruitjuiceItem, ItemRegistry.fruitbaitItem);
         registerItemRecipe(FruitRegistry.getFood(FruitRegistry.PERSIMMON), ItemRegistry.persimmonjuiceItem, ItemRegistry.fruitbaitItem);
         registerItemRecipe(FruitRegistry.getFood(FruitRegistry.ALMOND), ItemRegistry.freshmilkItem, ItemRegistry.grainbaitItem);
-        registerItemRecipe(CropRegistry.getSeed(CropRegistry.SESAME), ItemRegistry.oliveoilItem, ItemRegistry.grainbaitItem);
+        registerItemRecipe(CropRegistry.getSeed(CropRegistry.SESAME), ItemRegistry.sesameoilItem, ItemRegistry.grainbaitItem);
         registerItemRecipe(CropRegistry.getSeed(CropRegistry.GRAPE), ItemRegistry.oliveoilItem, ItemRegistry.grainbaitItem);
         registerItemRecipe(FruitRegistry.getFood(FruitRegistry.COCONUT), ItemRegistry.oliveoilItem, ItemRegistry.veggiebaitItem);
         registerItemRecipe(CropRegistry.getSeed(CropRegistry.MUSTARD), ItemRegistry.oliveoilItem, ItemRegistry.grainbaitItem);

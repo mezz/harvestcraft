@@ -857,6 +857,22 @@ public class GeneralOreRegistry {
     public static final String foodToadinthehole="foodToadinthehole";
     public static final String foodTunapotato="foodTunapotato";
     public static final String foodYorkshirepudding="foodYorkshirepudding";
+    public static final String foodSesameoil="foodSesameoil";
+    public static final String foodHotandsoursoup="foodHotandsoursoup";
+    public static final String foodNoodles="foodNoodles";
+    public static final String foodChickenchowmein="foodChickenchowmein";
+    public static final String foodKungpaochicken="foodKungpaochicken";
+    public static final String foodHoisinsauce="foodHoisinsauce";
+    public static final String foodFivespice="foodFivespice";
+    public static final String foodCharsiu="foodCharsiu";
+    public static final String foodSweetandsoursauce="foodSweetandsoursauce";
+    public static final String foodSweetandsourchicken="foodSweetandsourchicken";
+    public static final String foodBaconandeggs="foodBaconandeggs";
+    public static final String foodBiscuitsandgravy="foodBiscuitsandgravy";
+    public static final String foodApplefritter="foodApplefritter";
+    public static final String foodSweettea="foodSweettea";
+    public static final String foodCreepercookie="foodCreepercookie";
+    public static final String foodPatreonpie="foodPatreonpie";
 
     public static void initOreRegistry() {
         registerGeneralOres();
@@ -1915,6 +1931,23 @@ public class GeneralOreRegistry {
         OreDictionary.registerOre(foodToadinthehole, ItemRegistry.toadintheholeItem);
         OreDictionary.registerOre(foodTunapotato, ItemRegistry.tunapotatoItem);
         OreDictionary.registerOre(foodYorkshirepudding, ItemRegistry.yorkshirepuddingItem);
+        
+        OreDictionary.registerOre(foodSesameoil, ItemRegistry.sesameoilItem);
+        OreDictionary.registerOre(foodHotandsoursoup, ItemRegistry.hotandsoursoupItem);
+        OreDictionary.registerOre(foodNoodles, ItemRegistry.noodlesItem);
+        OreDictionary.registerOre(foodChickenchowmein, ItemRegistry.chickenchowmeinItem);
+        OreDictionary.registerOre(foodKungpaochicken, ItemRegistry.kungpaochickenItem);
+        OreDictionary.registerOre(foodHoisinsauce, ItemRegistry.hoisinsauceItem);
+        OreDictionary.registerOre(foodFivespice, ItemRegistry.fivespiceItem);
+        OreDictionary.registerOre(foodCharsiu, ItemRegistry.charsiuItem);
+        OreDictionary.registerOre(foodSweetandsoursauce, ItemRegistry.sweetandsoursauceItem);
+        OreDictionary.registerOre(foodSweetandsourchicken, ItemRegistry.sweetandsourchickenItem);
+        OreDictionary.registerOre(foodBaconandeggs, ItemRegistry.baconandeggsItem);
+        OreDictionary.registerOre(foodBiscuitsandgravy, ItemRegistry.biscuitsandgravyItem);
+        OreDictionary.registerOre(foodApplefritter, ItemRegistry.applefritterItem);
+        OreDictionary.registerOre(foodSweettea, ItemRegistry.sweetteaItem);
+        OreDictionary.registerOre(foodCreepercookie, ItemRegistry.creepercookieItem);
+        OreDictionary.registerOre(foodPatreonpie, ItemRegistry.patreonpieItem);
     }
 
     private static void registerOres(String key, Object... items) {

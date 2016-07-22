@@ -781,6 +781,26 @@ public class RecipeRegistry {
         addShapelessOreRecipe(ItemRegistry.toadintheholeItem, toolBakeware, foodYorkshirepudding, foodSausage);
         addShapelessOreRecipe(ItemRegistry.tunapotatoItem, toolCuttingboard, foodButteredpotato, cropCorn, listAllfishcooked);
         addShapelessOreRecipe(ItemRegistry.yorkshirepuddingItem, toolBakeware, foodFlour, foodSalt, foodStock, listAllegg, listAllmilk);
+        
+
+        addShapelessOreRecipe(ItemRegistry.sesameoilItem, toolJuicer, cropSesame);
+        addShapelessOreRecipe(ItemRegistry.oliveoilItem, foodSesameoil);
+        addShapelessOreRecipe(ItemRegistry.hotandsoursoupItem, toolSaucepan, listAllporkraw, foodSesameoil, listAllmushroom, cropBambooshoot, listAllegg, foodVinegar, foodBlackpepper);
+        addShapelessOreRecipe(ItemRegistry.noodlesItem, toolCuttingboard, foodDough);
+        addShapelessOreRecipe(ItemRegistry.chickenchowmeinItem, toolSkillet, listAllchickenraw, foodNoodles, cropOnion, cropCelery, cropCarrot, foodStock);
+        addShapelessOreRecipe(ItemRegistry.kungpaochickenItem, toolSaucepan, listAllchickenraw, cropOrange, cropGinger, cropGarlic, listAllsugar, foodOliveoil, cropPeppercorn, cropPeanut);
+        addShapelessOreRecipe(ItemRegistry.hoisinsauceItem, toolSaucepan, cropSweetpotato, listAllwater, listAllsugar, cropSoybean, cropSesame, foodVinegar, cropGarlic, cropChilipepper);
+        addShapelessOreRecipe(new ItemStack(ItemRegistry.fivespiceItem, 5), toolMortarandpestle, cropPeppercorn, cropSpiceleaf, cropCinnamon, cropNutmeg, cropGinger);
+        addShapelessOreRecipe(ItemRegistry.charsiuItem, toolSaucepan, listAllporkcooked, foodHoisinsauce, foodFivespice, ItemRegistry.honeyItem, foodSoysauce);
+        addShapelessOreRecipe(new ItemStack(ItemRegistry.sweetandsoursauceItem, 5), toolSaucepan, foodKetchup, ItemRegistry.honeyItem, foodVinegar, foodSoysauce, cropGinger);
+        addShapelessOreRecipe(ItemRegistry.sweetandsourchickenItem, toolSaucepan, listAllchickenraw, foodBatter, cropPineapple, cropBellpepper, cropOnion, foodSweetandsoursauce, foodKetchup);
+        addShapelessOreRecipe(ItemRegistry.baconandeggsItem, toolSkillet, listAllporkraw, listAllegg);
+        addShapelessOreRecipe(ItemRegistry.biscuitsandgravyItem, toolCuttingboard, foodBiscuit, foodGravy);
+        addShapelessOreRecipe(ItemRegistry.applefritterItem, toolPot, cropApple, foodDough, listAllsugar, foodOliveoil);
+        addShapelessOreRecipe(ItemRegistry.sweetteaItem, toolPot, foodTea, listAllsugar, cropLemon);
+        addShapelessOreRecipe(ItemRegistry.creepercookieItem, toolBakeware, foodFlour, listAllegg, listAllsugar, dyeGreen);
+        addShapelessOreRecipe(ItemRegistry.patreonpieItem, toolBakeware, Items.GOLD_NUGGET, listAllsugar, foodDough);
+
     }
 
     private static void registerMarketRecipe() {

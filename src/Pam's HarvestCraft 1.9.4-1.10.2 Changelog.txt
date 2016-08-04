@@ -1,0 +1,33 @@
+HarvestCraft 1.9.4-1.10.2b Cross Compatibility - Traps Update
+- Fixed: Texture issues of last update
+- Fixed: Rice, Cranberry, Seaweed seeds can now be crafted
+- Fixed: Mustard, Sesame Seeds being considered seeds instead of food
+- Fixed: Queen Bee (no durability) can finally be crafted into a Royal Jelly
+- Fixed: Mature fruit logs now only drop the crop and not the crop and log.
+- Config: cropsdropSeeds (default False): All crops now drop crops instead of crops and seeds by default.  Set to true to have it drop like in version a.
+- Changed: Pressing Soybean now gives Silken Tofu and Grain Bait
+- Added: Ground and Water Traps (previously Animal and Fish Traps): Add veggie, grain, or fruit bait to Ground Traps surrounded by at least 5 dirt or grass blocks on the same Y level to get items or add fishtrap bait to Water Traps surrounded by at least 5 water blocks on the same Y level to get items.
+- Added: Recipes to make grain, veggie, fruit, and fish baits (one string, three listAllgrain/listAllveggie/listAllfruit/listAllfishraw)
+- Config: grain, veggie, fruit, fish baitrecipeamount (default 4): Change to increase the amount created by the four individual recipes.
+
+HarvestCraft 1.9.4-1.10.2a Cross Compatibility 
+- Added: Sesame Oil, Hot and Sour Soup, 
+Noodles, 
+Chicken Chow Mein, Kung Pao Chicken, Hoisin Sauce
+, Five Spice
+, Char Siu
+, Sweet and Sour Sauce, 
+Sweet and Sour Chicken, 
+Bacon and Eggs, Biscuits and Gravy, Apple Fritter
+, Sweet Tea, Creeper Cookie, Patreon Pie
+- NOTE: Several of the above recipes return several items--this is intended
+- Added: Recipe to turn sesame oil into cooking oil
+- Changed: Pressing sesame seeds now produces sesame oil
+
+HarvestCraft 1.9.4c
+- Fixed: Conflict with soy items and stock recipe issue (use Presser from now on)
+- Fixed: Dupe bug with Market
+- Added: Cotton now drops from all but Arid gardens
+- Fixed: Queen bees of all durability can be crafted into Royal Jelly
+- Reminder: Sneak and left-click to pick up gardens
+- Fixed: Cranberry Juice no longer requires Sugar

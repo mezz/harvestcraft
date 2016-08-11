@@ -1,3 +1,15 @@
+HarvestCraft 1.9.4-1.10.2d Cross Compatibility - Bees Update
+- Changed: Re-named Beeswax to Pressed Wax
+- Added: Recipe of eight candleberries and a pot to make Pressed Wax
+- Added: Honey Bread, Honeybun, Honey Glazed Carrots, Honey Glazed Ham, Honey Soy Ribs
+- Added: Hardened Leather (made with one Pressed Wax and Leather) and Hardened Leather Armor set (Iron strength)
+- Added: Sixteen colored candle "torch" blocks (made with one Pressed Wax and one String to get 4), dye four White Candles with one dye item
+- Added: Storage blocks for Honey, Honeycomb, Pressed Wax, and Waxcomb (make with 9, put back into crafting grid for 9)
+- 
+
+HarvestCraft 1.9.4-1.10.2c Cross Compatibility - Cakes Update
+- Added: Cake blocks - Place cake blocks with cake items (that can still be eaten themselves) that have varying slice amounts
+
 HarvestCraft 1.9.4-1.10.2b Cross Compatibility - Traps Update
 - Fixed: Texture issues of last update
 - Fixed: Rice, Cranberry, Seaweed seeds can now be crafted

@@ -1,0 +1,15 @@
+itemGroup.tabBonecraft=BoneCraft
+
+tile.pamFossil.name=Fossil
+
+item.boneaxeItem.name=Bone Axe
+item.bonehoeItem.name=Bone Hoe
+item.bonepickaxeItem.name=Bone Pickaxe
+item.boneshovelItem.name=Bone Shovel
+item.boneswordItem.name=Bone Sword
+
+item.bonehelmItem.name=Bone Helm
+item.bonechestItem.name=Bone Chest
+item.bonelegsItem.name=Bone Legs
+item.bonebootsItem.name=Bone Boots
+

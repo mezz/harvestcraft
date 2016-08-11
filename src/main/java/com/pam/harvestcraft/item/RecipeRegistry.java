@@ -85,6 +85,7 @@ public class RecipeRegistry {
         addShapedOreRecipe(BlockRegistry.presser, "#O#", "# #", "#O#", '#', ingotIron, 'O', Blocks.PISTON);
         addShapedOreRecipe(BlockRegistry.presser, "#O#", "# #", "#O#", '#', ingotCopper, 'O', Blocks.PISTON);
         addShapedOreRecipe(BlockRegistry.presser, "#O#", "# #", "#O#", '#', ingotSteel, 'O', Blocks.PISTON);
+        addShapedOreRecipe(BlockRegistry.presser, "#O#", "# #", "#O#", '#', ingotBronze, 'O', Blocks.PISTON);
     }
 
     private static void registerBeeRecipes() {
@@ -120,6 +121,7 @@ public class RecipeRegistry {
         addShapelessOreRecipe(ItemRegistry.bubblywaterItem, toolPot, ItemRegistry.freshwaterItem);
         addShapelessOreRecipe(Items.SUGAR, toolPot, foodHoneydrop);
         addShapelessOreRecipe(Items.SUGAR, toolPot, dropHoney);
+        addShapelessOreRecipe(ItemRegistry.beeswaxItem, toolPot, cropCandle, cropCandle, cropCandle, cropCandle, cropCandle, cropCandle, cropCandle, cropCandle);
         addShapelessOreRecipe(Items.FISH, listAllfishraw);
         addShapelessOreRecipe(new ItemStack(ItemRegistry.freshwaterItem, config.freshwaterfrombucket), Items.WATER_BUCKET);
         addShapelessOreRecipe(new ItemStack(ItemRegistry.freshmilkItem, config.freshmilkfrombucket), Items.MILK_BUCKET);
@@ -798,6 +800,11 @@ public class RecipeRegistry {
         addShapelessOreRecipe(ItemRegistry.creepercookieItem, toolBakeware, foodFlour, listAllegg, listAllsugar, dyeGreen);
         addShapelessOreRecipe(ItemRegistry.patreonpieItem, toolBakeware, Items.GOLD_NUGGET, listAllsugar, foodDough);
 
+        addShapelessOreRecipe(ItemRegistry.honeybreadItem, toolCuttingboard, Items.BREAD, foodHoneydrop);
+        addShapelessOreRecipe(ItemRegistry.honeybunItem, toolBakeware, foodButter, listAllegg, foodHoneydrop, foodDough);
+        addShapelessOreRecipe(ItemRegistry.honeyglazedcarrotsItem, toolSaucepan, cropCarrot, foodHoneydrop, foodButter, cropLemon);
+        addShapelessOreRecipe(ItemRegistry.honeyglazedhamItem, toolSaucepan, listAllporkraw, foodHoneydrop, foodBlackpepper);
+        addShapelessOreRecipe(ItemRegistry.honeysoyribsItem, toolBakeware, listAllporkraw, foodHoneydrop, foodSoysauce, cropGarlic, foodVinegar);
     }
 
     private static void registerMarketRecipe() {
@@ -866,13 +873,49 @@ public class RecipeRegistry {
         addShapedOreRecipe(new ItemStack(Items.LEATHER_BOOTS, 1), "X X", "X X", 'X', ItemRegistry.wovencottonItem);
 
         addShapelessOreRecipe(CropRegistry.getSeed(CropRegistry.CANDLEBERRY), CropRegistry.getFood(CropRegistry.CANDLEBERRY));
+        
+        //Hardened Leather Recipes
+        addShapelessOreRecipe(new ItemStack(ItemRegistry.hardenedleatherItem, 1), materialPressedwax, Items.LEATHER);
+        addShapedOreRecipe(new ItemStack(ItemRegistry.hardenedleatherhelmItem, 1), "XXX", "X X", 'X', ItemRegistry.hardenedleatherItem);
+        addShapedOreRecipe(new ItemStack(ItemRegistry.hardenedleatherchestItem, 1), "X X", "XXX", "XXX", 'X', ItemRegistry.hardenedleatherItem);
+        addShapedOreRecipe(new ItemStack(ItemRegistry.hardenedleatherleggingsItem, 1), "XXX", "X X", "X X", 'X', ItemRegistry.hardenedleatherItem);
+        addShapedOreRecipe(new ItemStack(ItemRegistry.hardenedleatherbootsItem, 1), "X X", "X X", 'X', ItemRegistry.hardenedleatherItem);
 
         // Random Recipes
         addShapelessOreRecipe(new ItemStack(Items.SLIME_BALL, 1), foodJellyfishraw);
 
         //Pumpkin Lanterns
         addShapelessOreRecipe(new ItemStack(Blocks.LIT_PUMPKIN, 1), GeneralOreRegistry.cropPumpkin, blockTorch);
-
+        
+        //Candles
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco1, 4), materialPressedwax, Items.STRING);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco2, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeOrange);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco3, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeMagenta);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco4, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeLime);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco5, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeYellow);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco6, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeBrightBlue);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco7, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyePink);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco8, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeDarkGrey);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco9, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeLightGrey);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco10, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeBlue);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco11, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyePurple);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco12, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeDarkBlue);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco13, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeBrown);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco14, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeGreen);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco15, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeRed);
+        addShapelessOreRecipe(new ItemStack(BlockRegistry.candleDeco16, 4), BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, BlockRegistry.candleDeco1, dyeBlack);
+        
+        //Bee Blocks
+        addShapedOreRecipe(new ItemStack(BlockRegistry.honey, 1), "XXX", "XXX", "XXX", 'X', ItemRegistry.honeyItem);
+        addShapedOreRecipe(new ItemStack(BlockRegistry.honeycomb, 1), "XXX", "XXX", "XXX", 'X', ItemRegistry.honeycombItem);
+        addShapedOreRecipe(new ItemStack(BlockRegistry.pressedwax, 1), "XXX", "XXX", "XXX", 'X', materialPressedwax);
+        addShapedOreRecipe(new ItemStack(BlockRegistry.waxcomb, 1), "XXX", "XXX", "XXX", 'X', ItemRegistry.waxcombItem);
+        
+        addShapelessOreRecipe(new ItemStack(ItemRegistry.honeyItem, 9), BlockRegistry.honey);
+        addShapelessOreRecipe(new ItemStack(ItemRegistry.honeycombItem, 9), BlockRegistry.honeycomb);
+        addShapelessOreRecipe(new ItemStack(ItemRegistry.beeswaxItem, 9), BlockRegistry.pressedwax);
+        addShapelessOreRecipe(new ItemStack(ItemRegistry.waxcombItem, 9), BlockRegistry.waxcomb);
+        
         //Logs
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 4, 1), new ItemStack(FruitRegistry.getLog(FruitRegistry.MAPLE)));
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 4, 3), new ItemStack(FruitRegistry.getLog(FruitRegistry.PAPERBARK)));

@@ -23,18 +23,27 @@ public class GeneralOreRegistry {
     public static final String ingotBrickNether = "ingotBrickNether";
 
     // Dye
+    public static final ItemStack dyeBlack = new ItemStack(Items.DYE, 1, 0);
     public static final ItemStack dyeRed = new ItemStack(Items.DYE, 1, 1);
     public static final ItemStack dyeGreen = new ItemStack(Items.DYE, 1, 2);
-    public static final ItemStack dyeBrown = new ItemStack(Items.DYE, 1,3);
+    public static final ItemStack dyeBrown = new ItemStack(Items.DYE, 1, 3);
+    public static final ItemStack dyeDarkBlue = new ItemStack(Items.DYE, 1, 4);
     public static final ItemStack dyePurple = new ItemStack(Items.DYE, 1, 5);
     public static final ItemStack dyeBlue = new ItemStack(Items.DYE, 1, 6); // Cyan
+    public static final ItemStack dyeLightGrey = new ItemStack(Items.DYE, 1, 7);
+    public static final ItemStack dyeDarkGrey = new ItemStack(Items.DYE, 1, 8);
+    public static final ItemStack dyePink = new ItemStack(Items.DYE, 1, 9);
+    public static final ItemStack dyeBrightBlue = new ItemStack(Items.DYE, 1, 10);
     public static final ItemStack dyeYellow = new ItemStack(Items.DYE, 1, 11);
+    public static final ItemStack dyeLime = new ItemStack(Items.DYE, 1, 12);
     public static final ItemStack dyeMagenta = new ItemStack(Items.DYE, 1, 13);
     public static final ItemStack dyeOrange = new ItemStack(Items.DYE, 1, 14);
+    public static final ItemStack dyeWhite = new ItemStack(Items.DYE, 1, 15);
 
     // Non-forge
     public static final String ingotCopper = "ingotCopper";
     public static final String ingotSteel = "ingotSteel";
+    public static final String ingotBronze = "ingotBronze";
     public static final String oreSalt = "oreSalt";
 
     public static final String toolPot = "toolPot";
@@ -53,6 +62,8 @@ public class GeneralOreRegistry {
     public static final String cropCandle = "cropCandle";
     public static final String cropCandleberry = "cropCandleberry";
     public static final String seedCandleberry = "seedCandleberry";
+    
+    public static final String materialPressedwax = "materialPressedwax";
 
     public static final String dustSalt = "dustSalt";
     public static final String itemSalt = "itemSalt";
@@ -898,6 +909,8 @@ public class GeneralOreRegistry {
         OreDictionary.registerOre(cropCandle,   CropRegistry.getFood(CropRegistry.CANDLEBERRY));
         OreDictionary.registerOre(cropCandleberry,  CropRegistry.getFood(CropRegistry.CANDLEBERRY));
         OreDictionary.registerOre(seedCandleberry,  CropRegistry.getSeed(CropRegistry.CANDLEBERRY));
+        
+        OreDictionary.registerOre(materialPressedwax,  ItemRegistry.beeswaxItem);
 
         OreDictionary.registerOre(dustSalt,  ItemRegistry.saltItem);
         OreDictionary.registerOre(itemSalt,  ItemRegistry.saltItem);

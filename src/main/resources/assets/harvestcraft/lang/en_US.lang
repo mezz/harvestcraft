@@ -8,6 +8,11 @@ tile.beehive.name=Beehive
 tile.apiary.name=Apiary
 tile.presser.name=Presser
 
+tile.honey.name=Honey Block
+tile.honeycomb.name=Honeycomb Block
+tile.pressedwax.name=Pressed Wax Block
+tile.waxcomb.name=Waxcomb Block
+
 tile.groundtrap.name=Ground Trap
 tile.watertrap.name=Water Trap
 
@@ -176,33 +181,33 @@ harvestcraft.tile.pamcurryleafCrop.name=Curry Leaf Crop
 harvestcraft.tile.pamsesameseedsCrop.name=Sesame Seeds Crop
 harvestcraft.tile.pamwaterchestnutCrop.name=Water Chestnut Crop
 
-harvestcraft.tile.pamcandleDeco1.name=White Candle
-harvestcraft.tile.pamcandleDeco2.name=Orange Candle
-harvestcraft.tile.pamcandleDeco3.name=Magenta Candle
-harvestcraft.tile.pamcandleDeco4.name=Light Blue Candle
-harvestcraft.tile.pamcandleDeco5.name=Yellow Candle
-harvestcraft.tile.pamcandleDeco6.name=Lime Candle
-harvestcraft.tile.pamcandleDeco7.name=Pink Candle
-harvestcraft.tile.pamcandleDeco8.name=Dark Grey Candle
-harvestcraft.tile.pamcandleDeco9.name=Light Grey Candle
-harvestcraft.tile.pamcandleDeco10.name=Cyan Candle
-harvestcraft.tile.pamcandleDeco11.name=Purple Candle
-harvestcraft.tile.pamcandleDeco12.name=Blue Candle
-harvestcraft.tile.pamcandleDeco13.name=Brown Candle
-harvestcraft.tile.pamcandleDeco14.name=Green Candle
-harvestcraft.tile.pamcandleDeco15.name=Red Candle
-harvestcraft.tile.pamcandleDeco16.name=Black Candle
+tile.candleDeco1.name=White Candle
+tile.candleDeco2.name=Orange Candle
+tile.candleDeco3.name=Magenta Candle
+tile.candleDeco4.name=Light Blue Candle
+tile.candleDeco5.name=Yellow Candle
+tile.candleDeco6.name=Lime Candle
+tile.candleDeco7.name=Pink Candle
+tile.candleDeco8.name=Dark Grey Candle
+tile.candleDeco9.name=Light Grey Candle
+tile.candleDeco10.name=Cyan Candle
+tile.candleDeco11.name=Purple Candle
+tile.candleDeco12.name=Blue Candle
+tile.candleDeco13.name=Brown Candle
+tile.candleDeco14.name=Green Candle
+tile.candleDeco15.name=Red Candle
+tile.candleDeco16.name=Black Candle
 
-harvestcraft.tile.pamcarrotCake.name=Carrot Cake
-harvestcraft.tile.pamcheeseCake.name=Cheese Cake
-harvestcraft.tile.pamcherrycheeseCake.name=Cherry Cheese Cake
-harvestcraft.tile.pampineappleupsidedownCake.name=Pineapple Upside Down Cake
-harvestcraft.tile.pamchocolatesprinkleCake.name=Chocolate Sprinkles Cake
-harvestcraft.tile.pamredvelvetCake.name=Red Velvet Cake
-harvestcraft.tile.pamlamingtonCake.name=Lamington
-harvestcraft.tile.pampavlovaCake.name=Pavlova
-harvestcraft.tile.pamholidayCake.name=Holiday Cake
-harvestcraft.tile.pampumpkincheeseCake.name=Pumpkin Cheese Cake
+tile.carrotcake.name=Carrot Cake
+tile.cheesecake.name=Cheese Cake
+tile.cherrycheesecake.name=Cherry Cheese Cake
+tile.pineappleupsidedowncake.name=Pineapple Upside Down Cake
+tile.chocolatesprinklecake.name=Chocolate Sprinkles Cake
+tile.redvelvetcake.name=Red Velvet Cake
+tile.lamingtoncake.name=Lamington
+tile.pavlovacake.name=Pavlova
+tile.holidaycake.name=Holiday Cake
+tile.pumpkincheesecake.name=Pumpkin Cheese Cake
 
 # Items
 item.cottonItem.name=Cotton
@@ -211,7 +216,7 @@ item.cottonseedItem.name=Cotton Seed
 
 item.candleberryItem.name=Candleberry
 item.candleberryseedItem.name=Candleberry Seed
-item.waxItem.name=Candleberry Wax
+item.waxItem.name=Wax
 
 item.hardenedleatherhelmItem.name=Hardened Leather Helm
 item.hardenedleatherchestItem.name=Hardened Leather Chest
@@ -223,7 +228,7 @@ item.queenbeeItem.name=Queen Bee
 item.waxcombItem.name=Waxcomb
 item.honeycombItem.name=Honeycomb
 item.honeyItem.name=Honey
-item.beeswaxItem.name=Beeswax
+item.beeswaxItem.name=Pressed Wax
 item.royaljellyItem.name=Royal Jelly
 item.grubItem.name=Bee Grub
 
@@ -1105,3 +1110,9 @@ item.applefritterItem.name=Apple Fritter
 item.sweetteaItem.name=Sweet Tea
 item.creepercookieItem.name=Creeper Cookie
 item.patreonpieItem.name=Patreon Pie
+
+item.honeybreadItem.name=Honey Bread
+item.honeybunItem.name=Honeybun
+item.honeyglazedcarrotsItem.name=Honey Glazed Carrots
+item.honeyglazedhamItem.name=Honey Glazed Ham
+item.honeysoyribsItem.name=Honey Soy Ribs

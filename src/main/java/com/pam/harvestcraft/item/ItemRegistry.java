@@ -1,11 +1,20 @@
 package com.pam.harvestcraft.item;
 
 import com.pam.harvestcraft.HarvestCraft;
+import com.pam.harvestcraft.blocks.BlockRegistry;
+import com.pam.harvestcraft.blocks.blocks.BlockPamCake;
 import com.pam.harvestcraft.item.items.ItemPamBee;
+import com.pam.harvestcraft.item.items.ItemPamCakeFood;
 import com.pam.harvestcraft.item.items.ItemPamFood;
 import com.pam.harvestcraft.item.items.ItemPamPotionFood;
 import com.pam.harvestcraft.item.items.ItemPamTool;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.client.event.sound.SoundEvent;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import java.util.HashMap;
@@ -64,7 +73,7 @@ public final class ItemRegistry {
     public static Item roastedpumpkinseedsItem;
     public static Item pumpkinsoupItem;
     public static Item melonsmoothieItem;
-    public static Item carrotcakeItem;
+    
     public static Item carrotsoupItem;
     public static Item glazedcarrotsItem;
     public static Item butteredpotatoItem;
@@ -182,8 +191,8 @@ public final class ItemRegistry {
     public static Item cherrypieItem;
     public static Item chocolatecherryItem;
     public static Item cherrysmoothieItem;
-    public static Item cheesecakeItem;
-    public static Item cherrycheesecakeItem;
+    
+    
     public static Item stuffedeggplantItem;
     public static Item eggplantparmItem;
     public static Item raspberryicedteaItem;
@@ -203,7 +212,7 @@ public final class ItemRegistry {
     public static Item mashedsweetpotatoesItem;
     public static Item steamedpeasItem;
     public static Item splitpeasoupItem;
-    public static Item pineappleupsidedowncakeItem;
+    
     public static Item pineapplehamItem;
     public static Item pineappleyogurtItem;
     public static Item turnipsoupItem;
@@ -284,8 +293,7 @@ public final class ItemRegistry {
     public static Item creamcookieItem;
     public static Item jaffaItem;
     public static Item friedchickenItem;
-    public static Item chocolatesprinklecakeItem;
-    public static Item redvelvetcakeItem;
+    
     public static Item footlongItem;
     public static Item blueberryyogurtItem;
     public static Item lemonyogurtItem;
@@ -446,13 +454,13 @@ public final class ItemRegistry {
     public static Item honeycombchocolatebarItem;
     public static Item cherrycoconutchocolatebarItem;
     public static Item fairybreadItem;
-    public static Item lamingtonItem;
+    
     public static Item timtamItem;
     public static Item meatpieItem;
     public static Item chikorollItem;
     public static Item damperItem;
     public static Item beetburgerItem;
-    public static Item pavlovaItem;
+   
     public static Item gherkinItem;
     public static Item mcpamItem;
     public static Item ceasarsaladItem;
@@ -489,7 +497,7 @@ public final class ItemRegistry {
     public static Item tunarawItem;
     public static Item turtlerawItem;
     public static Item walleyerawItem;
-    public static Item holidaycakeItem;
+    
     public static Item clamcookedItem;
     public static Item crabcookedItem;
     public static Item crayfishcookedItem;
@@ -514,7 +522,7 @@ public final class ItemRegistry {
     public static Item pickledonionsItem;
     public static Item porksausageItem;
     public static Item raspberrytrifleItem;
-    public static Item pumpkincheesecakeItem;
+    
     public static Item pumpkinmuffinItem;
     public static Item suaderoItem;
     public static Item randomtacoItem;
@@ -622,6 +630,23 @@ public final class ItemRegistry {
     public static Item sweetteaItem;
     public static Item creepercookieItem;
     public static Item patreonpieItem;
+    
+    public static Item honeybreadItem;
+    public static Item honeybunItem;
+    public static Item honeyglazedcarrotsItem;
+    public static Item honeyglazedhamItem;
+    public static Item honeysoyribsItem;
+    
+    public static Item carrotcakeItem;
+    public static Item cheesecakeItem;
+    public static Item cherrycheesecakeItem;
+    public static Item pineappleupsidedowncakeItem;
+    public static Item chocolatesprinklecakeItem;
+    public static Item redvelvetcakeItem;
+    public static Item holidaycakeItem;
+    public static Item pumpkincheesecakeItem;
+    public static Item lamingtonItem;
+    public static Item pavlovaItem;
 
     public static Item queenbeeItem;
     public static Item grubItem;
@@ -633,7 +658,15 @@ public final class ItemRegistry {
     public static Item grainbaitItem;
     public static Item veggiebaitItem;
     public static Item fishtrapbaitItem;
-
+    
+    public static Item hardenedleatherItem;
+    public static Item hardenedleatherhelmItem;
+    public static Item hardenedleatherchestItem;
+    public static Item hardenedleatherleggingsItem;
+    public static Item hardenedleatherbootsItem;
+    
+    public static ArmorMaterial armorHardenedLeather = EnumHelper.addArmorMaterial("HARDENEDLEATHER", "harvestcraft:hardenedleather", 15, new int[] { 2, 6, 5, 2 }, 9, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F);
+	
     public static Item applejuiceItem;
     public static Item melonjuiceItem;
     public static Item carrotjuiceItem;
@@ -667,8 +700,16 @@ public final class ItemRegistry {
         registerFoodItems();
         registerBeesItems();
         registerTools();
-
+        registerArmorItems();
         initialized = true;
+    }
+    
+    private static void registerArmorItems() {
+    	hardenedleatherItem = registerGenericItem("hardenedleatherItem");
+    	hardenedleatherhelmItem = registerItemArmor("hardenedleatherhelmItem", EntityEquipmentSlot.HEAD);
+    	hardenedleatherchestItem = registerItemArmor("hardenedleatherchestItem", EntityEquipmentSlot.CHEST);
+    	hardenedleatherleggingsItem = registerItemArmor("hardenedleatherleggingsItem", EntityEquipmentSlot.LEGS);
+    	hardenedleatherbootsItem = registerItemArmor("hardenedleatherbootsItem", EntityEquipmentSlot.FEET);
     }
 
     private static void registerBeesItems() {
@@ -733,7 +774,7 @@ public final class ItemRegistry {
 
         pumpkinsoupItem = registerItemFood("pumpkinsoupItem", 8, config.meatymealsaturation);
         melonsmoothieItem = registerPotionFood("melonsmoothieItem", 5, config.mealsaturation);
-        carrotcakeItem = registerItemFood("carrotcakeItem", 8, config.mealsaturation);
+        
         carrotsoupItem = registerItemFood("carrotsoupItem", 8, config.meatymealsaturation);
         glazedcarrotsItem = registerItemFood("glazedcarrotsItem", 7, config.mealsaturation);
         butteredpotatoItem = registerItemFood("butteredpotatoItem", 7, config.mealsaturation);
@@ -851,8 +892,7 @@ public final class ItemRegistry {
         cherrypieItem = registerItemFood("cherrypieItem", 8, config.mealsaturation);
         chocolatecherryItem = registerItemFood("chocolatecherryItem", 8, config.snacksaturation);
         cherrysmoothieItem = registerPotionFood("cherrysmoothieItem", 6, config.mealsaturation);
-        cheesecakeItem = registerItemFood("cheesecakeItem", 10, config.mealsaturation);
-        cherrycheesecakeItem = registerItemFood("cherrycheesecakeItem", 12, config.snacksaturation);
+        
         stuffedeggplantItem = registerItemFood("stuffedeggplantItem", 10, config.mealsaturation);
         eggplantparmItem = registerItemFood("eggplantparmItem", 10, config.mealsaturation);
         raspberryicedteaItem = registerPotionFood("raspberryicedteaItem", 7, config.snacksaturation);
@@ -872,7 +912,7 @@ public final class ItemRegistry {
         mashedsweetpotatoesItem = registerItemFood("mashedsweetpotatoesItem", 7, config.mealsaturation);
         steamedpeasItem = registerItemFood("steamedpeasItem", 6, config.mealsaturation);
         splitpeasoupItem = registerItemFood("splitpeasoupItem", 12, config.meatymealsaturation);
-        pineappleupsidedowncakeItem = registerItemFood("pineappleupsidedowncakeItem", 10, config.snacksaturation);
+        
         pineapplehamItem = registerItemFood("pineapplehamItem", 10, config.meatymealsaturation);
         pineappleyogurtItem = registerItemFood("pineappleyogurtItem", 8, config.mealsaturation);
         turnipsoupItem = registerItemFood("turnipsoupItem", 8, config.mealsaturation);
@@ -953,8 +993,7 @@ public final class ItemRegistry {
         creamcookieItem = registerItemFood("creamcookieItem", 7, config.snacksaturation);
         jaffaItem = registerItemFood("jaffaItem", 9, config.snacksaturation);
         friedchickenItem = registerItemFood("friedchickenItem", 11, config.meatymealsaturation);
-        chocolatesprinklecakeItem = registerItemFood("chocolatesprinklecakeItem", 8, config.snacksaturation);
-        redvelvetcakeItem = registerItemFood("redvelvetcakeItem", 8, config.snacksaturation);
+        
         footlongItem = registerItemFood("footlongItem", 14, config.meatymealsaturation);
         blueberryyogurtItem = registerItemFood("blueberryyogurtItem", 8, config.mealsaturation);
         lemonyogurtItem = registerItemFood("lemonyogurtItem", 8, config.mealsaturation);
@@ -1115,13 +1154,13 @@ public final class ItemRegistry {
         honeycombchocolatebarItem = registerItemFood("honeycombchocolatebarItem", 8, config.snacksaturation);
         cherrycoconutchocolatebarItem = registerItemFood("cherrycoconutchocolatebarItem", 10, config.snacksaturation);
         fairybreadItem = registerItemFood("fairybreadItem", 5, config.snacksaturation);
-        lamingtonItem = registerItemFood("lamingtonItem", 6, config.mealsaturation);
+        
         timtamItem = registerItemFood("timtamItem", 9, config.snacksaturation);
         meatpieItem = registerItemFood("meatpieItem", 14, config.meatymealsaturation);
         chikorollItem = registerItemFood("chikorollItem", 14, config.meatymealsaturation);
         damperItem = registerItemFood("damperItem", 7, config.mealsaturation);
         beetburgerItem = registerItemFood("beetburgerItem", 18, config.meatymealsaturation);
-        pavlovaItem = registerItemFood("pavlovaItem", 10, config.mealsaturation);
+        
         gherkinItem = registerItemFood("gherkinItem", 6, config.mealsaturation);
         mcpamItem = registerItemFood("mcpamItem", 16, config.meatymealsaturation);
         ceasarsaladItem = registerItemFood("ceasarsaladItem", 10, config.mealsaturation);
@@ -1135,7 +1174,7 @@ public final class ItemRegistry {
         vegemiteontoastItem = registerItemFood("vegemiteontoastItem", 7, config.mealsaturation);
         registerFish();
 
-        holidaycakeItem = registerItemFood("holidaycakeItem", 10, config.mealsaturation);
+        
         clamcookedItem = registerItemFood("clamcookedItem", 2, config.meatymealsaturation);
         crabcookedItem = registerItemFood("crabcookedItem", 2, config.meatymealsaturation);
         crayfishcookedItem = registerItemFood("crayfishcookedItem", 2, config.meatymealsaturation);
@@ -1160,7 +1199,7 @@ public final class ItemRegistry {
         pickledonionsItem = registerItemFood("pickledonionsItem", 7, config.mealsaturation);
         porksausageItem = registerItemFood("porksausageItem", 8, config.meatymealsaturation);
         raspberrytrifleItem = registerItemFood("raspberrytrifleItem", 8, config.mealsaturation);
-        pumpkincheesecakeItem = registerItemFood("pumpkincheesecakeItem", 12, config.snacksaturation);
+        
         pumpkinmuffinItem = registerItemFood("pumpkinmuffinItem", 8, config.mealsaturation);
         suaderoItem = registerItemFood("suaderoItem", 10, config.mealsaturation);
         randomtacoItem = registerItemFood("randomtacoItem", 16, config.mealsaturation);
@@ -1265,6 +1304,23 @@ public final class ItemRegistry {
         sweetteaItem = registerItemFood("sweetteaItem", 6, config.mealsaturation);
         creepercookieItem = registerItemFood("creepercookieItem", 4, config.snacksaturation);
         patreonpieItem = registerItemFood("patreonpieItem", 8, config.mealsaturation);
+        
+        honeybreadItem = registerItemFood("honeybreadItem", 7, config.mealsaturation);
+        honeybunItem = registerItemFood("honeybunItem", 8, config.mealsaturation);
+        honeyglazedcarrotsItem = registerItemFood("honeyglazedcarrotsItem", 8, config.mealsaturation);
+        honeyglazedhamItem = registerItemFood("honeyglazedhamItem", 10, config.meatymealsaturation);
+        honeysoyribsItem = registerItemFood("honeysoyribsItem", 14, config.meatymealsaturation);
+        
+        carrotcakeItem = registerItemPamCakeFood("carrotcakeItem", 8, config.mealsaturation, BlockRegistry.carrotcake);
+        holidaycakeItem = registerItemPamCakeFood("holidaycakeItem", 10, config.mealsaturation, BlockRegistry.holidaycake);
+        pumpkincheesecakeItem = registerItemPamCakeFood("pumpkincheesecakeItem", 12, config.snacksaturation, BlockRegistry.pumpkincheesecake);
+        pavlovaItem = registerItemPamCakeFood("pavlovaItem", 10, config.mealsaturation, BlockRegistry.pavlovacake);
+        lamingtonItem = registerItemPamCakeFood("lamingtonItem", 6, config.mealsaturation, BlockRegistry.lamingtoncake);
+        cheesecakeItem = registerItemPamCakeFood("cheesecakeItem", 10, config.mealsaturation, BlockRegistry.cheesecake);
+        cherrycheesecakeItem = registerItemPamCakeFood("cherrycheesecakeItem", 12, config.snacksaturation, BlockRegistry.cherrycheesecake);
+        pineappleupsidedowncakeItem = registerItemPamCakeFood("pineappleupsidedowncakeItem", 10, config.snacksaturation, BlockRegistry.pineappleupsidedowncake);
+        chocolatesprinklecakeItem = registerItemPamCakeFood("chocolatesprinklecakeItem", 8, config.snacksaturation, BlockRegistry.chocolatesprinklecake);
+        redvelvetcakeItem = registerItemPamCakeFood("redvelvetcakeItem", 8, config.snacksaturation, BlockRegistry.redvelvetcake);
 
     }
 
@@ -1342,9 +1398,22 @@ public final class ItemRegistry {
 
         return registerItem(item, registryName);
     }
+    
+    private static Item registerItemArmor(String registryName, EntityEquipmentSlot slot) {
+        final ItemPamHardenedLeatherArmor item = new ItemPamHardenedLeatherArmor(slot);
+
+        return registerItem(item, registryName);
+    }
 
     private static Item registerItemFood(String registryName, int amount, float saturation) {
         final Item item = new ItemPamFood(amount, saturation);
+        allFood.add(item);
+
+        return registerItem(item, registryName);
+    }
+    
+    private static Item registerItemPamCakeFood(String registryName, int amount, float saturation, BlockPamCake blockpamcake) {
+    	final Item item = new ItemPamCakeFood(amount, saturation, initialized, blockpamcake);
         allFood.add(item);
 
         return registerItem(item, registryName);
@@ -1387,4 +1456,8 @@ public final class ItemRegistry {
 
         return GameRegistry.register(item);
     }
+    
+    private static ItemArmor.ArmorMaterial addArmorMaterial(String enumName, String textureName, int durability, int[] reductionAmounts, int enchantability, SoundEvent soundOnEquip, float toughness) {
+		return EnumHelper.addEnum(ItemArmor.ArmorMaterial.class, enumName, new Class<?>[]{String.class, int.class, int[].class, int.class, SoundEvent.class, float.class}, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness);
+	}
 }

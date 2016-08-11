@@ -1,0 +1,45 @@
+itemGroup.tabDesertcraft=DesertCraft
+
+tile.desertplant1.name=Brown Armed Cactus
+tile.desertplant2.name=Brown Cactus
+tile.desertplant3.name=Green Cactus
+tile.desertplant4.name=Olive Cactus
+tile.desertplant5.name=Olive Armed Cactus
+tile.desertplant6.name=Tall Rust Shrub
+tile.desertplant7.name=Short Rust Shrub
+tile.desertplant8.name=Rust Grass
+tile.desertplant9.name=Rust Wheat Grass
+tile.desertplant10.name=Tall Tan Shrub
+tile.desertplant11.name=Short Tan Shrub
+tile.desertplant12.name=Tan Grass
+tile.desertplant13.name=Tan Wheat Grass
+tile.desertplant14.name=Brown Bush
+tile.desertplant15.name=Desert Flower
+tile.desertplant16.name=Dead Sapling
+
+tile.pamGlasssteel.name=Glass Steel Block
+
+item.cactusaxeItem.name=Cactus Axe
+item.cactushoeItem.name=Cactus Hoe
+item.cactuspickaxeItem.name=Cactus Pickaxe
+item.cactusshovelItem.name=Cactus Shovel
+item.cactusswordItem.name=Cactus Sword
+
+item.cactushelmItem.name=Cactus Helm
+item.cactuschestItem.name=Cactus Chest
+item.cactuslegsItem.name=Cactus Legs
+item.cactusbootsItem.name=Cactus Boots
+
+item.sandstoneaxeItem.name=Sandstone Axe
+item.sandstonehoeItem.name=Sandstone Hoe
+item.sandstonepickaxeItem.name=Sandstone Pickaxe
+item.sandstoneshovelItem.name=Sandstone Shovel
+item.sandstoneswordItem.name=Sandstone Sword
+
+item.glasssteelaxeItem.name=Glass Steel Axe
+item.glasssteelhoeItem.name=Glass Steel Hoe
+item.glasssteelpickaxeItem.name=Glass Steel Pickaxe
+item.glasssteelshovelItem.name=Glass Steel Shovel
+item.glasssteelswordItem.name=Glass Steel Sword
+
+item.glasssteelingotItem.name=Glass Steel Ingot

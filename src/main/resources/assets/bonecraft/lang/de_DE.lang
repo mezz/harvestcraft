@@ -1,0 +1,15 @@
+itemGroup.tabBonecraft=BoneCraft
+
+tile.pamFossil.name=Fossil
+
+item.boneaxeItem.name=Knochenaxt
+item.bonehoeItem.name=Knochenhacke
+item.bonepickaxeItem.name=Knochenspitzhacke
+item.boneshovelItem.name=Knochenschaufel
+item.boneswordItem.name=Knochenschwert
+
+item.bonehelmItem.name=Knochenhelm
+item.bonechestItem.name=Knochenharnisch
+item.bonelegsItem.name=Knochenbeinschutz
+item.bonebootsItem.name=Knochenstiefel
+

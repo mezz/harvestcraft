@@ -37,22 +37,22 @@ public class WorldGenDesertPlant implements IWorldGenerator {
         	
         	int rand = ThreadLocalRandom.current().nextInt(0,15);
         	switch(rand) {
-        	  case 0:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant1), world, blockPos); break;
-        	  case 1:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant2), world, blockPos); break;
-        	  case 2:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant3), world, blockPos); break;
-        	  case 3:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant4), world, blockPos); break;
-        	  case 4:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant5), world, blockPos); break;
-        	  case 5:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant6), world, blockPos); break;
-        	  case 6:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant7), world, blockPos); break;
-        	  case 7:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant8), world, blockPos); break;
-        	  case 8:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant9), world, blockPos); break;
-        	  case 9:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant10), world, blockPos); break;
-        	  case 10:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant11), world, blockPos); break;
-        	  case 11:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant12), world, blockPos); break;
-        	  case 12:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant13), world, blockPos); break;
-        	  case 13:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant14), world, blockPos); break;
-        	  case 14:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant15), world, blockPos); break;
-        	  case 15:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertPlant16), world, blockPos); break;
+        	  case 0:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant1), world, blockPos); break;
+        	  case 1:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant2), world, blockPos); break;
+        	  case 2:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant3), world, blockPos); break;
+        	  case 3:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant4), world, blockPos); break;
+        	  case 4:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant5), world, blockPos); break;
+        	  case 5:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant6), world, blockPos); break;
+        	  case 6:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant7), world, blockPos); break;
+        	  case 7:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant8), world, blockPos); break;
+        	  case 8:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant9), world, blockPos); break;
+        	  case 9:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant10), world, blockPos); break;
+        	  case 10:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant11), world, blockPos); break;
+        	  case 11:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant12), world, blockPos); break;
+        	  case 12:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant13), world, blockPos); break;
+        	  case 13:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant14), world, blockPos); break;
+        	  case 14:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant15), world, blockPos); break;
+        	  case 15:generateGarden(BlockRegistry.getGarden(BlockRegistry.desertplant16), world, blockPos); break;
         	}
         	}
 }

@@ -31,6 +31,8 @@ public class ConfigHandler {
     private static final String CATEGORY_DIMENSIONS = "dimensions";
     private static final String CATEGORY_SEEDS = "seeds";
     private static final String CATEGORY_MISC_RECIPES = "miscellaneous recipes";
+    private static final String CATEGORY_SHIPPINGBIN_PURCHASES = "shipping bin purchases";
+    private static final String CATEGORY_SHIPPINGBIN_PRICES = "shipping bin prices";
 
     /**
      * Defaults
@@ -159,6 +161,10 @@ public class ConfigHandler {
     public int marketcurrencyHorse;
     public int marketcurrencyBonemeal;
     public boolean enableEasyHarvest;
+    
+    //Shipping Bin
+    public boolean shippingbinbuyCrops;
+    public int shippingbincropPrice;
 
     // Beehive config
     public boolean enableBeehiveGeneration;
@@ -324,6 +330,9 @@ public class ConfigHandler {
         marketcurrencyChicken = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyChicken", 0).getInt();
         marketcurrencyHorse = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyHorse", 0).getInt();
         marketcurrencyBonemeal = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyBonemeal", 0).getInt();
+        
+        shippingbinbuyCrops = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinbuyCrops", true).getBoolean();
+        shippingbincropPrice = config.get(CATEGORY_SHIPPINGBIN_PRICES, "shippingbincropPrice", 32).getInt();
     }
 
     private void initSeedDropSettings() {

@@ -1,5 +1,5 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "harvestcraft:blocks/candledeco10"
+		"layer0": "harvestcraft:blocks/candleDeco10"
 	}}

@@ -25,6 +25,7 @@ harvestcraft.tile.salt.name=Salt Ore
 harvestcraft.tile.pamcompressedsaltBlock.name=Compressed Salt Block
 
 tile.market.name=Market
+tile.shippingbin.name=Shipping Bin
 
 harvestcraft.tile.oven.name=Oven
 
@@ -1116,3 +1117,24 @@ item.honeybunItem.name=Honeybun
 item.honeyglazedcarrotsItem.name=Honey Glazed Carrots
 item.honeyglazedhamItem.name=Honey Glazed Ham
 item.honeysoyribsItem.name=Honey Soy Ribs
+
+item.rawtofeakItem.name=Raw Tofeak
+item.rawtofaconItem.name=Raw Tofacon
+item.rawtofishItem.name=Raw Tofish
+item.rawtofeegItem.name=Raw Tofeeg
+item.rawtofuttonItem.name=Raw Tofutton
+item.rawtofickenItem.name=Raw Toficken
+item.rawtofabbitItem.name=Raw Tofabbit
+item.rawtofurkeyItem.name=Raw Tofurkey
+item.rawtofenisonItem.name=Raw Tofenison
+
+item.cookedtofeakItem.name=Cooked Tofeak
+item.cookedtofaconItem.name=Cooked Tofacon
+item.cookedtofishItem.name=Cooked Tofish
+item.cookedtofeegItem.name=Cooked Tofeeg
+item.cookedtofuttonItem.name=Cooked Tofutton
+item.cookedtofickenItem.name=Cooked Toficken
+item.cookedtofabbitItem.name=Cooked Tofabbit
+item.cookedtofurkeyItem.name=Cooked Tofurkey
+item.cookedtofenisonItem.name=Cooked Tofenison
+

@@ -1,5 +1,5 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "desertcraft:blocks/desertPlant16"
+        "layer0": "desertcraft:block/desertplant16"
     }}

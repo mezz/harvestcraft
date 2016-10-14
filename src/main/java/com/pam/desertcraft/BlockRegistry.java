@@ -15,34 +15,34 @@ public final class BlockRegistry {
 
 	public static Block pamGlasssteel;
 	public static ItemBlock pamglasssteelItemBlock;
-	public static Block pamdesertPlant;
+	public static Block pamdesertplant;
 	public static ItemBlock pamdesertplantItemBlock;
 	
-	// Desert Plant blocks
+	// Desert plant blocks
     public static final HashMap<String, BlockPamDesertPlant> gardens = new HashMap<>();
-    public static final String desertPlant1 = "desertPlant1";
-    public static final String desertPlant2 = "desertPlant2";
-    public static final String desertPlant3 = "desertPlant3";
-    public static final String desertPlant4 = "desertPlant4";
-    public static final String desertPlant5 = "desertPlant5";
-    public static final String desertPlant6 = "desertPlant6";
-    public static final String desertPlant7 = "desertPlant7";
-    public static final String desertPlant8 = "desertPlant8";
-    public static final String desertPlant9 = "desertPlant9";
-    public static final String desertPlant10 = "desertPlant10";
-    public static final String desertPlant11 = "desertPlant11";
-    public static final String desertPlant12 = "desertPlant12";
-    public static final String desertPlant13 = "desertPlant13";
-    public static final String desertPlant14 = "desertPlant14";
-    public static final String desertPlant15 = "desertPlant15";
-    public static final String desertPlant16 = "desertPlant16";
+    public static final String desertplant1 = "desertplant1";
+    public static final String desertplant2 = "desertplant2";
+    public static final String desertplant3 = "desertplant3";
+    public static final String desertplant4 = "desertplant4";
+    public static final String desertplant5 = "desertplant5";
+    public static final String desertplant6 = "desertplant6";
+    public static final String desertplant7 = "desertplant7";
+    public static final String desertplant8 = "desertplant8";
+    public static final String desertplant9 = "desertplant9";
+    public static final String desertplant10 = "desertplant10";
+    public static final String desertplant11 = "desertplant11";
+    public static final String desertplant12 = "desertplant12";
+    public static final String desertplant13 = "desertplant13";
+    public static final String desertplant14 = "desertplant14";
+    public static final String desertplant15 = "desertplant15";
+    public static final String desertplant16 = "desertplant16";
 
     private static boolean initialized = false;
 
     public static void initBlockRegistry() {
 
     	registerGlasssteel();
-    	registerDesertPlant();
+    	registerDesertplant();
         initialized = true;
     }
 
@@ -67,23 +67,23 @@ public final class BlockRegistry {
         registerBlock(BlockPamGlassSteel.registryName, pamglasssteelItemBlock, pamGlasssteel);
     }
     
-    private static void registerDesertPlant() {
-    	addGarden(desertPlant1, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant2, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant3, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant4, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant5, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant6, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant7, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant8, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant9, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant10, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant11, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant12, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant13, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant14, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant15, BlockPamDesertPlant.Region.DESERT);
-    	addGarden(desertPlant16, BlockPamDesertPlant.Region.DESERT);
+    private static void registerDesertplant() {
+    	addGarden(desertplant1, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant2, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant3, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant4, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant5, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant6, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant7, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant8, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant9, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant10, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant11, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant12, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant13, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant14, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant15, BlockPamDesertPlant.Region.DESERT);
+    	addGarden(desertplant16, BlockPamDesertPlant.Region.DESERT);
     }
 
     private static void addGarden(String gardenName, BlockPamDesertPlant.Region region) {

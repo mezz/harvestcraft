@@ -11,10 +11,12 @@ import com.pam.harvestcraft.item.RecipeRegistry;
 import com.pam.harvestcraft.item.SeedDropRegistry;
 import com.pam.harvestcraft.loottables.LootTableLoadEventHandler;
 import com.pam.harvestcraft.tileentities.MarketItems;
+import com.pam.harvestcraft.tileentities.ShippingBinItems;
 import com.pam.harvestcraft.tileentities.TileEntityApiary;
 import com.pam.harvestcraft.tileentities.TileEntityGroundTrap;
 import com.pam.harvestcraft.tileentities.TileEntityMarket;
 import com.pam.harvestcraft.tileentities.TileEntityPresser;
+import com.pam.harvestcraft.tileentities.TileEntityShippingBin;
 import com.pam.harvestcraft.tileentities.TileEntityWaterTrap;
 import com.pam.harvestcraft.worldgen.BeehiveWorldGen;
 import com.pam.harvestcraft.worldgen.BushWorldWorldGen;
@@ -54,10 +56,12 @@ public class CommonProxy {
         SeedDropRegistry.getSeedDrops();
 
         MarketItems.registerItems();
+        ShippingBinItems.registerItems();
         PacketHandler.init();
 
         GameRegistry.registerTileEntity(TileEntityApiary.class, "PamApiary");
         GameRegistry.registerTileEntity(TileEntityMarket.class, "PamMarket");
+        GameRegistry.registerTileEntity(TileEntityShippingBin.class, "PamShippingbin");
         GameRegistry.registerTileEntity(TileEntityPresser.class, "PamPresser");
         GameRegistry.registerTileEntity(TileEntityGroundTrap.class, "PamGroundTrap");
         GameRegistry.registerTileEntity(TileEntityWaterTrap.class, "PamWaterTrap");

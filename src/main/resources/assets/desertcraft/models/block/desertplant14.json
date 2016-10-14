@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/cross",
     "textures": {
-        "cross": "desertcraft:blocks/desertPlant14"
+        "cross": "desertcraft:blocks/desertplant14"
     }
 }

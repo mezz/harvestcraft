@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "#torch",
-	"candleDeco7": "harvestcraft:blocks/candledeco7"
+        "particle": "harvestcraft:blocks/candleDeco7",
+	"candleDeco7": "harvestcraft:blocks/candleDeco7"
     },
     "elements": [
         {   "from": [ -1, 3.5, 7 ],

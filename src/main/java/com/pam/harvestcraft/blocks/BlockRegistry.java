@@ -12,10 +12,15 @@ import java.util.HashMap;
 
 public final class BlockRegistry {
 
-    // Market blocks
+    // Market block
     public static final String marketItemName = "market";
     public static Block pamMarket;
     public static ItemBlock marketItemBlock;
+    
+    // Shipping Bin block
+    public static final String shippingbinItemName = "shippingbin";
+    public static Block pamShippingbin;
+    public static ItemBlock shippingbinItemBlock;
     
     //Trap blocks
     public static GroundTrapBlock groundtrap;
@@ -279,6 +284,12 @@ public final class BlockRegistry {
         ItemRegistry.items.put(marketItemName, marketItemBlock);
 
         registerBlock(marketItemName, marketItemBlock, pamMarket);
+        
+        pamShippingbin = new BlockPamShippingBin().setHardness(1.0F).setResistance(1.0F);
+        shippingbinItemBlock = new ItemBlock(pamShippingbin);
+        ItemRegistry.items.put(shippingbinItemName, shippingbinItemBlock);
+
+        registerBlock(shippingbinItemName, shippingbinItemBlock, pamShippingbin);
     }
     
     private static void registerTraps() {

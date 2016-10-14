@@ -637,6 +637,26 @@ public final class ItemRegistry {
     public static Item honeyglazedhamItem;
     public static Item honeysoyribsItem;
     
+    public static Item rawtofeakItem;
+    public static Item rawtofaconItem;
+    public static Item rawtofishItem;
+    public static Item rawtofeegItem;
+    public static Item rawtofuttonItem;
+    public static Item rawtofickenItem;
+    public static Item rawtofabbitItem;
+    public static Item rawtofurkeyItem;
+    public static Item rawtofenisonItem;
+
+    public static Item cookedtofeakItem;
+    public static Item cookedtofaconItem;
+    public static Item cookedtofishItem;
+    public static Item cookedtofeegItem;
+    public static Item cookedtofuttonItem;
+    public static Item cookedtofickenItem;
+    public static Item cookedtofabbitItem;
+    public static Item cookedtofurkeyItem;
+    public static Item cookedtofenisonItem;
+    
     public static Item carrotcakeItem;
     public static Item cheesecakeItem;
     public static Item cherrycheesecakeItem;
@@ -1310,6 +1330,26 @@ public final class ItemRegistry {
         honeyglazedcarrotsItem = registerItemFood("honeyglazedcarrotsItem", 8, config.mealsaturation);
         honeyglazedhamItem = registerItemFood("honeyglazedhamItem", 10, config.meatymealsaturation);
         honeysoyribsItem = registerItemFood("honeysoyribsItem", 14, config.meatymealsaturation);
+        
+        rawtofeakItem = registerItemFood("rawtofeakItem", 3, config.snacksaturation);
+        rawtofaconItem = registerItemFood("rawtofaconItem", 3, config.snacksaturation);
+        rawtofishItem = registerItemFood("rawtofishItem", 2, config.snacksaturation);
+        rawtofeegItem = registerItemFood("rawtofeegItem", 1, config.snacksaturation);
+        rawtofuttonItem = registerItemFood("rawtofuttonItem", 2, config.snacksaturation);
+        rawtofickenItem = registerItemFood("rawtofickenItem", 2, config.snacksaturation);
+        rawtofabbitItem = registerItemFood("rawtofabbitItem", 3, config.snacksaturation);
+        rawtofurkeyItem = registerItemFood("rawtofurkeyItem", 2, config.snacksaturation);
+        rawtofenisonItem = registerItemFood("rawtofenisonItem", 3, config.snacksaturation);
+
+        cookedtofeakItem = registerItemFood("cookedtofeakItem", 8, config.meatymealsaturation);
+        cookedtofaconItem = registerItemFood("cookedtofaconItem", 8, config.meatymealsaturation);
+        cookedtofishItem = registerItemFood("cookedtofishItem", 5, config.meatymealsaturation);
+        cookedtofeegItem = registerItemFood("cookedtofeegItem", 2, config.meatymealsaturation);
+        cookedtofuttonItem = registerItemFood("cookedtofuttonItem", 6, config.meatymealsaturation);
+        cookedtofickenItem = registerItemFood("cookedtofickenItem", 6, config.meatymealsaturation);
+        cookedtofabbitItem = registerItemFood("cookedtofabbitItem", 5, config.meatymealsaturation);
+        cookedtofurkeyItem = registerItemFood("cookedtofurkeyItem", 5, config.meatymealsaturation);
+        cookedtofenisonItem = registerItemFood("cookedtofenisonItem", 8, config.meatymealsaturation);
         
         carrotcakeItem = registerItemPamCakeFood("carrotcakeItem", 8, config.mealsaturation, BlockRegistry.carrotcake);
         holidaycakeItem = registerItemPamCakeFood("holidaycakeItem", 10, config.mealsaturation, BlockRegistry.holidaycake);

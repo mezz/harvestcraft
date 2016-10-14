@@ -934,24 +934,40 @@ public class GeneralOreRegistry {
         }
 
         if (HarvestCraft.config.enableTofuAsMeatInRecipes) {
-            OreDictionary.registerOre(listAllmeatraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllfishcooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllegg, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllchickenraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllchickencooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllporkraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllporkcooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllbeefraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllbeefcooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllmuttonraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllmuttoncooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllturkeyraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllturkeycooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllrabbitraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllrabbitcooked, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllvenisonraw, ItemRegistry.firmtofuItem);
-            OreDictionary.registerOre(listAllvenisoncooked, ItemRegistry.firmtofuItem);
+        	OreDictionary.registerOre(listAllmeatraw, ItemRegistry.rawtofeakItem);
+            OreDictionary.registerOre(listAllmeatraw, ItemRegistry.rawtofaconItem);
+            OreDictionary.registerOre(listAllmeatraw, ItemRegistry.rawtofuttonItem);
+            OreDictionary.registerOre(listAllmeatraw, ItemRegistry.rawtofickenItem);
+            OreDictionary.registerOre(listAllmeatraw, ItemRegistry.rawtofabbitItem);
+            OreDictionary.registerOre(listAllmeatraw, ItemRegistry.rawtofurkeyItem);
+            OreDictionary.registerOre(listAllmeatraw, ItemRegistry.rawtofenisonItem);
+            
+            
+            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.cookedtofeakItem);
+            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.cookedtofaconItem);
+            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.cookedtofuttonItem);
+            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.cookedtofickenItem);
+            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.cookedtofabbitItem);
+            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.cookedtofurkeyItem);
+            OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.cookedtofenisonItem);
+            
+            OreDictionary.registerOre(listAllchickenraw, ItemRegistry.rawtofickenItem);
+            OreDictionary.registerOre(listAllegg, ItemRegistry.rawtofeegItem);
+            OreDictionary.registerOre(listAllchickencooked, ItemRegistry.cookedtofickenItem);
+            OreDictionary.registerOre(listAllporkraw, ItemRegistry.rawtofaconItem);
+            OreDictionary.registerOre(listAllporkcooked, ItemRegistry.cookedtofaconItem);
+            OreDictionary.registerOre(listAllbeefraw, ItemRegistry.rawtofeakItem);
+            OreDictionary.registerOre(listAllbeefcooked, ItemRegistry.cookedtofeakItem);
+            OreDictionary.registerOre(listAllmuttonraw, ItemRegistry.rawtofuttonItem);
+            OreDictionary.registerOre(listAllmuttoncooked, ItemRegistry.cookedtofuttonItem);
+            OreDictionary.registerOre(listAllturkeyraw, ItemRegistry.rawtofurkeyItem);
+            OreDictionary.registerOre(listAllturkeycooked, ItemRegistry.cookedtofurkeyItem);
+            OreDictionary.registerOre(listAllrabbitraw, ItemRegistry.rawtofabbitItem);
+            OreDictionary.registerOre(listAllrabbitcooked, ItemRegistry.cookedtofabbitItem);
+            OreDictionary.registerOre(listAllvenisonraw, ItemRegistry.rawtofenisonItem);
+            OreDictionary.registerOre(listAllvenisoncooked, ItemRegistry.cookedtofenisonItem);
+            registerOres(listAllfishraw, ItemRegistry.rawtofishItem);
+            OreDictionary.registerOre(listAllfishcooked, ItemRegistry.cookedtofishItem);
         }
 
         if (HarvestCraft.config.enableTofuAsMilkInRecipes) {
@@ -1054,6 +1070,8 @@ public class GeneralOreRegistry {
         OreDictionary.registerOre(listAllmeatraw, ItemRegistry.turkeyrawItem);
         OreDictionary.registerOre(listAllmeatraw, Items.RABBIT);
         OreDictionary.registerOre(listAllmeatraw, ItemRegistry.venisonrawItem);
+        
+        
 
         OreDictionary.registerOre(listAllmeatcooked, Items.COOKED_BEEF);
         OreDictionary.registerOre(listAllmeatcooked, Items.COOKED_CHICKEN);
@@ -1062,12 +1080,17 @@ public class GeneralOreRegistry {
         OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.turkeycookedItem);
         OreDictionary.registerOre(listAllmeatcooked, Items.COOKED_RABBIT);
         OreDictionary.registerOre(listAllmeatcooked, ItemRegistry.venisoncookedItem);
+
+        
         OreDictionary.registerOre(listAllfishraw, new ItemStack(Items.FISH, 1, OreDictionary.WILDCARD_VALUE));
         registerOres(listAllfishraw, ItemRegistry.allFishRaw);
+        
+        
 
         OreDictionary.registerOre(listAllfishcooked, Items.COOKED_FISH);
         OreDictionary.registerOre(listAllfishcooked, new ItemStack(Items.COOKED_FISH, 1, 1));
         OreDictionary.registerOre(listAllfishcooked, ItemRegistry.calamaricookedItem);
+        
         OreDictionary.registerOre(salmonRaw, new ItemStack(Items.FISH, 1));
 
         OreDictionary.registerOre(listAllsugar, Items.SUGAR);

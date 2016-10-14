@@ -1,5 +1,6 @@
 package com.pam.harvestcraft.item;
 
+import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.BlockRegistry;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
@@ -79,6 +80,19 @@ public class RecipeRegistry {
         addSmelting(ItemRegistry.shrimprawItem, ItemRegistry.shrimpcookedItem);
         addSmelting(ItemRegistry.snailrawItem, ItemRegistry.snailcookedItem);
         addSmelting(ItemRegistry.turtlerawItem, ItemRegistry.turtlecookedItem);
+        
+        if (HarvestCraft.config.enableTofuAsMeatInRecipes)
+        {
+        	addSmelting(ItemRegistry.rawtofeakItem, ItemRegistry.cookedtofeakItem);
+        	addSmelting(ItemRegistry.rawtofaconItem, ItemRegistry.cookedtofaconItem);
+        	addSmelting(ItemRegistry.rawtofishItem, ItemRegistry.cookedtofishItem);
+        	addSmelting(ItemRegistry.rawtofeegItem, ItemRegistry.cookedtofeegItem);
+        	addSmelting(ItemRegistry.rawtofuttonItem, ItemRegistry.cookedtofuttonItem);
+        	addSmelting(ItemRegistry.rawtofickenItem, ItemRegistry.cookedtofickenItem);
+        	addSmelting(ItemRegistry.rawtofabbitItem, ItemRegistry.cookedtofabbitItem);
+        	addSmelting(ItemRegistry.rawtofurkeyItem, ItemRegistry.cookedtofurkeyItem);
+        	addSmelting(ItemRegistry.rawtofenisonItem, ItemRegistry.cookedtofenisonItem);
+        }
     }
 
     private static void registerPresserRecipe() {
@@ -805,6 +819,17 @@ public class RecipeRegistry {
         addShapelessOreRecipe(ItemRegistry.honeyglazedcarrotsItem, toolSaucepan, cropCarrot, foodHoneydrop, foodButter, cropLemon);
         addShapelessOreRecipe(ItemRegistry.honeyglazedhamItem, toolSaucepan, listAllporkraw, foodHoneydrop, foodBlackpepper);
         addShapelessOreRecipe(ItemRegistry.honeysoyribsItem, toolBakeware, listAllporkraw, foodHoneydrop, foodSoysauce, cropGarlic, foodVinegar);
+        
+
+        addShapelessOreRecipe(ItemRegistry.rawtofeakItem, toolCuttingboard, foodFirmtofu, listAllmushroom, foodSoysauce, foodBlackpepper, foodOliveoil);
+        addShapelessOreRecipe(ItemRegistry.rawtofaconItem, toolCuttingboard, foodFirmtofu, foodOliveoil, foodSalt, foodFlour, listAllsugar);
+        addShapelessOreRecipe(ItemRegistry.rawtofishItem, toolCuttingboard, foodFirmtofu, cropSeaweed, cropLemon, cropSpiceleaf);
+        addShapelessOreRecipe(ItemRegistry.rawtofeegItem, toolCuttingboard, foodFirmtofu, dyeYellow);
+        addShapelessOreRecipe(ItemRegistry.rawtofuttonItem, toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, cropPotato);
+        addShapelessOreRecipe(ItemRegistry.rawtofickenItem, toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, cropSpiceleaf);
+        addShapelessOreRecipe(ItemRegistry.rawtofabbitItem, toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, cropCarrot);
+        addShapelessOreRecipe(ItemRegistry.rawtofurkeyItem, toolCuttingboard, foodFirmtofu, foodOliveoil, Items.BREAD);
+        addShapelessOreRecipe(ItemRegistry.rawtofenisonItem, toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, listAllnut, foodSoysauce, listAllmushroom);
     }
 
     private static void registerMarketRecipe() {

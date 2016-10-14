@@ -4,6 +4,7 @@ import com.pam.harvestcraft.tileentities.TileEntityApiary;
 import com.pam.harvestcraft.tileentities.TileEntityGroundTrap;
 import com.pam.harvestcraft.tileentities.TileEntityMarket;
 import com.pam.harvestcraft.tileentities.TileEntityPresser;
+import com.pam.harvestcraft.tileentities.TileEntityShippingBin;
 import com.pam.harvestcraft.tileentities.TileEntityWaterTrap;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,6 +21,10 @@ public class GuiHandler implements IGuiHandler {
             return new ContainerMarket(player.inventory, (TileEntityMarket) tileEntity);
         }
 
+        if (tileEntity instanceof TileEntityShippingBin) {
+            return new ContainerShippingBin(player.inventory, (TileEntityShippingBin) tileEntity);
+        }
+        
         if (tileEntity instanceof TileEntityApiary) {
             return new ContainerApiary(player.inventory, (TileEntityApiary) tileEntity);
         }
@@ -42,6 +47,10 @@ public class GuiHandler implements IGuiHandler {
 
         if (tileEntity instanceof TileEntityMarket) {
             return new GuiMarket(player.inventory, (TileEntityMarket) tileEntity);
+        }
+        
+        if (tileEntity instanceof TileEntityShippingBin) {
+            return new GuiShippingBin(player.inventory, (TileEntityShippingBin) tileEntity);
         }
 
         if (tileEntity instanceof TileEntityApiary) {

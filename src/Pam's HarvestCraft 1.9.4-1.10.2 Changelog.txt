@@ -1,3 +1,51 @@
+HarvestCraft 1.9.4-1.10.2f Cross Compatibility - Shipping Bin
+- Changed: You can always craft the new tofu meats, no matter your config, you just can't use them in recipes.
+
+HarvestCraft 1.9.4-1.10.2f Cross Compatibility - Tofu Update
+- Changed: Firm/Soft Tofu no longer works as meat/eggs in recipes
+- Added: rawtofeakItem, 
+rawtofaconItem, 
+rawtofishItem, 
+rawtofeegItem, 
+rawtofuttonItem, 
+rawtofickenItem, 
+rawtofabbitItem, 
+rawtofurkeyItem, 
+rawtofenisonItem, 
+
+cookedtofeakItem, 
+cookedtofaconItem, 
+cookedtofishItem, 
+cookedtofeegItem, 
+cookedtofuttonItem, 
+cookedtofickenItem, 
+cookedtofabbitItem, 
+cookedtofurkeyItem, 
+cookedtofenisonItem
+--Note: While all raw items give the same food back as their raw meat counterparts, same for their cooked counterparts
+- Added: Cook raw tofu items in the furnace to get cooked tofu items
+- Recipes Added
+rawtofeakItem = toolCuttingboard, foodFirmtofu, listAllmushroom, foodSoysauce, foodBlackpepper, foodOliveoil
+        
+rawtofaconItem = toolCuttingboard, foodFirmtofu, foodOliveoil, foodSalt, foodFlour, listAllsugar
+        
+rawtofishItem = toolCuttingboard, foodFirmtofu, cropSeaweed, cropLemon, cropSpiceleaf
+        
+rawtofeegItem = toolCuttingboard, foodFirmtofu, dyeYellow
+        
+rawtofuttonItem = toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, cropPotato
+        
+rawtofickenItem = toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, cropSpiceleaf
+        
+rawtofabbitItem = toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, cropCarrot
+        
+rawtofurkeyItem = toolCuttingboard, foodFirmtofu, foodOliveoil, Items.BREAD
+        
+rawtofenisonItem = toolCuttingboard, foodFirmtofu, foodFlour, foodOliveoil, listAllnut, foodSoysauce, listAllmushroom
+
+HarvestCraft 1.9.4-1.10.2e Cross Compatibility
+- Fixed: Candles should now show textures properly in inventory and world
+
 HarvestCraft 1.9.4-1.10.2d Cross Compatibility - Bees Update
 - Changed: Re-named Beeswax to Pressed Wax
 - Added: Recipe of eight candleberries and a pot to make Pressed Wax

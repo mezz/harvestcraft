@@ -1,0 +1,45 @@
+itemGroup.tabDesertcraft=DesertCraft
+
+tile.desertplant1.name=Brauner armiger Kaktus
+tile.desertplant2.name=Brauner Kaktus
+tile.desertplant3.name=Grüner Kaktus
+tile.desertplant4.name=Oliver Kaktus
+tile.desertplant5.name=Oliver armiger Kaktus
+tile.desertplant6.name=Großer rostbrauner Strauch
+tile.desertplant7.name=Kleiner rostbrauner Strauch
+tile.desertplant8.name=Rostbraunes Gras
+tile.desertplant9.name=Rostbraunes Weizengras
+tile.desertplant10.name=Großer hellbrauner Strauch
+tile.desertplant11.name=Kleiner hellbrauner Strauch
+tile.desertplant12.name=Hellbraunes Gras
+tile.desertplant13.name=Hellbraunes Weizengras
+tile.desertplant14.name=Brauner Busch
+tile.desertplant15.name=Wüstenblume
+tile.desertplant16.name=Toter Setzling
+
+tile.pamGlasssteel.name=Hartglasblock
+
+item.cactusaxeItem.name=Kaktusaxt
+item.cactushoeItem.name=Kaktushacke
+item.cactuspickaxeItem.name=Kaktusspitzhacke
+item.cactusshovelItem.name=Kaktusschaufel
+item.cactusswordItem.name=Kaktusschwert
+
+item.cactushelmItem.name=Kaktushelm
+item.cactuschestItem.name=Kaktushemd
+item.cactuslegsItem.name=Kaktushose
+item.cactusbootsItem.name=Kaktusstiefel
+
+item.sandstoneaxeItem.name=Sandsteinaxt
+item.sandstonehoeItem.name=Sandsteinhacke
+item.sandstonepickaxeItem.name=Sandsteinspitzhacke
+item.sandstoneshovelItem.name=Sandsteinschaufel
+item.sandstoneswordItem.name=Sandsteinschwert
+
+item.glasssteelaxeItem.name=Hartglasaxt
+item.glasssteelhoeItem.name=Hartglashacke
+item.glasssteelpickaxeItem.name=Hartglasspitzhacke
+item.glasssteelshovelItem.name=Hartglasschaufel
+item.glasssteelswordItem.name=Hartglasschwert
+
+item.glasssteelingotItem.name=Hartglasbarren

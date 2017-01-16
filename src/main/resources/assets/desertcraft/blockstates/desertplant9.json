@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "desertcraft:desertplant9"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

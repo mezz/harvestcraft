@@ -1,0 +1,1137 @@
+itemGroup.harvestcraft=HarvestCraft
+
+# Blocks
+harvestcraft.harvestcraft.tile.cuttingboard.name=Cutting Board
+harvestcraft.tile.pot.name=Pot
+
+tile.beehive.name=Beehive
+tile.apiary.name=Apiary
+tile.presser.name=Presser
+
+tile.honey.name=Honey Block
+tile.honeycomb.name=Honeycomb Block
+tile.pressedwax.name=Pressed Wax Block
+tile.waxcomb.name=Waxcomb Block
+
+tile.groundtrap.name=Ground Trap
+tile.watertrap.name=Water Trap
+
+tile.well.name=Well
+
+harvestcraft.tile.salt.name=Salt Ore
+harvestcraft.tile.pamcompressedsaltBlock.name=Compressed Salt Block
+
+tile.market.name=Market
+tile.shippingbin.name=Shipping Bin
+
+harvestcraft.tile.oven.name=Oven
+
+harvestcraft.tile.churn.name=Churn
+harvestcraft.tile.quern.name=Quern
+harvestcraft.tile.watertrap.name=Water Trap
+harvestcraft.tile.groundtrap.name=Ground Trap
+harvestcraft.tile.dehydrator.name=Dehydrator
+
+tile.aridgarden.name=Arid Garden
+tile.frostgarden.name=Frost Garden
+tile.tropicalgarden.name=Tropical Garden
+tile.windygarden.name=Windy Garden
+tile.shadedgarden.name=Shaded Garden
+tile.soggygarden.name=Soggy Garden
+
+item.desc.snack=Snack
+item.desc.lightmeal=Light meal
+item.desc.largemeal=Large meal
+item.desc.potionspeed=Speed (0:03)
+
+harvestcraft.tile.pamAlmond.name=Almond
+harvestcraft.tile.pamApple.name=Apple
+harvestcraft.tile.pamApricot.name=Apricot
+harvestcraft.tile.pamAvocado.name=Avocado
+harvestcraft.tile.pamBanana.name=Banana
+harvestcraft.tile.pamCashew.name=Cashew
+harvestcraft.tile.pamCherry.name=Cherry
+harvestcraft.tile.pamChestnut.name=Chestnut
+harvestcraft.tile.pamCinnamon.name=Cinnamon Wood
+harvestcraft.tile.pamCoconut.name=Coconut
+harvestcraft.tile.pamDate.name=Date
+harvestcraft.tile.pamDragonfruit.name=Dragonfruit
+harvestcraft.tile.pamDurian.name=Durian
+harvestcraft.tile.pamFig.name=Fig
+harvestcraft.tile.pamGrapefruit.name=Grapefruit
+harvestcraft.tile.pamLemon.name=Lemon
+harvestcraft.tile.pamLime.name=Lime
+harvestcraft.tile.pamMaple.name=Maple Wood
+harvestcraft.tile.pamMango.name=Mango
+harvestcraft.tile.pamNutmeg.name=Nutmeg
+harvestcraft.tile.pamOlive.name=Olive
+harvestcraft.tile.pamOrange.name=Orange
+harvestcraft.tile.pamPapaya.name=Papaya
+harvestcraft.tile.pamPaperbark.name=Paperbark Wood
+harvestcraft.tile.pamPeach.name=Peach
+harvestcraft.tile.pamPear.name=Pear
+harvestcraft.tile.pamPecan.name=Pecan
+harvestcraft.tile.pamPeppercorn.name=Peppercorn
+harvestcraft.tile.pamPersimmon.name=Persimmon
+harvestcraft.tile.pamPistachio.name=Pistachio
+harvestcraft.tile.pamPlum.name=Plum
+harvestcraft.tile.pamPomegranate.name=Pomegranate
+harvestcraft.tile.pamStarfruit.name=Starfruit
+harvestcraft.tile.pamVanillabean.name=Vanilla Bean
+harvestcraft.tile.pamWalnut.name=Walnut
+harvestcraft.tile.pamGooseberry.name=Goosberry
+
+tile.almond_sapling.name=Almond Sapling
+tile.apple_sapling.name=Apple Sapling
+tile.apricot_sapling.name=Apricot Sapling
+tile.avocado_sapling.name=Avocado Sapling
+tile.banana_sapling.name=Banana Sapling
+tile.cashew_sapling.name=Cashew Sapling
+tile.cherry_sapling.name=Cherry Sapling
+tile.chestnut_sapling.name=Chestnut Sapling
+tile.cinnamon_sapling.name=Cinnamon Sapling
+tile.coconut_sapling.name=Coconut Sapling
+tile.date_sapling.name=Date Sapling
+tile.dragonfruit_sapling.name=Dragonfruit Sapling
+tile.durian_sapling.name=Durian Sapling
+tile.fig_sapling.name=Fig Sapling
+tile.grapefruit_sapling.name=Grapefruit Sapling
+tile.lemon_sapling.name=Lemon Sapling
+tile.lime_sapling.name=Lime Sapling
+tile.maple_sapling.name=Maple Sapling
+tile.mango_sapling.name=Mango Sapling
+tile.nutmeg_sapling.name=Nutmeg Sapling
+tile.olive_sapling.name=Olive Sapling
+tile.orange_sapling.name=Orange Sapling
+tile.papaya_sapling.name=Papaya Sapling
+tile.paperbark_sapling.name=Paperbark Sapling
+tile.peach_sapling.name=Peach Sapling
+tile.pear_sapling.name=Pear Sapling
+tile.pecan_sapling.name=Pecan Sapling
+tile.peppercorn_sapling.name=Peppercorn Sapling
+tile.persimmon_sapling.name=Persimmon Sapling
+tile.pistachio_sapling.name=Pistachio Sapling
+tile.plum_sapling.name=Plum Sapling
+tile.pomegranate_sapling.name=Pomegranate Sapling
+tile.starfruit_sapling.name=Starfruit Sapling
+tile.vanillabean_sapling.name=Vanilla Sapling
+tile.walnut_sapling.name=Walnut Sapling
+tile.gooseberry_sapling.name=Gooseberry Sapling
+
+harvestcraft.tile.pamblackberryCrop.name=Blackberry Crop
+harvestcraft.tile.pamblueberryCrop.name=Blueberry Crop
+harvestcraft.tile.pamcandleberryCrop.name=Candleberry Crop
+harvestcraft.tile.pamraspberryCrop.name=Raspberry Crop
+harvestcraft.tile.pamstrawberryCrop.name=Strawberry Crop
+harvestcraft.tile.pamcactusfruitCrop.name=Cactus Fruit Crop
+harvestcraft.tile.pamasparagusCrop.name=Asparagus Crop
+harvestcraft.tile.pambarleyCrop.name=Barley Crop
+harvestcraft.tile.pamoatsCrop.name=Oats Crop
+harvestcraft.tile.pamryeCrop.name=Rye Crop
+harvestcraft.tile.pamcornCrop.name=Corn Crop
+harvestcraft.tile.pambambooshootCrop.name=Bamboo Crop
+harvestcraft.tile.pamcantaloupeCrop.name=Cantaloupe Crop
+harvestcraft.tile.pamcucumberCrop.name=Cucumber Crop
+harvestcraft.tile.pamwintersquashCrop.name=Winter Squash Crop
+harvestcraft.tile.pamzucchiniCrop.name=Zucchini Crop
+harvestcraft.tile.pambeetCrop.name=Beet Crop
+harvestcraft.tile.pamonionCrop.name=Onion Crop
+harvestcraft.tile.pamparsnipCrop.name=Parsnip Crop
+harvestcraft.tile.pampeanutCrop.name=Peanut Crop
+harvestcraft.tile.pamradishCrop.name=Radish Crop
+harvestcraft.tile.pamrutabagaCrop.name=Rutabaga Crop
+harvestcraft.tile.pamsweetpotatoCrop.name=Sweet Potato Crop
+harvestcraft.tile.pamturnipCrop.name=Turnip Crop
+harvestcraft.tile.pamrhubarbCrop.name=Rhubarb Crop
+harvestcraft.tile.pamceleryCrop.name=Celery Crop
+harvestcraft.tile.pamgarlicCrop.name=Garlic Crop
+harvestcraft.tile.pamgingerCrop.name=Ginger Crop
+harvestcraft.tile.pamspiceleafCrop.name=Spice Leaf Crop
+harvestcraft.tile.pamtealeafCrop.name=Tea Leaf Crop
+harvestcraft.tile.pamcoffeebeanCrop.name=Coffee Bean Crop
+harvestcraft.tile.pammustardseedsCrop.name=Mustard Seeds Crop
+harvestcraft.tile.pambroccoliCrop.name=Broccoli Crop
+harvestcraft.tile.pamcauliflowerCrop.name=Cauliflower Crop
+harvestcraft.tile.pamleekCrop.name=Leek Crop
+harvestcraft.tile.pamlettuceCrop.name=Lettuce Crop
+harvestcraft.tile.pamscallionCrop.name=Scallion Crop
+harvestcraft.tile.pamartichokeCrop.name=Artichoke Crop
+harvestcraft.tile.pambrusselsproutCrop.name=Brussel Sprout Crop
+harvestcraft.tile.pamcabbageCrop.name=Cabbage Crop
+harvestcraft.tile.pamspinachCrop.name=Spinach Crop
+harvestcraft.tile.pamwhitemushroomCrop.name=White Mushroom Crop
+harvestcraft.tile.pambeanCrop.name=Bean Crop
+harvestcraft.tile.pamsoybeanCrop.name=Soybean Crop
+harvestcraft.tile.pambellpepperCrop.name=Bell Pepper Crop
+harvestcraft.tile.pamchilipepperCrop.name=Chili Pepper Crop
+harvestcraft.tile.pameggplantCrop.name=Eggplant Crop
+harvestcraft.tile.pamokraCrop.name=Okra Crop
+harvestcraft.tile.pampeasCrop.name=Peas Crop
+harvestcraft.tile.pamtomatoCrop.name=Tomato Crop
+harvestcraft.tile.pamcottonCrop.name=Cotton Crop
+harvestcraft.tile.pampineappleCrop.name=Pineapple Crop
+harvestcraft.tile.pamgrapeCrop.name=Grape Crop
+harvestcraft.tile.pamkiwiCrop.name=Kiwi Crop
+harvestcraft.tile.pamcranberryCrop.name=Cranberry Crop
+harvestcraft.tile.pamriceCrop.name=Rice Crop
+harvestcraft.tile.pamseaweedCrop.name=Seaweed Crop
+harvestcraft.tile.pamcurryleafCrop.name=Curry Leaf Crop
+harvestcraft.tile.pamsesameseedsCrop.name=Sesame Seeds Crop
+harvestcraft.tile.pamwaterchestnutCrop.name=Water Chestnut Crop
+
+tile.candleDeco1.name=White Candle
+tile.candleDeco2.name=Orange Candle
+tile.candleDeco3.name=Magenta Candle
+tile.candleDeco4.name=Light Blue Candle
+tile.candleDeco5.name=Yellow Candle
+tile.candleDeco6.name=Lime Candle
+tile.candleDeco7.name=Pink Candle
+tile.candleDeco8.name=Dark Grey Candle
+tile.candleDeco9.name=Light Grey Candle
+tile.candleDeco10.name=Cyan Candle
+tile.candleDeco11.name=Purple Candle
+tile.candleDeco12.name=Blue Candle
+tile.candleDeco13.name=Brown Candle
+tile.candleDeco14.name=Green Candle
+tile.candleDeco15.name=Red Candle
+tile.candleDeco16.name=Black Candle
+
+tile.carrotcake.name=Carrot Cake
+tile.cheesecake.name=Cheese Cake
+tile.cherrycheesecake.name=Cherry Cheese Cake
+tile.pineappleupsidedowncake.name=Pineapple Upside Down Cake
+tile.chocolatesprinklecake.name=Chocolate Sprinkles Cake
+tile.redvelvetcake.name=Red Velvet Cake
+tile.lamingtoncake.name=Lamington
+tile.pavlovacake.name=Pavlova
+tile.holidaycake.name=Holiday Cake
+tile.pumpkincheesecake.name=Pumpkin Cheese Cake
+
+# Items
+item.cottonItem.name=Cotton
+item.wovencottonItem.name=Woven Cotton
+item.cottonseedItem.name=Cotton Seed
+
+item.candleberryItem.name=Candleberry
+item.candleberryseedItem.name=Candleberry Seed
+item.waxItem.name=Wax
+
+item.hardenedleatherhelmItem.name=Hardened Leather Helm
+item.hardenedleatherchestItem.name=Hardened Leather Chest
+item.hardenedleatherleggingsItem.name=Hardened Leather Leggings
+item.hardenedleatherbootsItem.name=Hardened Leather Boots
+item.hardenedleatherItem.name=Hardened Leather
+
+item.queenbeeItem.name=Queen Bee
+item.waxcombItem.name=Waxcomb
+item.honeycombItem.name=Honeycomb
+item.honeyItem.name=Honey
+item.beeswaxItem.name=Pressed Wax
+item.royaljellyItem.name=Royal Jelly
+item.grubItem.name=Bee Grub
+
+item.grainbaitItem.name=Grain Bait
+item.veggiebaitItem.name=Veggie Bait
+item.fruitbaitItem.name=Fruit Bait
+item.fishtrapbaitItem.name=Fish Trap Bait
+
+item.potItem.name=Pot
+item.skilletItem.name=Skillet
+item.saucepanItem.name=Saucepan
+item.bakewareItem.name=Bakeware
+item.cuttingboardItem.name=Cutting Board
+item.mortarandpestleItem.name=Mortar and Pestle
+item.mixingbowlItem.name=Mixing Bowl
+item.juicerItem.name=Juicer
+
+item.asparagusItem.name=Asparagus
+item.asparagusseedItem.name=Asparagus Seed
+item.grilledasparagusItem.name=Grilled Asparagus
+item.barleyItem.name=Barley
+item.barleyseedItem.name=Barley Seed
+item.beanItem.name=Beans
+item.beanseedItem.name=Bean Seed
+item.beetItem.name=Beet
+item.beetseedItem.name=Beet Seed
+item.broccoliItem.name=Broccoli
+item.broccoliseedItem.name=Broccoli Seed
+item.cauliflowerItem.name=Cauliflower
+item.cauliflowerseedItem.name=Cauliflower Seed
+item.celeryItem.name=Celery
+item.celeryseedItem.name=Celery Seed
+item.cranberryItem.name=Cranberry
+item.cranberryseedItem.name=Cranberry Seed
+item.garlicItem.name=Garlic
+item.garlicseedItem.name=Garlic Seed
+item.gingerItem.name=Ginger
+item.gingerseedItem.name=Ginger Seed
+item.leekItem.name=Leek
+item.leekseedItem.name=Leek Seed
+item.lettuceItem.name=Lettuce
+item.lettuceseedItem.name=Lettuce Seed
+item.oatsItem.name=Oats
+item.oatsseedItem.name=Oats Seed
+item.onionItem.name=Onion
+item.onionseedItem.name=Onion Seed
+item.parsnipItem.name=Parsnip
+item.parsnipseedItem.name=Parsnip Seed
+item.peanutItem.name=Peanut
+item.peanutseedItem.name=Peanut Seed
+item.pineappleItem.name=Pineapple
+item.pineappleseedItem.name=Pineapple Seed
+item.radishItem.name=Radish
+item.radishseedItem.name=Radish Seed
+item.riceItem.name=Rice
+item.riceseedItem.name=Rice Seed
+item.ricecakeItem.name=Rice Cake
+item.rutabagaItem.name=Rutabaga
+item.rutabagaseedItem.name=Rutabaga Seed
+item.ryeItem.name=Rye
+item.ryeseedItem.name=Rye Seed
+item.scallionItem.name=Scallion
+item.scallionseedItem.name=Scallion Seed
+item.soybeanItem.name=Soybean
+item.soybeanseedItem.name=Soybean Seed
+item.spiceleafItem.name=Spice Leaf
+item.spiceleafseedItem.name=Spice Leaf Seed
+item.sunflowerseedsItem.name=Sunflower Seeds
+item.sunflowerseedItem.name=Sunflower Seed
+item.sweetpotatoItem.name=Sweet Potato
+item.sweetpotatoseedItem.name=Sweet Potato Seed
+item.bakedsweetpotatoItem.name=Baked Sweet Potato
+item.tealeafItem.name=Tea Leaf
+item.teaseedItem.name=Tea Seed
+item.teaItem.name=Cup of Tea
+item.turnipItem.name=Turnip
+item.turnipseedItem.name=Turnip Seed
+item.whitemushroomItem.name=White Mushroom
+item.whitemushroomseedItem.name=White Mushroom Spore
+        
+item.artichokeItem.name=Artichoke
+item.artichokeseedItem.name=Artichoke Seed
+item.bellpepperItem.name=Bellpepper
+item.bellpepperseedItem.name=Bellpepper Seed
+item.blackberryItem.name=Blackberry
+item.blackberryseedItem.name=Blackberry Seed
+item.blueberryItem.name=Blueberry
+item.blueberryseedItem.name=Blueberry Seed
+item.brusselsproutItem.name=Brussel Sprout
+item.brusselsproutseedItem.name=Brussel Sprout Seed
+item.cabbageItem.name=Cabbage
+item.cabbageseedItem.name=Cabbage Seed
+item.cactusfruitItem.name=Cactus Fruit
+item.cactusfruitseedItem.name=Cactus Fruit Seed
+item.candleberryItem.name=Candleberry
+item.candleberryseedItem.name=Candleberry Seed
+item.waxItem.name=Wax
+item.cantaloupeItem.name=Cantaloupe
+item.cantaloupeseedItem.name=Cantaloupe Seed
+item.chilipepperItem.name=Chili Pepper
+item.chilipepperseedItem.name=Chili Pepper Seed
+item.coffeebeanItem.name=Coffee Beans
+item.coffeeseedItem.name=Coffee Seed
+item.coffeeItem.name=Cup of Coffee
+item.cornItem.name=Corn
+item.cornseedItem.name=Corn Seed
+item.popcornItem.name=Popcorn
+item.cottonItem.name=Cotton
+item.cottonseedItem.name=Cotton Seed
+item.wovencottonItem.name=Woven Cotton
+item.cucumberItem.name=Cucumber
+item.cucumberseedItem.name=Cucumber Seed
+item.eggplantItem.name=Eggplant
+item.eggplantseedItem.name=Eggplant Seed
+item.grilledeggplantItem.name=Grilled Eggplant
+item.grapeItem.name=Grape
+item.grapeseedItem.name=Grape Seed
+item.raisinsItem.name=Raisins
+item.kiwiItem.name=Kiwi
+item.kiwiseedItem.name=Kiwi Seed
+item.mustardseedsItem.name=Mustard Seeds
+item.mustardseedItem.name=Mustard Seed
+item.okraItem.name=Okra
+item.okraseedItem.name=Okra Seed
+item.peasItem.name=Peas
+item.peasseedItem.name=Peas Seed
+item.raspberryItem.name=Raspberry
+item.raspberryseedItem.name=Raspberry Seed
+item.rhubarbItem.name=Rhubarb
+item.rhubarbseedItem.name=Rhubarb Seed
+item.seaweedItem.name=Seaweed
+item.seaweedseedItem.name=Seaweed Seed
+item.strawberryItem.name=Strawberry
+item.strawberryseedItem.name=Strawberry Seed
+item.tomatoItem.name=Tomato
+item.tomatoseedItem.name=Tomato Seed
+item.wintersquashItem.name=Winter Squash
+item.wintersquashseedItem.name=Winter Squash Seed
+item.zucchiniItem.name=Zucchini
+item.zucchiniseedItem.name=Zucchini Seed
+item.bambooshootItem.name=Bamboo Shoot
+item.bambooshootseedItem.name=Bamboo Shoot Seed
+item.spinachItem.name=Spinach
+item.spinachseedItem.name=Spinach Seed
+item.curryleafItem.name=Curry Leaf
+item.curryleafseedItem.name=Curry Leaf Seed
+item.sesameseedsItem.name=Sesame Seeds
+item.sesameseedsseedItem.name=Sesame Seeds Seed
+item.waterchestnutItem.name=Water Chestnut
+item.waterchestnutseedItem.name=Water Chestnut Seed
+        
+item.almondItem.name=Almond
+item.apricotItem.name=Apricot
+item.avocadoItem.name=Avocado
+item.bananaItem.name=Banana
+item.cashewItem.name=Cashew
+item.cherryItem.name=Cherry
+item.chestnutItem.name=Chestnut
+item.cinnamonItem.name=Cinnamon
+item.coconutItem.name=Coconut
+item.dateItem.name=Date
+item.dragonfruitItem.name=Dragonfruit
+item.durianItem.name=Durian
+item.figItem.name=Fig
+item.grapefruitItem.name=Grapefruit
+item.lemonItem.name=Lemon
+item.limeItem.name=Lime
+item.maplesyrupItem.name=Maple Syrup
+item.mangoItem.name=Mango
+item.nutmegItem.name=Nutmeg
+item.oliveItem.name=Olive
+item.orangeItem.name=Orange
+item.papayaItem.name=Papaya
+item.peachItem.name=Peach
+item.pearItem.name=Pear
+item.pecanItem.name=Pecan
+item.peppercornItem.name=Peppercorn
+item.persimmonItem.name=Persimmon
+item.pistachioItem.name=Pistachio
+item.plumItem.name=Plum
+item.pomegranateItem.name=Pomegranate
+item.starfruitItem.name=Starfruit
+item.vanillabeanItem.name=Vanilla Bean
+item.walnutItem.name=Walnut
+item.gooseberryItem.name=Gooseberry
+
+item.grilledasparagusItem.name=Grilled Asparagus
+item.ricecakeItem.name=Rice Cake
+item.bakedsweetpotatoItem.name=Baked Sweet Potato
+item.teaItem.name=Cup of Tea
+item.coffeeItem.name=Cup of Coffee
+item.grilledeggplantItem.name=Grilled Eggplant
+item.toastedcoconutItem.name=Toasted Coconut
+item.vanillaItem.name=Vanilla
+item.toastedsesameseedsItem.name=Toasted Sesame Seeds
+        
+item.saltItem.name=Salt
+item.flourItem.name=Flour
+item.doughItem.name=Dough
+item.toastItem.name=Toast
+item.pastaItem.name=Pasta
+item.heavycreamItem.name=Heavy Cream
+item.butterItem.name=Butter
+item.cheeseItem.name=Cheese
+item.icecreamItem.name=Ice Cream
+item.grilledcheeseItem.name=Grilled Cheese
+item.applesauceItem.name=Apple Sauce
+item.applejuiceItem.name=Apple Juice
+item.applepieItem.name=Apple Pie
+item.caramelappleItem.name=Caramel Apple
+item.pumpkinbreadItem.name=Pumpkin Bread
+item.roastedpumpkinseedsItem.name=Roasted Pumpkin Seeds
+item.pumpkinsoupItem.name=Pumpkin Soup
+item.melonjuiceItem.name=Melon Juice
+item.melonsmoothieItem.name=Melon Smoothie
+item.carrotjuiceItem.name=Carrot Juice
+item.carrotcakeItem.name=Carrot Cake
+item.carrotsoupItem.name=Carrot Soup
+item.glazedcarrotsItem.name=Glazed Carrots
+item.butteredpotatoItem.name=Buttered Potato
+item.loadedbakedpotatoItem.name=Loaded Baked Potato
+item.mashedpotatoesItem.name=Mashed Potatoes
+item.potatosaladItem.name=Potato Salad
+item.potatosoupItem.name=Potato Soup
+item.friesItem.name=Fries
+item.grilledmushroomItem.name=Grilled Mushroom
+item.stuffedmushroomItem.name=Stuffed Mushroom
+item.chickensandwichItem.name=Chicken Sandwich
+item.chickennoodlesoupItem.name=Chicken Noodle Soup
+item.chickenpotpieItem.name=Chicken Pot Pie
+item.breadedporkchopItem.name=Breaded Porkchop
+item.hotdogItem.name=Hotdog
+item.bakedhamItem.name=Baked Ham
+item.hamburgerItem.name=Hamburger
+item.cheeseburgerItem.name=Cheeseburger
+item.baconcheeseburgerItem.name=Bacon Cheeseburger
+item.potroastItem.name=Pot Roast
+item.fishsandwichItem.name=Fish Sandwich
+item.fishsticksItem.name=Fish Sticks
+item.fishandchipsItem.name=Fish and Chips
+item.mayoItem.name=Mayo
+item.friedeggItem.name=Fried Egg
+item.scrambledeggItem.name=Scrambled Egg
+item.boiledeggItem.name=Boiled Egg
+item.eggsaladItem.name=Egg Salad
+item.caramelItem.name=Caramel
+item.taffyItem.name=Taffy
+item.spidereyesoupItem.name=Spider Eye Soup
+item.zombiejerkyItem.name=Zombie Jerky
+item.cocoapowderItem.name=Cocoa Powder
+item.chocolatebarItem.name=Chocolate Bar
+item.hotchocolateItem.name=Hot Chocolate
+item.chocolateicecreamItem.name=Chocolate Ice Cream
+item.vegetablesoupItem.name=Vegetable Soup
+item.stockItem.name=Stock
+item.fruitsaladItem.name=Fruit Salad
+        
+item.spagettiItem.name=Spagetti
+item.spagettiandmeatballsItem.name=Spagetti and Meatballs
+item.tomatosoupItem.name=Tomato Soup
+item.ketchupItem.name=Ketchup
+item.chickenparmasanItem.name=Chicken Parmasan
+item.pizzaItem.name=Pizza
+        
+item.springsaladItem.name=Spring Salad
+item.porklettucewrapItem.name=Pork Lettuce Wrap
+item.fishlettucewrapItem.name=Fish Lettuce Wrap
+item.bltItem.name=BLT
+item.leafychickensandwichItem.name=Leafy Chicken Sandwich
+item.leafyfishsandwichItem.name=Leafy Fish Sandwich
+item.deluxecheeseburgerItem.name=Deluxe Cheeseburger
+item.delightedmealItem.name=Delighted Meal
+        
+item.onionsoupItem.name=Onion Soup
+item.potatocakesItem.name=Potato Cakes
+item.hashItem.name=Hash
+item.braisedonionsItem.name=Braised Onions
+item.heartybreakfastItem.name=Hearty Breakfast
+
+item.cornonthecobItem.name=Corn on the Cob
+item.cornmealItem.name=Cornmeal
+item.cornbreadItem.name=Cornbread
+item.tortillaItem.name=Tortilla
+item.nachoesItem.name=Nachoes
+item.tacoItem.name=Taco
+item.fishtacoItem.name=Fish Taco
+item.creamedcornItem.name=Creamed Corn
+        
+item.strawberrysmoothieItem.name=Strawberry Smoothie
+item.strawberrypieItem.name=Strawberry Pie
+item.strawberrysaladItem.name=Strawberry Salad
+item.strawberryjuiceItem.name=Strawberry Juice
+item.chocolatestrawberryItem.name=Chocolate Strawberry
+        
+item.peanutbutterItem.name=Peanut Butter
+item.trailmixItem.name=Trail Mix
+item.pbandjItem.name=PB&J
+item.peanutbuttercookiesItem.name=Peanut Butter Cookies
+        
+item.grapejuiceItem.name=Grape Juice
+item.vinegarItem.name=Vinegar
+item.grapejellyItem.name=Grape Jelly
+item.grapesaladItem.name=Grape Salad
+item.raisincookiesItem.name=Raisin Cookies
+        
+item.picklesItem.name=Pickles
+item.cucumbersaladItem.name=Cucumber Salad
+item.cucumbersoupItem.name=Cucumber Soup
+item.vegetarianlettucewrapItem.name=Vegetarian Lettuce Wrap
+item.marinatedcucumbersItem.name=Marinated Cucumbers
+
+item.ricesoupItem.name=Rice Soup
+item.friedriceItem.name=Fried Rice
+item.mushroomrisottoItem.name=Mushroom Risotto
+item.curryItem.name=Curry Rice
+item.rainbowcurryItem.name=Rainbow Curry
+        
+item.refriedbeansItem.name=Refried Beans
+item.bakedbeansItem.name=Baked Beans
+item.beansandriceItem.name=Beans and Rice
+item.chiliItem.name=Chili
+item.beanburritoItem.name=Bean Burrito
+        
+item.stuffedpepperItem.name=Stuffed Pepper
+item.veggiestirfryItem.name=Veggie Stirfry
+item.grilledskewersItem.name=Grilled Skewer
+item.supremepizzaItem.name=Supreme Pizza
+item.omeletItem.name=Omelet
+        
+item.hotwingsItem.name=Hot Wings
+item.chilipoppersItem.name=Chili Poppers
+item.extremechiliItem.name=Extreme Chili
+item.chilichocolateItem.name=Chili Chocolate
+        
+item.lemonaideItem.name=Lemonade
+item.lemonbarItem.name=Lemon Bar
+item.fishdinnerItem.name=Fish Dinner
+item.lemonsmoothieItem.name=Lemon Smoothie
+item.lemonmeringueItem.name=Lemon Meringue
+item.candiedlemonItem.name=Candied Lemon
+item.lemonchickenItem.name=Lemon Chicken
+        
+item.blueberrysmoothieItem.name=Blueberry Smoothie
+item.blueberrypieItem.name=Blueberry Pie
+item.blueberrymuffinItem.name=Blueberry Muffin
+item.blueberryjuiceItem.name=Blueberry Juice
+item.pancakesItem.name=Pancakes
+item.blueberrypancakesItem.name=Blueberry Pancakes
+        
+item.cherryjuiceItem.name=Cherry Juice
+item.cherrypieItem.name=Cherry Pie
+item.chocolatecherryItem.name=Chocolate Cherry
+item.cherrysmoothieItem.name=Cherry Smoothie
+item.cheesecakeItem.name=Cheesecake
+item.cherrycheesecakeItem.name=Cherry Cheesecake
+        
+item.stuffedeggplantItem.name=Stuffed Eggplant
+item.eggplantparmItem.name=Eggplant Parm
+        
+item.raspberryicedteaItem.name=Raspberry Iced Tea
+item.chaiteaItem.name=Chai Tea
+        
+item.espressoItem.name=Espresso
+item.coffeeconlecheItem.name=Coffee con Leche
+item.mochaicecreamItem.name=Mocha Ice Cream
+        
+item.pickledbeetsItem.name=Pickled Beets
+item.beetsaladItem.name=Beet Salad
+item.beetsoupItem.name=Beet Soup
+item.bakedbeetsItem.name=Baked Beets
+        
+item.broccolimacItem.name=Broccoli Mac
+item.broccolindipItem.name=Broccoli n Dip
+item.creamedbroccolisoupItem.name=Creamed Broccoli Soup
+        
+item.sweetpotatopieItem.name=Sweet Potato Pie
+item.candiedsweetpotatoesItem.name=Candied Sweet Potatoes
+item.mashedsweetpotatoesItem.name=Mashed Sweet Potatoes
+        
+item.steamedpeasItem.name=Steamed Peas
+item.splitpeasoupItem.name=Split Pea Soup
+        
+item.pineappleupsidedowncakeItem.name=Pineapple Upsidedown Cake
+item.pineapplehamItem.name=Pineapple Ham
+item.pineappleyogurtItem.name=Pineapple Yogurt
+        
+item.turnipsoupItem.name=Turnip Soup
+item.roastedrootveggiemedleyItem.name=Roasted Root Veggie Medley
+item.bakedturnipsItem.name=Baked Turnips
+        
+item.gingerbreadItem.name=Ginger Bread
+item.gingersnapsItem.name=Ginger Snaps
+item.candiedgingerItem.name=Candied Ginger
+        
+item.mustardItem.name=Mustard
+item.softpretzelandmustardItem.name=Soft Pretzel and Mustard
+item.spicymustardporkItem.name=Spicy Mustard Pork
+item.spicygreensItem.name=Spicy Greens
+        
+item.garlicbreadItem.name=Garlic Bread
+item.garlicmashedpotatoesItem.name=Garlic Mashed Potatoes
+item.garlicchickenItem.name=Garlic Chicken
+        
+item.summerradishsaladItem.name=Summer Radish Salad
+item.summersquashwithradishItem.name=Summer Squash with Radish
+        
+item.celeryandpeanutbutterItem.name=Celery and Peanut Butter
+item.chickencelerycasseroleItem.name=Chicken Celery Casserole
+item.peasandceleryItem.name=Peas and Celery
+item.celerysoupItem.name=Celery Soup
+        
+item.zucchinibreadItem.name=Zucchini Bread
+item.zucchinifriesItem.name=Zucchini Fries
+item.zestyzucchiniItem.name=Zesty Zucchini
+item.zucchinibakeItem.name=Zucchini Bake
+        
+item.asparagusquicheItem.name=Asparagus Quiche
+item.asparagussoupItem.name=Asparagus Soup
+        
+item.walnutraisinbreadItem.name=Walnut Raisin Bread
+item.candiedwalnutsItem.name=Candied Walnuts
+item.brownieItem.name=Brownie
+        
+item.papayajuiceItem.name=Papaya Juice
+item.papayasmoothieItem.name=Papaya Smoothie
+item.papayayogurtItem.name=Papaya Yogurt
+        
+item.starfruitjuiceItem.name=Starfruit Juice
+item.starfruitsmoothieItem.name=Starfruit Smoothie
+item.starfruityogurtItem.name=Starfruit Yogurt
+        
+item.guacamoleItem.name=Guacamole
+item.creamofavocadosoupItem.name=Cream of Avocado Soup
+item.avocadoburritoItem.name=Avocado Burrito
+        
+item.poachedpearItem.name=Poached Pear
+item.fruitcrumbleItem.name=Fruit Crumble
+item.pearyogurtItem.name=Pear Yogurt
+item.plumyogurtItem.name=Plum Yogurt
+        
+item.bananasplitItem.name=Banana Split
+item.banananutbreadItem.name=Banana Nut Bread
+item.bananasmoothieItem.name=Banana Smoothie
+item.bananayogurtItem.name=Banana Yogurt
+        
+item.coconutmilkItem.name=Coconut Milk
+item.chickencurryItem.name=Chicken Curry
+item.coconutshrimpItem.name=Coconut Shrimp
+item.coconutyogurtItem.name=Coconut Yogurt
+        
+item.orangejuiceItem.name=Orange Juice
+item.orangechickenItem.name=Orange Chicken
+item.orangesmoothieItem.name=Orange Smoothie
+item.orangeyogurtItem.name=Orange Yogurt
+        
+item.peachjuiceItem.name=Peach Juice
+item.peachcobblerItem.name=Peach Cobbler
+item.peachsmoothieItem.name=Peach Smoothie
+item.peachyogurtItem.name=Peach Yogurt
+        
+item.limejuiceItem.name=Lime Juice
+item.keylimepieItem.name=Keylime Pie
+item.limesmoothieItem.name=Lime Smoothie
+item.limeyogurtItem.name=Lime Yogurt
+        
+item.mangojuiceItem.name=Mango Juice
+item.mangosmoothieItem.name=Mango Smoothie
+item.mangoyogurtItem.name=Mango Yogurt
+        
+item.pomegranatejuiceItem.name=Pomegranate Juice
+item.pomegranatesmoothieItem.name=Pomegranate Smoothie
+item.pomegranateyogurtItem.name=Pomegranate Yogurt
+        
+item.vanillayogurtItem.name=Vanilla Yogurt
+        
+item.cinnamonrollItem.name=Cinnamon Roll
+item.frenchtoastItem.name=French Toast
+        
+item.marshmellowsItem.name=Marshmellows
+item.donutItem.name=Donut
+item.chocolatedonutItem.name=Chocolate Donut
+item.powdereddonutItem.name=Powdered Donut
+item.jellydonutItem.name=Jelly Donut
+item.frosteddonutItem.name=Frosted Donut
+        
+item.cactussoupItem.name=Cactus Soup
+item.wafflesItem.name=Waffles
+item.seedsoupItem.name=Seed Soup
+item.softpretzelItem.name=Soft Pretzel
+item.jellybeansItem.name=Jellybeans
+item.biscuitItem.name=Biscuit
+        
+item.creamcookieItem.name=Cream Cookie
+item.jaffaItem.name=Jaffa
+item.friedchickenItem.name=Fried Chicken
+item.chocolatesprinklecakeItem.name=Chocolate Spinkles Cake
+item.redvelvetcakeItem.name=Red Velvet Cake
+item.footlongItem.name=Footlong
+        
+item.blueberryyogurtItem.name=Blueberry Yogurt
+item.lemonyogurtItem.name=Lemon Yogurt
+item.cherryyogurtItem.name=Cherry Yogurt
+item.strawberryyogurtItem.name=Strawberry Yogurt
+item.grapeyogurtItem.name=Grape Yogurt
+item.chocolateyogurtItem.name=Chocolate Yogurt
+        
+item.blackberryjuiceItem.name=Blackberry Juice
+item.blackberrycobblerItem.name=Blackberry Cobbler
+item.blackberrysmoothieItem.name=Blackberry Smoothie
+item.blackberryyogurtItem.name=Blackberry Yogurt
+item.chocolatemilkItem.name=Chocolate Milk
+item.pumpkinyogurtItem.name=Pumpkin Yogurt
+        
+item.raspberryjuiceItem.name=Raspberry Juice
+item.raspberrypieItem.name=Raspberry Pie
+item.raspberrysmoothieItem.name=Raspberry Smoothie
+item.raspberryyogurtItem.name=Raspberry Yogurt
+item.cinnamonsugardonutItem.name=Cinnamon Sugar Donut
+item.melonyogurtItem.name=Melon Yogurt
+        
+item.kiwijuiceItem.name=Kiwi Juice
+item.kiwismoothieItem.name=Kiwi Smoothie
+item.kiwiyogurtItem.name=Kiwi Yogurt
+item.plainyogurtItem.name=Plain Yogurt
+item.appleyogurtItem.name=Apple Yogurt
+        
+item.saltedsunflowerseedsItem.name=Salted Sunflower Seeds
+item.sunflowerwheatrollsItem.name=Sunflower Wheat Rolls
+item.sunflowerbroccolisaladItem.name=Sunflower Broccoli Salad
+        
+item.cranberryjuiceItem.name=Cranberry Juice
+item.cranberrysauceItem.name=Cranberry Sauce
+item.cranberrybarItem.name=Cranberry Bar
+        
+item.peppermintItem.name=Peppermint
+        
+item.cactusfruitjuiceItem.name=Cactus Fruit Juice
+        
+item.blackpepperItem.name=Black Pepper
+item.groundcinnamonItem.name=Ground Cinnamon
+item.groundnutmegItem.name=Ground Nutmeg
+item.oliveoilItem.name=Cooking Oil
+        
+item.baklavaItem.name=Baklava
+item.gummybearsItem.name=Gummy Bears
+item.baconmushroomburgerItem.name=Bacon Mushroom Burger
+item.fruitpunchItem.name=Fruit Punch
+item.meatystewItem.name=Meaty Stew
+item.mixedsaladItem.name=Mixed Salad
+item.pinacoladaItem.name=Pinacolada
+item.saladdressingItem.name=Salad Dressing
+item.shepardspieItem.name=Shepherd's Pie
+item.eggnogItem.name=Egg Nog
+item.custardItem.name=Custard
+item.sushiItem.name=Sushi
+item.gardensoupItem.name=Garden Soup
+        
+item.freshwaterItem.name=Fresh Water
+item.freshmilkItem.name=Fresh Milk
+        
+item.muttonrawItem.name=Raw Mutton
+item.muttoncookedItem.name=Cooked Mutton
+item.calamarirawItem.name=Raw Calamari
+item.calamaricookedItem.name=Cooked Calamari
+        
+item.applejellyItem.name=Apple Jelly
+item.applejellysandwichItem.name=Apple Jelly Sandwich
+item.blackberryjellyItem.name=Blackberry Jelly
+item.blackberryjellysandwichItem.name=Blackberry Jelly Sandwich
+item.blueberryjellyItem.name=Blueberry Jelly
+item.blueberryjellysandwichItem.name=Blueberry Jelly Sandwich
+item.cherryjellyItem.name=Cherry Jelly
+item.cherryjellysandwichItem.name=Cherry Jelly Sandwich
+item.cranberryjellyItem.name=Cranberry Jelly
+item.cranberryjellysandwichItem.name=Cranberry Jelly Sandwich
+item.kiwijellyItem.name=Kiwi Jelly
+item.kiwijellysandwichItem.name=Kiwi Jelly Sandwich
+item.lemonjellyItem.name=Lemon Jelly
+item.lemonjellysandwichItem.name=Lemon Jelly Sandwich
+item.limejellyItem.name=Lime Jelly
+item.limejellysandwichItem.name=Lime Jelly Sandwich
+item.mangojellyItem.name=Mango Jelly
+item.mangojellysandwichItem.name=Mango Jelly Sandwich
+item.orangejellyItem.name=Orange Jelly
+item.orangejellysandwichItem.name=Orange Jelly Sandwich
+item.papayajellyItem.name=Papaya Jelly
+item.papayajellysandwichItem.name=Papaya Jelly Sandwich
+item.peachjellyItem.name=Peach Jelly
+item.peachjellysandwichItem.name=Peach Jelly Sandwich
+item.pomegranatejellyItem.name=Pomegranate Jelly
+item.pomegranatejellysandwichItem.name=Pomegranate Jelly Sandwich
+item.raspberryjellyItem.name=Raspberry Jelly
+item.raspberryjellysandwichItem.name=Raspberry Jelly Sandwich
+item.starfruitjellyItem.name=Starfruit Jelly
+item.starfruitjellysandwichItem.name=Starfruit Jelly Sandwich
+item.strawberryjellyItem.name=Strawberry Jelly
+item.strawberryjellysandwichItem.name=Strawberry Jelly Sandwich
+item.watermelonjellyItem.name=Watermelon Jelly
+item.watermelonjellysandwichItem.name=Watermelon Jelly Sandwich
+        
+item.bubblywaterItem.name=Bubbly Water
+item.cherrysodaItem.name=Cherry Soda
+item.colasodaItem.name=Cola Soda
+item.gingersodaItem.name=Ginger Ale
+item.grapesodaItem.name=Grape Soda
+item.lemonlimesodaItem.name=Lemon-Lime Soda
+item.orangesodaItem.name=Orange Soda
+item.rootbeersodaItem.name=Root Beer
+item.strawberrysodaItem.name=Strawberry Soda
+        
+item.caramelicecreamItem.name=Caramel Ice Cream
+item.mintchocolatechipicecreamItem.name=Mint Chocolate Chip Ice Cream
+item.strawberryicecreamItem.name=Strawberry Ice Cream
+item.vanillaicecreamItem.name=Vanilla Ice Cream
+        
+item.ediblerootItem.name=Edible Root
+        
+item.gingerchickenItem.name=Ginger Chicken
+        
+item.oldworldveggiesoupItem.name=Old World Veggie Soup
+item.spicebunItem.name=Spice Bun
+item.gingeredrhubarbtartItem.name=Gingered Rhubarb Tart
+item.lambbarleysoupItem.name=Lamb Barley Soup
+item.honeylemonlambItem.name=Honey Lemon Lamb
+item.pumpkinoatsconesItem.name=Pumpkin Oat Scones
+item.beefjerkyItem.name=Beef Jerky
+item.plumjuiceItem.name=Plum Juice
+item.pearjuiceItem.name=Pear Juice
+item.ovenroastedcauliflowerItem.name=Oven Roasted Cauliflower
+item.leekbaconsoupItem.name=Leek Bacon Soup
+item.herbbutterparsnipsItem.name=Herb Butter Parsnips
+item.scallionbakedpotatoItem.name=Scallion Baked Potato
+item.soymilkItem.name=Soy Milk
+item.firmtofuItem.name=Firm Tofu
+item.silkentofuItem.name=Silken Tofu
+
+item.bamboosteamedriceItem.name=Bamboo Steamed Rice
+item.roastedchestnutItem.name=Roasted Chestnut
+item.sweetpotatosouffleItem.name=Sweet Potato Souffle
+item.cashewchickenItem.name=Cashew Chicken
+item.apricotjuiceItem.name=Apricot Juice
+item.apricotyogurtItem.name=Apricot Yogurt
+item.apricotglazedporkItem.name=Apricot Glazed Pork
+item.apricotjellyItem.name=Apricot Jelly
+item.apricotjellysandwichItem.name=Apricot Jelly Sandwich
+item.apricotsmoothieItem.name=Apricot Smoothie
+item.figbarItem.name=Fig Bar
+item.figjellyItem.name=Fig Jelly
+item.figjellysandwichItem.name=Fig Jelly Sandwich
+item.figsmoothieItem.name=Fig Smoothie
+item.figyogurtItem.name=Fig Yogurt
+item.figjuiceItem.name=Fig Juice
+item.grapefruitjuiceItem.name=Grapfruit Juice
+item.grapefruitjellyItem.name=Grapefruit Jelly
+item.grapefruitjellysandwichItem.name=Grapefruit Jelly Sandwich
+item.grapefruitsmoothieItem.name=Grapefruit Smoothie
+item.grapefruityogurtItem.name=Grapefruit Yogurt
+item.grapefruitsodaItem.name=Grapefruit Soda
+item.citrussaladItem.name=Citrus Salad
+item.pecanpieItem.name=Pecan Pie
+item.pralinesItem.name=Pralines
+item.persimmonjuiceItem.name=Persimmon Juice
+item.persimmonyogurtItem.name=Persimmon Yogurt
+item.persimmonsmoothieItem.name=Persimmon Smoothie
+item.persimmonjellyItem.name=Persimmon Jelly
+item.persimmonjellysandwichItem.name=Persimmon Jelly Sandwich
+item.pistachiobakedsalmonItem.name=Pistachio Baked Salmon
+item.baconwrappeddatesItem.name=Bacon Wrapped Dates
+item.datenutbreadItem.name=Date Nut Bread
+item.maplesyruppancakesItem.name=Maple Syrup Pancakes
+item.maplesyrupwafflesItem.name=Maple Syrup Waffles
+item.maplesausageItem.name=Maple Sausage
+item.mapleoatmealItem.name=Maple Oatmeal
+item.peachesandcreamoatmealItem.name=Peaches and Cream Oatmeal
+item.cinnamonappleoatmealItem.name=Cinnamon Apple Oatmeal
+item.maplecandiedbaconItem.name=Maple Candied Bacon
+item.toastsandwichItem.name=Toast Sandwich
+item.potatoandcheesepirogiItem.name=Potato and Cheese Pirogi
+item.zeppoleItem.name=Zeppole
+item.sausageinbreadItem.name=Sausage in Bread
+item.chocolatecaramelfudgeItem.name=Chocolate Caramel Fudge
+item.lavendershortbreadItem.name=Lavender Shortbread
+item.beefwellingtonItem.name=Beef Wellington
+item.epicbaconItem.name=Epic Bacon
+item.manjuuItem.name=Manjuu
+
+item.chickengumboItem.name=Chicken Gumbo
+item.generaltsochickenItem.name=General Tso's Chicken
+item.californiarollItem.name=California Roll
+item.futomakiItem.name=Futo Maki
+item.beansontoastItem.name=Beans on Toast
+item.vegemiteItem.name=Vegemite
+item.honeycombchocolatebarItem.name=Honeycomb Chocolate Bar
+item.cherrycoconutchocolatebarItem.name=Cherry Coconut Chocolate Bar
+item.fairybreadItem.name=Fairy Bread
+item.lamingtonItem.name=Lamington
+item.timtamItem.name=Tim Tam
+item.meatpieItem.name=Meat Pie
+item.chikorollItem.name=Chiko Roll
+item.damperItem.name=Damper
+item.beetburgerItem.name=Beet Burger
+item.pavlovaItem.name=Pavlova
+item.gherkinItem.name=Gherkin
+item.mcpamItem.name=McPam
+
+item.ceasarsaladItem.name=Ceasar Salad
+item.chaoscookieItem.name=Chaos Cookie
+item.chocolatebaconItem.name=Chocolate Bacon
+item.lambkebabItem.name=Lamb Kebab
+item.nutellaItem.name=Nutella
+item.snickersbarItem.name=Snickers Bar
+item.spinachpieItem.name=Spinach Pie
+item.steamedspinachItem.name=Steamed Spinach
+item.vegemiteontoastItem.name=Vegemite on Toast
+    
+item.anchovyrawItem.name=Raw Anchovy
+item.bassrawItem.name=Raw Bass
+item.carprawItem.name=Raw Carp
+item.catfishrawItem.name=Raw Catfish
+item.charrrawItem.name=Raw Charr
+item.clamrawItem.name=Raw Clam
+item.crabrawItem.name=Raw Crab
+item.crayfishrawItem.name=Raw Crayfish
+item.eelrawItem.name=Raw Eel
+item.frograwItem.name=Raw Frog
+item.grouperrawItem.name=Raw Grouper
+item.herringrawItem.name=Raw Herring
+item.jellyfishrawItem.name=Raw Jellyfish
+item.mudfishrawItem.name=Raw Mudfish
+item.octopusrawItem.name=Raw Octopus
+item.perchrawItem.name=Raw Perch
+item.scalloprawItem.name=Raw Scallop
+item.shrimprawItem.name=Raw Shrimp
+item.snailrawItem.name=Raw Snail
+item.snapperrawItem.name=Raw Snapper
+item.tilapiarawItem.name=Raw Tilapia
+item.troutrawItem.name=Raw Trout
+item.tunarawItem.name=Raw Tuna
+item.turtlerawItem.name=Raw Turtle
+item.walleyerawItem.name=Raw Walleye
+
+item.holidaycakeItem.name=Holiday Cake
+
+item.clamcookedItem.name=Cooked Clam
+item.crabcookedItem.name=Cooked Crab
+item.crayfishcookedItem.name=Cooked Crayfish
+item.frogcookedItem.name=Cooked Frog Legs
+item.octopuscookedItem.name=Cooked Octopus
+item.scallopcookedItem.name=Cooked Scallop
+item.shrimpcookedItem.name=Cooked Shrimp
+item.snailcookedItem.name=Cooked Snail
+item.turtlecookedItem.name=Cooked Turtle
+    
+item.appleciderItem.name=Apple Cider
+item.bangersandmashItem.name=Bangers and Mash
+item.batteredsausageItem.name=Battered Sausage
+item.batterItem.name=Batter
+item.chorizoItem.name=Chorizo
+item.coleslawItem.name=Coleslaw
+item.energydrinkItem.name=Energy Drink
+item.friedonionsItem.name=Fried Onions
+item.meatfeastpizzaItem.name=Meat Feast Pizza
+item.mincepieItem.name=Mince Pie
+item.onionhamburgerItem.name=Onion Hamburger
+item.pepperoniItem.name=Pepperoni
+item.pickledonionsItem.name=Pickled Onions
+item.porksausageItem.name=Pork Sausage
+item.raspberrytrifleItem.name=Raspberry Trifle
+item.pumpkincheesecakeItem.name=Pumpkin Cheesecake
+item.pumpkinmuffinItem.name=Pumpkin Muffin
+item.suaderoItem.name=Suadero
+item.randomtacoItem.name=Random Taco
+
+item.turkeyrawItem.name=Raw Turkey
+item.turkeycookedItem.name=Cooked Turkey
+item.rabbitrawItem.name=Raw Rabbit
+item.rabbitcookedItem.name=Cooked Rabbit
+item.venisonrawItem.name=Raw Venison
+item.venisoncookedItem.name=Cooked Venison
+
+item.strawberrymilkshakeItem.name=Strawberry Milkshake
+item.chocolatemilkshakeItem.name=Chocolate Milkshake
+item.bananamilkshakeItem.name=Banana Milkeshake
+item.cornflakesItem.name=Cornflakes
+item.coleslawburgerItem.name=Coleslaw Burger
+item.roastchickenItem.name=Roast Chicken
+item.roastpotatoesItem.name=Roast Potatoes
+item.sundayroastItem.name=Sunday Roast
+item.bbqpulledporkItem.name=BBQ Pulled Pork
+item.lambwithmintsauceItem.name=Lamb with Mint Sauce
+item.steakandchipsItem.name=Steak and Chips
+
+item.cherryicecreamItem.name=Cherry Ice Cream
+item.pistachioicecreamItem.name=Pistachio Ice Cream
+item.neapolitanicecreamItem.name=Neapolitan Ice Cream
+item.spumoniicecreamItem.name=Spumoni Ice Cream
+
+item.almondbutterItem.name=Almond Butter
+item.cashewbutterItem.name=Cashew Butter
+item.chestnutbutterItem.name=Chestnut Butter
+item.cornishpastyItem.name=Cornish Pasty
+item.cottagepieItem.name=Cottage Pie
+item.croissantItem.name=Croissant
+item.currypowderItem.name=Curry Powder
+item.dimsumItem.name=Dim Sum
+item.friedpecanokraItem.name=Fried Pecan Okra
+item.gooseberryjellyItem.name=Gooseberry Jelly
+item.gooseberryjellysandwichItem.name=Gooseberry Jelly Sandwich
+item.gooseberrymilkshakeItem.name=Gooseberry Milkshake
+item.gooseberrypieItem.name=Gooseberry Pie
+item.gooseberrysmoothieItem.name=Gooseberry Smoothie
+item.gooseberryyogurtItem.name=Gooseberry Yogurt
+item.greenheartfishItem.name=Green Heart Fish
+item.hamsweetpicklesandwichItem.name=Ham & Sweet Pickle Sandwich
+item.hushpuppiesItem.name=Hushpuppies
+item.kimchiItem.name=Kimchi
+item.mochiItem.name=Mochi
+item.museliItem.name=Museli
+item.naanItem.name=Naan
+item.okrachipsItem.name=Okra Chips
+item.okracreoleItem.name=Okra Creole
+item.pistachiobutterItem.name=Pistachio Butter
+item.ploughmanslunchItem.name=Ploughman's Lunch
+item.porklomeinItem.name=Pork Lo Mein
+item.salmonpattiesItem.name=Salmon Patties
+item.sausageItem.name=Sausage
+item.sausagerollItem.name=Sausage Roll
+item.sesameballItem.name=Sesame Ball
+item.sesamesnapsItem.name=Sesame Snaps
+item.shrimpokrahushpuppiesItem.name=Shrimp Pork Okra Hushpuppies
+item.soysauceItem.name=Soy Sauce
+item.sweetpickleItem.name=Sweet Pickle
+item.veggiestripsItem.name=Veggie Strips
+item.vindalooItem.name=Vindaloo
+
+item.applesmoothieItem.name=Apple Smoothie
+item.cheeseontoastItem.name=Cheese on Toast
+item.chocolaterollItem.name=Chocolate Roll
+item.coconutcreamItem.name=Coconut Cream
+item.coconutsmoothieItem.name=Coconut Smoothie
+item.crackerItem.name=Cracker
+item.cranberrysmoothieItem.name=Cranberry Smoothie
+item.cranberryyogurtItem.name=Cranberry Yogurt
+item.deluxechickencurryItem.name=Deluxe Chicken Curry
+item.garammasalaItem.name=Garam Masala
+item.grapesmoothieItem.name=Grape Smoothie
+item.gravyItem.name=Gravy
+item.honeysandwichItem.name=Honey Sandwich
+item.jamrollItem.name=Jam Roll
+item.mangochutneyItem.name=Mango Chutney
+item.marzipanItem.name=Marzipan
+item.paneerItem.name=Paneer
+item.paneertikkamasalaItem.name=Paneer Tikka Masala
+item.peaandhamsoupItem.name=Pea and Ham Soup
+item.pearjellyItem.name=Pear Jelly
+item.pearjellysandwichItem.name=Pear Jelly Sandwich
+item.pearsmoothieItem.name=Pear Smoothie
+item.plumjellyItem.name=Plum Jelly
+item.plumjellysandwichItem.name=Plum Jelly Sandwich
+item.plumsmoothieItem.name=Plum Smoothie
+item.potatoandleeksoupItem.name=Potato and Leek Soup
+item.toadintheholeItem.name=Toad in the Hole
+item.tunapotatoItem.name=Tuna Potato
+item.yorkshirepuddingItem.name=Yorkshire Pudding
+
+item.sesameoilItem.name=Sesame Oil
+item.hotandsoursoupItem.name=Hot and Sour Soup
+item.noodlesItem.name=Noodles
+item.chickenchowmeinItem.name=Chicken Chow Mein
+item.kungpaochickenItem.name=Kung Pao Chicken
+item.hoisinsauceItem.name=Hoisin Sauce
+item.fivespiceItem.name=Five Spice
+item.charsiuItem.name=Char Siu
+item.sweetandsoursauceItem.name=Sweet and Sour Sauce
+item.sweetandsourchickenItem.name=Sweet and Sour Chicken
+item.baconandeggsItem.name=Bacon and Eggs
+item.biscuitsandgravyItem.name=Biscuits and Gravy
+item.applefritterItem.name=Apple Fritter
+item.sweetteaItem.name=Sweet Tea
+item.creepercookieItem.name=Creeper Cookie
+item.patreonpieItem.name=Patreon Pie
+
+item.honeybreadItem.name=Honey Bread
+item.honeybunItem.name=Honeybun
+item.honeyglazedcarrotsItem.name=Honey Glazed Carrots
+item.honeyglazedhamItem.name=Honey Glazed Ham
+item.honeysoyribsItem.name=Honey Soy Ribs
+
+item.rawtofeakItem.name=Raw Tofeak
+item.rawtofaconItem.name=Raw Tofacon
+item.rawtofishItem.name=Raw Tofish
+item.rawtofeegItem.name=Raw Tofeeg
+item.rawtofuttonItem.name=Raw Tofutton
+item.rawtofickenItem.name=Raw Toficken
+item.rawtofabbitItem.name=Raw Tofabbit
+item.rawtofurkeyItem.name=Raw Tofurkey
+item.rawtofenisonItem.name=Raw Tofenison
+
+item.cookedtofeakItem.name=Cooked Tofeak
+item.cookedtofaconItem.name=Cooked Tofacon
+item.cookedtofishItem.name=Cooked Tofish
+item.cookedtofeegItem.name=Cooked Tofeeg
+item.cookedtofuttonItem.name=Cooked Tofutton
+item.cookedtofickenItem.name=Cooked Toficken
+item.cookedtofabbitItem.name=Cooked Tofabbit
+item.cookedtofurkeyItem.name=Cooked Tofurkey
+item.cookedtofenisonItem.name=Cooked Tofenison
+

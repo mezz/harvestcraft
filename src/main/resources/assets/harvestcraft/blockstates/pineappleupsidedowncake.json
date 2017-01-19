@@ -1,6 +1,7 @@
 
 {
     "variants": {
+    	"inventory": [{ "model": "harvestcraft:pineappleupsidedowncake_uneaten" }],
         "bites=0": { "model": "harvestcraft:pineappleupsidedowncake_uneaten" },
         "bites=1": { "model": "harvestcraft:pineappleupsidedowncake_slice1" },
         "bites=2": { "model": "harvestcraft:pineappleupsidedowncake_slice2" },

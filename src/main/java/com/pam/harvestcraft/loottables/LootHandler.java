@@ -1,5 +1,8 @@
 package com.pam.harvestcraft.loottables;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootEntry;
 import net.minecraft.world.storage.loot.LootPool;
@@ -7,9 +10,6 @@ import net.minecraft.world.storage.loot.LootTable;
 import net.minecraft.world.storage.loot.RandomValueRange;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraftforge.event.LootTableLoadEvent;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class LootHandler {
     public static final String SEPARATE_LOOT_POOL_ID = "harvestcraft";

@@ -1,12 +1,12 @@
 package com.pam.harvestcraft.loottables;
 
+import java.util.List;
+
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootEntryItem;
 import net.minecraft.world.storage.loot.LootPool;
 import net.minecraft.world.storage.loot.RandomValueRange;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
-
-import java.util.List;
 
 public class CustomLootPool {
 

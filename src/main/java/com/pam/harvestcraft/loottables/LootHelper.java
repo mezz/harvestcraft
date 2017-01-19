@@ -1,8 +1,13 @@
 package com.pam.harvestcraft.loottables;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
+
 import net.minecraft.item.Item;
 import net.minecraft.world.storage.loot.LootEntryItem;
 import net.minecraft.world.storage.loot.LootTableList;
@@ -11,10 +16,6 @@ import net.minecraft.world.storage.loot.conditions.KilledByPlayer;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraft.world.storage.loot.functions.LootFunction;
 import net.minecraft.world.storage.loot.functions.SetCount;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 
 public class LootHelper {
     public static final Set<CustomLootPool> additionalLootPools = new HashSet<CustomLootPool>();

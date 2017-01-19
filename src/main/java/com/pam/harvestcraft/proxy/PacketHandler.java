@@ -1,7 +1,13 @@
 package com.pam.harvestcraft.proxy;
 
 import com.pam.harvestcraft.Reference;
-import com.pam.harvestcraft.tileentities.*;
+import com.pam.harvestcraft.tileentities.MessageMarketBrowse;
+import com.pam.harvestcraft.tileentities.MessageMarketBuy;
+import com.pam.harvestcraft.tileentities.MessageMarketClosed;
+import com.pam.harvestcraft.tileentities.MessageShippingBinBrowse;
+import com.pam.harvestcraft.tileentities.MessageShippingBinBuy;
+import com.pam.harvestcraft.tileentities.MessageShippingBinClosed;
+
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;

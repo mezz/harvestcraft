@@ -2,7 +2,6 @@ package com.pam.bonecraft;
 
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;

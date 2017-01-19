@@ -1,5 +1,9 @@
 package com.pam.harvestcraft.worldgen;
 
+import java.util.Random;
+
+import javax.annotation.ParametersAreNonnullByDefault;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCocoa;
 import net.minecraft.block.BlockSapling;
@@ -12,9 +16,6 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
-
-import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.Random;
 
 public class FruitTreeGen extends WorldGenAbstractTree {
     private final int minTreeHeight;

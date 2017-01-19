@@ -10,51 +10,46 @@ import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
 public class MessageShippingBinBrowse implements IMessage, IMessageHandler<MessageShippingBinBrowse, IMessage> {
-    private int itemNum;
-    private int x;
-    private int y;
-    private int z;
+	private int itemNum;
+	private int x;
+	private int y;
+	private int z;
 
-    @SuppressWarnings("unused")
-    public MessageShippingBinBrowse() {}
+	public MessageShippingBinBrowse() {}
 
-    @SuppressWarnings("unused")
-    public MessageShippingBinBrowse(int itemNum, int x, int y, int z) {
-        this.itemNum = itemNum;
-        this.x = x;
-        this.y = y;
-        this.z = z;
-    }
+	public MessageShippingBinBrowse(int itemNum, int x, int y, int z) {
+		this.itemNum = itemNum;
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
 
+	public void fromBytes(ByteBuf buf) {
+		this.itemNum = buf.readInt();
+		this.x = buf.readInt();
+		this.y = buf.readInt();
+		this.z = buf.readInt();
+	}
 
-    public void fromBytes(ByteBuf buf) {
-        this.itemNum = buf.readInt();
-        this.x = buf.readInt();
-        this.y = buf.readInt();
-        this.z = buf.readInt();
-    }
+	public void toBytes(ByteBuf buf) {
+		buf.writeInt(this.itemNum);
+		buf.writeInt(this.x);
+		buf.writeInt(this.y);
+		buf.writeInt(this.z);
+	}
 
+	public IMessage onMessage(MessageShippingBinBrowse message, MessageContext ctx) {
+		EntityPlayerMP player = ctx.getServerHandler().playerEntity;
 
-    public void toBytes(ByteBuf buf) {
-        buf.writeInt(this.itemNum);
-        buf.writeInt(this.x);
-        buf.writeInt(this.y);
-        buf.writeInt(this.z);
-    }
+		TileEntity tile_entity = player.world.getTileEntity(new BlockPos(message.x, message.y, message.z));
+		if((tile_entity instanceof TileEntityShippingBin)) {
+			TileEntityShippingBin tileEntityShippingBin = (TileEntityShippingBin) tile_entity;
+			tileEntityShippingBin.setBrowsingInfo(message.itemNum);
+		}
 
-
-    public IMessage onMessage(MessageShippingBinBrowse message, MessageContext ctx) {
-        EntityPlayerMP player = ctx.getServerHandler().playerEntity;
-
-        TileEntity tile_entity = player.world.getTileEntity(new BlockPos(message.x, message.y, message.z));
-        if ((tile_entity instanceof TileEntityShippingBin)) {
-            TileEntityShippingBin tileEntityShippingBin = (TileEntityShippingBin) tile_entity;
-            tileEntityShippingBin.setBrowsingInfo(message.itemNum);
-        }
-
-        final IBlockState state = player.world.getBlockState(new BlockPos(message.x, message.y, message.z));
-        player.world.notifyBlockUpdate(new BlockPos(message.x, message.y, message.z), state, state, 3);
-        return null;
-    }
+		final IBlockState state = player.world.getBlockState(new BlockPos(message.x, message.y, message.z));
+		player.world.notifyBlockUpdate(new BlockPos(message.x, message.y, message.z), state, state, 3);
+		return null;
+	}
 
 }

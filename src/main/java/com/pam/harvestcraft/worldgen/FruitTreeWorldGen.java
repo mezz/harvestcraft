@@ -1,7 +1,12 @@
 package com.pam.harvestcraft.worldgen;
 
+import static com.pam.harvestcraft.HarvestCraft.config;
+
+import java.util.Random;
+
 import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.blocks.growables.BlockPamSapling;
+
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -9,10 +14,6 @@ import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.fml.common.IWorldGenerator;
-
-import java.util.Random;
-
-import static com.pam.harvestcraft.HarvestCraft.config;
 
 public class FruitTreeWorldGen implements IWorldGenerator {
 

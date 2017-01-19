@@ -1,18 +1,19 @@
 package com.pam.harvestcraft.config;
 
-import com.pam.harvestcraft.blocks.CropRegistry;
-import com.pam.harvestcraft.blocks.blocks.BlockBaseGarden;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.FMLLog;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.pam.harvestcraft.blocks.CropRegistry;
+import com.pam.harvestcraft.blocks.blocks.BlockBaseGarden;
+
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.FMLLog;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ConfigHandler {
 

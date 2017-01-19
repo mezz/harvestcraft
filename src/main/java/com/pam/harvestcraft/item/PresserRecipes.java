@@ -1,15 +1,16 @@
 package com.pam.harvestcraft.item;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class PresserRecipes {
     private static final Map<ItemStack, ItemStack[]> pressingList = new HashMap<ItemStack, ItemStack[]>();

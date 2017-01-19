@@ -1,6 +1,7 @@
 
 {
     "variants": {
+    	"inventory": [{ "model": "harvestcraft:chocolatesprinklecake_uneaten" }],
         "bites=0": { "model": "harvestcraft:chocolatesprinklecake_uneaten" },
         "bites=1": { "model": "harvestcraft:chocolatesprinklecake_slice1" },
         "bites=2": { "model": "harvestcraft:chocolatesprinklecake_slice2" },

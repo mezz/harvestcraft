@@ -2,7 +2,6 @@ package com.pam.desertcraft;
 
 import java.util.Random;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockGlass;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.relauncher.Side;

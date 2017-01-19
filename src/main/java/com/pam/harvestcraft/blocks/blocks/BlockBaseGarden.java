@@ -1,7 +1,17 @@
 package com.pam.harvestcraft.blocks.blocks;
 
+import static com.pam.harvestcraft.HarvestCraft.config;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.BlockRegistry;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.SoundType;
@@ -20,10 +30,6 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.event.ForgeEventFactory;
-
-import java.util.*;
-
-import static com.pam.harvestcraft.HarvestCraft.config;
 
 public class BlockBaseGarden extends BlockBush {
     public static final Map<String, List<ItemStack>> drops = new HashMap<String, List<ItemStack>>();

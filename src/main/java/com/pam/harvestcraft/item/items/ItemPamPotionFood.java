@@ -1,7 +1,10 @@
 package com.pam.harvestcraft.item.items;
 
+import java.util.List;
+
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.Reference;
+
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
@@ -10,8 +13,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.FMLLog;
-
-import java.util.List;
 
 public class ItemPamPotionFood extends ItemFood {
 

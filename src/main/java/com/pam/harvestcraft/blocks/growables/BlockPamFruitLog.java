@@ -1,6 +1,11 @@
 package com.pam.harvestcraft.blocks.growables;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 import com.pam.harvestcraft.HarvestCraft;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;
@@ -16,10 +21,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.FMLLog;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class BlockPamFruitLog extends Block implements IGrowable, PamCropGrowable {
 

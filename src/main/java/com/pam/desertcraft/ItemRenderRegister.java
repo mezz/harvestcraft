@@ -3,8 +3,6 @@ package com.pam.desertcraft;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraftforge.fml.common.FMLLog;
 
 public final class ItemRenderRegister {
 

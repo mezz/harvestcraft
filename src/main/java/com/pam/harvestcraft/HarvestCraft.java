@@ -4,6 +4,7 @@ import com.pam.harvestcraft.config.ConfigHandler;
 import com.pam.harvestcraft.gui.GuiHandler;
 import com.pam.harvestcraft.item.ItemRegistry;
 import com.pam.harvestcraft.proxy.CommonProxy;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
@@ -18,39 +19,38 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SuppressWarnings("unused")
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class HarvestCraft {
 
-    @Instance(value = Reference.MODID)
-    public static HarvestCraft instance = new HarvestCraft();
-    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-    public static CommonProxy proxy;
+	@Instance(value = Reference.MODID)
+	public static HarvestCraft instance = new HarvestCraft();
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
 
-    public static final CreativeTabs modTab = new CreativeTabs(Reference.MODID) {
-        @Override
-        @SideOnly(Side.CLIENT)
-        public ItemStack getTabIconItem() {
-            return new ItemStack(ItemRegistry.toastsandwichItem);
-        }
-    };
+	public static final CreativeTabs modTab = new CreativeTabs(Reference.MODID) {
+		@Override
+		@SideOnly(Side.CLIENT)
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ItemRegistry.toastsandwichItem);
+		}
+	};
 
-    public static ConfigHandler config;
+	public static ConfigHandler config;
 
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-        config = new ConfigHandler(new Configuration(event.getSuggestedConfigurationFile()));
-        proxy.preInit(event);
-        NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
-    }
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		config = new ConfigHandler(new Configuration(event.getSuggestedConfigurationFile()));
+		proxy.preInit(event);
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+	}
 
-    @EventHandler
-    public void init(FMLInitializationEvent event) {
-        proxy.init(event);
-    }
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		proxy.init(event);
+	}
 
-    @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {
-        proxy.postInit(event);
-    }
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		proxy.postInit(event);
+	}
 }

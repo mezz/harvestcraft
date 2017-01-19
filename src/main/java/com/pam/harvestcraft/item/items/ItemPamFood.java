@@ -1,11 +1,12 @@
 package com.pam.harvestcraft.item.items;
 
+import java.util.List;
+
 import com.pam.harvestcraft.Reference;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-
-import java.util.List;
 
 public class ItemPamFood extends ItemFood {
 

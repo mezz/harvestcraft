@@ -1,7 +1,10 @@
 package com.pam.harvestcraft.worldgen;
 
+import java.util.Random;
+
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.BlockRegistry;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -11,8 +14,6 @@ import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.fml.common.IWorldGenerator;
-
-import java.util.Random;
 
 public class BeehiveWorldGen implements IWorldGenerator {
 

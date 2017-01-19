@@ -1,7 +1,5 @@
 package com.pam.bonecraft;
 
-import net.minecraft.client.resources.I18n;
-
 /**
  * Strings starting with "PROP:" are replaced by Gradle.
  */

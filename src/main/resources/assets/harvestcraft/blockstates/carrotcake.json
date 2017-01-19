@@ -1,6 +1,7 @@
 
 {
     "variants": {
+    	"inventory": [{ "model": "harvestcraft:carrotcake_uneaten" }],
         "bites=0": { "model": "harvestcraft:carrotcake_uneaten" },
         "bites=1": { "model": "harvestcraft:carrotcake_slice1" },
         "bites=2": { "model": "harvestcraft:carrotcake_slice2" },

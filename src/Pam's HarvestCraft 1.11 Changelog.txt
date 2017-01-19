@@ -1,3 +1,9 @@
 HarvestCraft 1.11
 -----------------
 - Added: Beetroot Seeds to Market Block
+- Changed fully from IInventory to IItemHandler #204
+- Fixed candles not giving light #153 #184
+- Fixed Chinese language file 
+- Fixed minor spelling errors in the american language file #194
+- Fixed crop blocks having the wrong plant type. #154
+- Fixed missing cake block textures #206 #190

@@ -1,8 +1,8 @@
 package com.pam.harvestcraft.blocks;
 
-import com.pam.harvestcraft.Reference;
-
 import java.util.HashMap;
+
+import com.pam.harvestcraft.Reference;
 
 public class ItemModelList {
     private final HashMap<Integer, String> registrations = new HashMap<Integer, String>();

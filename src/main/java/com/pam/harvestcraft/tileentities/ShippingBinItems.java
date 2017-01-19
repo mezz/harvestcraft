@@ -1,14 +1,15 @@
 package com.pam.harvestcraft.tileentities;
 
+import java.util.ArrayList;
+
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.config.ConfigHandler;
+
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-
-import java.util.ArrayList;
 
 public class ShippingBinItems {
 

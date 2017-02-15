@@ -80,8 +80,9 @@ public class TileEntityGroundTrap extends TileEntity implements ITickable {
 						&& (offsetX != radius - 1 || offsetZ != radius - 1)
 						&& (offsetX != radius - 1 || offsetZ != -(radius - 1))
 						&& (offsetX != -(radius - 1) || offsetZ != radius - 1)) {
-					final Block blockAtCoords =
-							world.getBlockState(new BlockPos(varX + offsetX, varY, varZ + offsetZ)).getBlock();
+					final BlockPos pos = new BlockPos(varX + offsetX, varY, varZ + offsetZ);
+					if (!world.isBlockLoaded(pos)) continue;
+					final Block blockAtCoords = world.getBlockState(pos).getBlock();
 					if(blockAtCoords instanceof BlockDirt || blockAtCoords instanceof BlockGrass) {
 						count++;
 					}
@@ -281,8 +282,9 @@ public class TileEntityGroundTrap extends TileEntity implements ITickable {
 						|| offsetX == radius - 1 && offsetZ == -radius - 1
 						|| offsetX == -radius - 1 && offsetZ == radius - 1)
 					continue;
-				final Block blockAtCoords =
-						world.getBlockState(new BlockPos(varX + offsetX, varY, varZ + offsetZ)).getBlock();
+				final BlockPos pos = new BlockPos(varX + offsetX, varY, varZ + offsetZ);
+				if (!world.isBlockLoaded(pos)) continue;
+				final Block blockAtCoords = world.getBlockState(pos).getBlock();
 				if(blockAtCoords instanceof BlockDirt || blockAtCoords instanceof BlockGrass) {
 					speed = (int) (speed * 0.95);
 				}

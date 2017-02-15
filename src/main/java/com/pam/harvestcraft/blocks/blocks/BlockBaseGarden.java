@@ -11,6 +11,7 @@ import java.util.Random;
 
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.BlockRegistry;
+import com.pam.harvestcraft.worldgen.WorldGenHelper;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
@@ -81,7 +82,7 @@ public class BlockBaseGarden extends BlockBush {
             int amount = config.gardenSpreadMax;
 
             for (BlockPos blockpos : BlockPos.getAllInBoxMutable(pos.add(-4, -1, -4), pos.add(4, 1, 4))) {
-                if (worldIn.getBlockState(blockpos).getBlock() == this) {
+                if (!worldIn.isBlockLoaded(blockpos) || worldIn.getBlockState(blockpos).getBlock() == this) {
                     --amount;
 
                     if (amount <= 0) return;
@@ -91,14 +92,15 @@ public class BlockBaseGarden extends BlockBush {
             BlockPos newGardenPos = pos.add(rand.nextInt(3) - 1, rand.nextInt(2) - rand.nextInt(2), rand.nextInt(3) - 1);
 
             for (int k = 0; k < 4; ++k) {
-                if (worldIn.isAirBlock(newGardenPos) && canBlockStay(worldIn, newGardenPos, getDefaultState())) {
+                if (worldIn.isBlockLoaded(newGardenPos) && canPlaceBlockAt(worldIn, newGardenPos) && canBlockStay(worldIn, newGardenPos, getDefaultState())) {
                     pos = newGardenPos;
                 }
 
                 newGardenPos = pos.add(rand.nextInt(3) - 1, rand.nextInt(2) - rand.nextInt(2), rand.nextInt(3) - 1);
             }
 
-            if (worldIn.isAirBlock(newGardenPos) &&
+            if (worldIn.isBlockLoaded(newGardenPos) &&
+                    canPlaceBlockAt(worldIn, newGardenPos) &&
                     canBlockStay(worldIn, newGardenPos, getDefaultState())) {
                 worldIn.setBlockState(newGardenPos, getDefaultState(), 2);
             }
@@ -107,7 +109,8 @@ public class BlockBaseGarden extends BlockBush {
 
     @Override
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
-        return worldIn.isAirBlock(pos) && checkSoilBlock(worldIn, pos);
+        IBlockState blockState = worldIn.getBlockState(pos);
+        return WorldGenHelper.canReplace(blockState, worldIn, pos) && checkSoilBlock(worldIn, pos);
     }
 
     private boolean checkSoilBlock(World world, BlockPos pos) {

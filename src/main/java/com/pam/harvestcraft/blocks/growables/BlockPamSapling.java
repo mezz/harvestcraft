@@ -7,6 +7,7 @@ import javax.annotation.Nonnull;
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.worldgen.FruitTreeGen;
 import com.pam.harvestcraft.worldgen.LogFruitTreeGen;
+import com.pam.harvestcraft.worldgen.WorldGenHelper;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
@@ -147,20 +148,18 @@ public class BlockPamSapling extends BlockBush implements IGrowable {
         }
     }
 
-    public void worldGenTrees(World world, BlockPos pos) {
-        for (int tries = 0; tries < rarity; tries++) {
-            int posX = pos.getX() + world.rand.nextInt(8) - world.rand.nextInt(8);
-            int posY = pos.getY() + world.rand.nextInt(4) - world.rand.nextInt(4);
-            int posZ = pos.getZ() + world.rand.nextInt(8) - world.rand.nextInt(8);
-            final BlockPos newPos = new BlockPos(posX, posY, posZ);
+    public void worldGenTree(World world, Random random, int x, int z) {
+        if (random.nextFloat() > rarity / 64.0f) return;
 
-            final IBlockState fruitState = getFruit().getDefaultState();
+        final BlockPos pos = WorldGenHelper.getGroundPos(world, x, z);
+        if (pos == null) return;
 
-            if (getFruit() instanceof BlockPamFruit) {
-                new FruitTreeGen(5, logState, leavesState, false, fruitState).generate(world, world.rand, newPos);
-            } else if (getFruit() instanceof BlockPamFruitLog) {
-                new LogFruitTreeGen(5, logState, leavesState, fruitState).generate(world, world.rand, newPos);
-            }
+        final IBlockState fruitState = getFruit().getDefaultState();
+
+        if (getFruit() instanceof BlockPamFruit) {
+            new FruitTreeGen(5, logState, leavesState, false, fruitState).generate(world, random, pos);
+        } else if (getFruit() instanceof BlockPamFruitLog) {
+            new LogFruitTreeGen(5, logState, leavesState, fruitState).generate(world, random, pos);
         }
     }
 

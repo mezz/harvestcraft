@@ -67,9 +67,14 @@ public class BlockPamCrop extends BlockCrops implements IGrowable, IPlantable, P
 		this.setDefaultState(blockState.getBaseState().withProperty(getAgeProperty(), 0));
 	}
 
+	@Override
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+		return NULL_AABB;
+	}
+
 	public String getStageId(int stage) {
 		if(BASE_STAGE_ID == null) {
-			BASE_STAGE_ID = registerName.replaceFirst("pam", "").replace("Crop", "") + "_stage";
+			BASE_STAGE_ID = registerName.replaceFirst("pam", "").replace("crop", "") + "_stage";
 		}
 
 		return BASE_STAGE_ID + stage;

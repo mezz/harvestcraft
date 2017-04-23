@@ -78,8 +78,8 @@ public class TileEntityWaterTrap extends TileEntity implements ITickable {
 						&& (offsetX != radius - 1 || offsetZ != radius - 1)
 						&& (offsetX != radius - 1 || offsetZ != -(radius - 1))
 						&& (offsetX != -(radius - 1) || offsetZ != radius - 1)) {
-					if(world.getBlockState(new BlockPos(varX + offsetX, varY, varZ + offsetZ))
-							.getBlock() == Blocks.WATER) {
+					final BlockPos pos = new BlockPos(varX + offsetX, varY, varZ + offsetZ);
+					if (world.isBlockLoaded(pos) && world.getBlockState(pos).getBlock() == Blocks.WATER) {
 						count++;
 					}
 				}
@@ -164,7 +164,7 @@ public class TileEntityWaterTrap extends TileEntity implements ITickable {
 		Random rnd = new Random();
 
 		if(!itemstackhandler.getStackInSlot(18).isEmpty()) {
-			int rndnum = rnd.nextInt(32);
+			int rndnum = rnd.nextInt(34);
 			switch(rndnum) {
 				case 0:
 					return new ItemStack(Items.FISH, 1, 0);
@@ -230,6 +230,10 @@ public class TileEntityWaterTrap extends TileEntity implements ITickable {
 					return new ItemStack(Items.FISH, 1, 0);
 				case 31:
 					return new ItemStack(ItemRegistry.greenheartfishItem, 1, 0);
+				case 32:
+					return new ItemStack(ItemRegistry.sardinerawItem, 1, 0);
+				case 33:
+					return new ItemStack(ItemRegistry.musselrawItem, 1, 0);
 			}
 
 		}
@@ -261,8 +265,9 @@ public class TileEntityWaterTrap extends TileEntity implements ITickable {
 						|| offsetX == radius - 1 && offsetZ == -radius - 1
 						|| offsetX == -radius - 1 && offsetZ == radius - 1)
 					continue;
-				final Block blockAtCoords =
-						world.getBlockState(new BlockPos(varX + offsetX, varY, varZ + offsetZ)).getBlock();
+				final BlockPos pos = new BlockPos(varX + offsetX, varY, varZ + offsetZ);
+				if (!world.isBlockLoaded(pos)) continue;
+				final Block blockAtCoords = world.getBlockState(pos).getBlock();
 				if(blockAtCoords instanceof BlockLiquid) {
 					speed = (int) (speed * 0.95);
 				}

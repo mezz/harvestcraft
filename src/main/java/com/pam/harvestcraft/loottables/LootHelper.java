@@ -49,6 +49,7 @@ public class LootHelper {
         gameplayFishingFishEntries.add(createLootEntryItem(ItemRegistry.troutrawItem, 25, 0));
         gameplayFishingFishEntries.add(createLootEntryItem(ItemRegistry.tunarawItem, 25, 0));
         gameplayFishingFishEntries.add(createLootEntryItem(ItemRegistry.walleyerawItem, 25, 0));
+        gameplayFishingFishEntries.add(createLootEntryItem(ItemRegistry.sardinerawItem, 25, 0));
 
         additionalLootPools.add(new CustomLootPool(
                 LootTableList.GAMEPLAY_FISHING_FISH,

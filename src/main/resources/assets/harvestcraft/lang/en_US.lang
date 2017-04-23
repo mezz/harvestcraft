@@ -44,42 +44,42 @@ item.desc.lightmeal=Light meal
 item.desc.largemeal=Large meal
 item.desc.potionspeed=Speed (0:03)
 
-harvestcraft.tile.pamAlmond.name=Almond
-harvestcraft.tile.pamApple.name=Apple
-harvestcraft.tile.pamApricot.name=Apricot
-harvestcraft.tile.pamAvocado.name=Avocado
-harvestcraft.tile.pamBanana.name=Banana
-harvestcraft.tile.pamCashew.name=Cashew
-harvestcraft.tile.pamCherry.name=Cherry
-harvestcraft.tile.pamChestnut.name=Chestnut
-harvestcraft.tile.pamCinnamon.name=Cinnamon Wood
-harvestcraft.tile.pamCoconut.name=Coconut
-harvestcraft.tile.pamDate.name=Date
-harvestcraft.tile.pamDragonfruit.name=Dragonfruit
-harvestcraft.tile.pamDurian.name=Durian
-harvestcraft.tile.pamFig.name=Fig
-harvestcraft.tile.pamGrapefruit.name=Grapefruit
-harvestcraft.tile.pamLemon.name=Lemon
-harvestcraft.tile.pamLime.name=Lime
-harvestcraft.tile.pamMaple.name=Maple Wood
-harvestcraft.tile.pamMango.name=Mango
-harvestcraft.tile.pamNutmeg.name=Nutmeg
-harvestcraft.tile.pamOlive.name=Olive
-harvestcraft.tile.pamOrange.name=Orange
-harvestcraft.tile.pamPapaya.name=Papaya
-harvestcraft.tile.pamPaperbark.name=Paperbark Wood
-harvestcraft.tile.pamPeach.name=Peach
-harvestcraft.tile.pamPear.name=Pear
-harvestcraft.tile.pamPecan.name=Pecan
-harvestcraft.tile.pamPeppercorn.name=Peppercorn
-harvestcraft.tile.pamPersimmon.name=Persimmon
-harvestcraft.tile.pamPistachio.name=Pistachio
-harvestcraft.tile.pamPlum.name=Plum
-harvestcraft.tile.pamPomegranate.name=Pomegranate
-harvestcraft.tile.pamStarfruit.name=Starfruit
-harvestcraft.tile.pamVanillabean.name=Vanilla Bean
-harvestcraft.tile.pamWalnut.name=Walnut
-harvestcraft.tile.pamGooseberry.name=Goosberry
+tile.pamalmond.name=Almond
+tile.pamapple.name=Apple
+tile.pamapricot.name=Apricot
+tile.pamavocado.name=Avocado
+tile.pambanana.name=Banana
+tile.pamcashew.name=Cashew
+tile.pamcherry.name=Cherry
+tile.pamchestnut.name=Chestnut
+tile.pamcinnamon.name=Cinnamon Wood
+tile.pamcoconut.name=Coconut
+tile.pamdate.name=Date
+tile.pamdragonfruit.name=Dragonfruit
+tile.pamdurian.name=Durian
+tile.pamfig.name=Fig
+tile.pamgrapefruit.name=Grapefruit
+tile.pamlemon.name=Lemon
+tile.pamlime.name=Lime
+tile.pammaple.name=Maple Wood
+tile.pammango.name=Mango
+tile.pamnutmeg.name=Nutmeg
+tile.pamolive.name=Olive
+tile.pamorange.name=Orange
+tile.pampapaya.name=Papaya
+tile.pampaperbark.name=Paperbark Wood
+tile.pampeach.name=Peach
+tile.pampear.name=Pear
+tile.pampecan.name=Pecan
+tile.pampeppercorn.name=Peppercorn
+tile.pampersimmon.name=Persimmon
+tile.pampistachio.name=Pistachio
+tile.pamplum.name=Plum
+tile.pampomegranate.name=Pomegranate
+tile.pamstarfruit.name=Starfruit
+tile.pamvanillabean.name=Vanilla Bean
+tile.pamwalnut.name=Walnut
+tile.pamgooseberry.name=Gooseberry
 
 tile.almond_sapling.name=Almond Sapling
 tile.apple_sapling.name=Apple Sapling
@@ -118,66 +118,66 @@ tile.vanillabean_sapling.name=Vanilla Sapling
 tile.walnut_sapling.name=Walnut Sapling
 tile.gooseberry_sapling.name=Gooseberry Sapling
 
-harvestcraft.tile.pamblackberryCrop.name=Blackberry Crop
-harvestcraft.tile.pamblueberryCrop.name=Blueberry Crop
-harvestcraft.tile.pamcandleberryCrop.name=Candleberry Crop
-harvestcraft.tile.pamraspberryCrop.name=Raspberry Crop
-harvestcraft.tile.pamstrawberryCrop.name=Strawberry Crop
-harvestcraft.tile.pamcactusfruitCrop.name=Cactus Fruit Crop
-harvestcraft.tile.pamasparagusCrop.name=Asparagus Crop
-harvestcraft.tile.pambarleyCrop.name=Barley Crop
-harvestcraft.tile.pamoatsCrop.name=Oats Crop
-harvestcraft.tile.pamryeCrop.name=Rye Crop
-harvestcraft.tile.pamcornCrop.name=Corn Crop
-harvestcraft.tile.pambambooshootCrop.name=Bamboo Crop
-harvestcraft.tile.pamcantaloupeCrop.name=Cantaloupe Crop
-harvestcraft.tile.pamcucumberCrop.name=Cucumber Crop
-harvestcraft.tile.pamwintersquashCrop.name=Winter Squash Crop
-harvestcraft.tile.pamzucchiniCrop.name=Zucchini Crop
-harvestcraft.tile.pambeetCrop.name=Beet Crop
-harvestcraft.tile.pamonionCrop.name=Onion Crop
-harvestcraft.tile.pamparsnipCrop.name=Parsnip Crop
-harvestcraft.tile.pampeanutCrop.name=Peanut Crop
-harvestcraft.tile.pamradishCrop.name=Radish Crop
-harvestcraft.tile.pamrutabagaCrop.name=Rutabaga Crop
-harvestcraft.tile.pamsweetpotatoCrop.name=Sweet Potato Crop
-harvestcraft.tile.pamturnipCrop.name=Turnip Crop
-harvestcraft.tile.pamrhubarbCrop.name=Rhubarb Crop
-harvestcraft.tile.pamceleryCrop.name=Celery Crop
-harvestcraft.tile.pamgarlicCrop.name=Garlic Crop
-harvestcraft.tile.pamgingerCrop.name=Ginger Crop
-harvestcraft.tile.pamspiceleafCrop.name=Spice Leaf Crop
-harvestcraft.tile.pamtealeafCrop.name=Tea Leaf Crop
-harvestcraft.tile.pamcoffeebeanCrop.name=Coffee Bean Crop
-harvestcraft.tile.pammustardseedsCrop.name=Mustard Seeds Crop
-harvestcraft.tile.pambroccoliCrop.name=Broccoli Crop
-harvestcraft.tile.pamcauliflowerCrop.name=Cauliflower Crop
-harvestcraft.tile.pamleekCrop.name=Leek Crop
-harvestcraft.tile.pamlettuceCrop.name=Lettuce Crop
-harvestcraft.tile.pamscallionCrop.name=Scallion Crop
-harvestcraft.tile.pamartichokeCrop.name=Artichoke Crop
-harvestcraft.tile.pambrusselsproutCrop.name=Brussel Sprout Crop
-harvestcraft.tile.pamcabbageCrop.name=Cabbage Crop
-harvestcraft.tile.pamspinachCrop.name=Spinach Crop
-harvestcraft.tile.pamwhitemushroomCrop.name=White Mushroom Crop
-harvestcraft.tile.pambeanCrop.name=Bean Crop
-harvestcraft.tile.pamsoybeanCrop.name=Soybean Crop
-harvestcraft.tile.pambellpepperCrop.name=Bell Pepper Crop
-harvestcraft.tile.pamchilipepperCrop.name=Chili Pepper Crop
-harvestcraft.tile.pameggplantCrop.name=Eggplant Crop
-harvestcraft.tile.pamokraCrop.name=Okra Crop
-harvestcraft.tile.pampeasCrop.name=Peas Crop
-harvestcraft.tile.pamtomatoCrop.name=Tomato Crop
-harvestcraft.tile.pamcottonCrop.name=Cotton Crop
-harvestcraft.tile.pampineappleCrop.name=Pineapple Crop
-harvestcraft.tile.pamgrapeCrop.name=Grape Crop
-harvestcraft.tile.pamkiwiCrop.name=Kiwi Crop
-harvestcraft.tile.pamcranberryCrop.name=Cranberry Crop
-harvestcraft.tile.pamriceCrop.name=Rice Crop
-harvestcraft.tile.pamseaweedCrop.name=Seaweed Crop
-harvestcraft.tile.pamcurryleafCrop.name=Curry Leaf Crop
-harvestcraft.tile.pamsesameseedsCrop.name=Sesame Seeds Crop
-harvestcraft.tile.pamwaterchestnutCrop.name=Water Chestnut Crop
+harvestcraft.tile.pamblackberrycrop.name=Blackberry Crop
+harvestcraft.tile.pamblueberrycrop.name=Blueberry Crop
+harvestcraft.tile.pamcandleberrycrop.name=Candleberry Crop
+harvestcraft.tile.pamraspberrycrop.name=Raspberry Crop
+harvestcraft.tile.pamstrawberrycrop.name=Strawberry Crop
+harvestcraft.tile.pamcactusfruitcrop.name=Cactus Fruit Crop
+harvestcraft.tile.pamasparaguscrop.name=Asparagus Crop
+harvestcraft.tile.pambarleycrop.name=Barley Crop
+harvestcraft.tile.pamoatscrop.name=Oats Crop
+harvestcraft.tile.pamryecrop.name=Rye Crop
+harvestcraft.tile.pamcorncrop.name=Corn Crop
+harvestcraft.tile.pambambooshootcrop.name=Bamboo Crop
+harvestcraft.tile.pamcantaloupecrop.name=Cantaloupe Crop
+harvestcraft.tile.pamcucumbercrop.name=Cucumber Crop
+harvestcraft.tile.pamwintersquashcrop.name=Winter Squash Crop
+harvestcraft.tile.pamzucchinicrop.name=Zucchini Crop
+harvestcraft.tile.pambeetcrop.name=Beet Crop
+harvestcraft.tile.pamonioncrop.name=Onion Crop
+harvestcraft.tile.pamparsnipcrop.name=Parsnip Crop
+harvestcraft.tile.pampeanutcrop.name=Peanut Crop
+harvestcraft.tile.pamradishcrop.name=Radish Crop
+harvestcraft.tile.pamrutabagacrop.name=Rutabaga Crop
+harvestcraft.tile.pamsweetpotatocrop.name=Sweet Potato Crop
+harvestcraft.tile.pamturnipcrop.name=Turnip Crop
+harvestcraft.tile.pamrhubarbcrop.name=Rhubarb Crop
+harvestcraft.tile.pamcelerycrop.name=Celery Crop
+harvestcraft.tile.pamgarliccrop.name=Garlic Crop
+harvestcraft.tile.pamgingercrop.name=Ginger Crop
+harvestcraft.tile.pamspiceleafcrop.name=Spice Leaf Crop
+harvestcraft.tile.pamtealeafcrop.name=Tea Leaf Crop
+harvestcraft.tile.pamcoffeebeancrop.name=Coffee Bean Crop
+harvestcraft.tile.pammustardseedscrop.name=Mustard Seeds Crop
+harvestcraft.tile.pambroccolicrop.name=Broccoli Crop
+harvestcraft.tile.pamcauliflowercrop.name=Cauliflower Crop
+harvestcraft.tile.pamleekcrop.name=Leek Crop
+harvestcraft.tile.pamlettucecrop.name=Lettuce Crop
+harvestcraft.tile.pamscallioncrop.name=Scallion Crop
+harvestcraft.tile.pamartichokecrop.name=Artichoke Crop
+harvestcraft.tile.pambrusselsproutcrop.name=Brussel Sprout Crop
+harvestcraft.tile.pamcabbagecrop.name=Cabbage Crop
+harvestcraft.tile.pamspinachcrop.name=Spinach Crop
+harvestcraft.tile.pamwhitemushroomcrop.name=White Mushroom Crop
+harvestcraft.tile.pambeancrop.name=Bean Crop
+harvestcraft.tile.pamsoybeancrop.name=Soybean Crop
+harvestcraft.tile.pambellpeppercrop.name=Bell Pepper Crop
+harvestcraft.tile.pamchilipeppercrop.name=Chili Pepper Crop
+harvestcraft.tile.pameggplantcrop.name=Eggplant Crop
+harvestcraft.tile.pamokracrop.name=Okra Crop
+harvestcraft.tile.pampeascrop.name=Peas Crop
+harvestcraft.tile.pamtomatocrop.name=Tomato Crop
+harvestcraft.tile.pamcottoncrop.name=Cotton Crop
+harvestcraft.tile.pampineapplecrop.name=Pineapple Crop
+harvestcraft.tile.pamgrapecrop.name=Grape Crop
+harvestcraft.tile.pamkiwicrop.name=Kiwi Crop
+harvestcraft.tile.pamcranberrycrop.name=Cranberry Crop
+harvestcraft.tile.pamricecrop.name=Rice Crop
+harvestcraft.tile.pamseaweedcrop.name=Seaweed Crop
+harvestcraft.tile.pamcurryleafcrop.name=Curry Leaf Crop
+harvestcraft.tile.pamsesameseedscrop.name=Sesame Seeds Crop
+harvestcraft.tile.pamwaterchestnutcrop.name=Water Chestnut Crop
 
 tile.candleDeco1.name=White Candle
 tile.candleDeco2.name=Orange Candle
@@ -565,7 +565,6 @@ item.lemonaideitem.name=Lemonade
 item.lemonbaritem.name=Lemon Bar
 item.fishdinneritem.name=Fish Dinner
 item.lemonsmoothieitem.name=Lemon Smoothie
-item.lemonmeringueitem.name=Lemon Meringue
 item.candiedlemonitem.name=Candied Lemon
 item.lemonchickenitem.name=Lemon Chicken
         
@@ -1135,3 +1134,103 @@ item.cookedtofabbititem.name=Cooked Tofabbit
 item.cookedtofurkeyitem.name=Cooked Tofurkey
 item.cookedtofenisonitem.name=Cooked Tofenison
 
+item.anchovypepperonipizzaitem.name=Anchovy Pepperoni Pizza
+item.chocovoxelsitem.name=Choco Voxels Cereal
+item.cinnamontoastitem.name=Cinnamon Toast
+item.cornedbeefhashitem.name=Corned Beef Hash
+item.cornedbeefitem.name=Corned Beef
+item.cottoncandyitem.name=Cotton Candy
+item.crackersitem.name=Crackers
+item.creeperwingsitem.name=Creeper Wings
+item.dhalitem.name=Dhal
+item.durianmilkshakeitem.name=Durian Milkshake
+item.durianmuffinitem.name=Durian Muffin
+item.homestylelunchitem.name=Homestyle Lunch
+item.hotsauceitem.name=Hot Sauce
+item.hummusitem.name=Hummus
+item.ironbrewitem.name=Iron Brew
+item.lasangaitem.name=Lasanga
+item.lemondrizzelcakeitem.name=Lemon Drizzle Cake
+item.meatloafitem.name=Meatloaf
+item.montecristosandwichitem.name=Monte Cristo Sandwich
+item.mushroomlasangaitem.name=Mushroom Lasanga
+item.musselcookeditem.name=Cooked Mussel
+item.musselrawitem.name=Raw Mussel
+item.netherwingsitem.name=Nether Wings
+item.pizzasoupitem.name=Pizza Soup
+item.poutineitem.name=Poutine
+item.salsaitem.name=Salsa
+item.sardinerawitem.name=Raw Sardine
+item.sardinesinhotsauceitem.name=Sardines in Hot Sauce
+item.teriyakichickenitem.name=Teriyaki Chicken
+item.toastedwesternitem.name=Toasted Western
+item.turkishdelightitem.name=Turkish Delight
+
+item.cornedbeefbreakfastitem.name=Corned Beef Breakfast
+item.greeneggsandhamitem.name=Green Eggs and Ham
+item.spaghettidinneritem.name=Spaghetti Dinner
+item.theatreboxitem.name=Theatre Box
+item.cookiesandmilkitem.name=Cookies and Milk
+item.crackersandcheeseitem.name=Crackers and Cheese
+item.chickendinneritem.name=Chicken Dinner
+item.bbqplatteritem.name=BBQ Platter
+
+weekendpicnicitem
+corndogitem
+chilidogitem
+hamandcheesesandwichitem
+tunafishsandwichitem
+tunasaladitem
+gritsitem
+southernstylebreakfastitem
+chimichangaitem
+clamchowderitem
+breakfastburritoitem
+buttercookieitem
+sugarcookieitem
+potatochipsitem
+bbqpotatochipsitem
+sourcreamandonionpotatochipsitem
+cheddarandsourcreampotatochipsitem
+tortillachipsitem
+chipsandsalsaitem
+chipsanddipitem
+cheezepuffsitem
+surfandturfitem
+liverandonionsitem
+beefjerkyitem
+fortunecookieitem
+deviledeggitem
+mozzerellasticksitem
+gumboitem
+jambalayaitem
+succotashitem
+eggsbenedictitem
+friedgreentomatoesitem
+chickenandwafflesitem
+potatoesobrienitem
+tatertotsitem
+smoresitem
+thankfuldinneritem
+phoitem
+steakfajitaitem
+lasagnaitem
+ramenitem
+misosoupitem
+onigiriitem
+grilledcheesevegemitetoastitem
+monsterfrieddumplingsitem
+salisburysteakitem
+crispyricepuffcerealitem
+crispyricepuffbarsitem
+babaganoushitem
+berryvinaigrettesaladitem
+tomatoherbchickenitem
+pastagardeniaitem
+fiestacornsaladitem
+threebeansaladitem
+sweetandsourmeatballsitem
+pepperjellyitem
+pepperjellyandcrackersitem
+saltedcaramelitem
+caramelicecreamitem

@@ -1,5 +1,5 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/bananasplitItem"
+		"layer0": "harvestcraft:items/bananasplititem"
 	}}

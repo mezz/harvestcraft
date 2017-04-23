@@ -21,55 +21,54 @@ public class BushWorldGen implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 
-        final int xChunk = chunkX * 16 + 8, zChunk = chunkZ * 16 + 8;
-        int xCh = chunkX * 16 + random.nextInt(16);
-        int yCh = random.nextInt(128);
-        int zCh = chunkZ * 16 + random.nextInt(16);
+        final int x = chunkX * 16 + 8;
+        final int z = chunkZ * 16 + 8;
 
-        final Biome biome = world.getBiomeForCoordsBody(new BlockPos(xChunk + 16, 0, zChunk + 16));
-        final BlockPos blockPos = new BlockPos(xCh, yCh + 64, zCh);
+        final Biome biome = world.getBiomeForCoordsBody(new BlockPos(x, 0, z));
         if (BiomeDictionary.hasType(biome, BiomeDictionary.Type.DEAD)) {
             return;
         }
-
+        
+        if (BiomeDictionary.hasType(biome, BiomeDictionary.Type.NETHER)) {
+            return;
+        }
+        
+        if (BiomeDictionary.hasType(biome, BiomeDictionary.Type.END)) {
+            return;
+        }
 
         if (config.enablearidgardenGeneration && (BiomeDictionary.hasType(biome, BiomeDictionary.Type.SANDY)) || (BiomeDictionary.hasType(biome, BiomeDictionary.Type.MESA))) {
-            generateGarden(BlockRegistry.getGarden(BlockRegistry.aridGarden), world, blockPos);
+            generateGarden(BlockRegistry.getGarden(BlockRegistry.aridGarden), world, random, x, z);
         }
 
         if (config.enablefrostgardenGeneration && (BiomeDictionary.hasType(biome, BiomeDictionary.Type.SNOWY)) || (BiomeDictionary.hasType(biome, BiomeDictionary.Type.MOUNTAIN))) {
-            generateGarden(BlockRegistry.getGarden(BlockRegistry.frostGarden), world, blockPos);
+            generateGarden(BlockRegistry.getGarden(BlockRegistry.frostGarden), world, random, x, z);
         }
 
         if (config.enableshadedgardenGeneration && (BiomeDictionary.hasType(biome, BiomeDictionary.Type.FOREST)) || (BiomeDictionary.hasType(biome, BiomeDictionary.Type.SPOOKY))) {
-            generateGarden(BlockRegistry.getGarden(BlockRegistry.shadedGarden), world, blockPos);
+            generateGarden(BlockRegistry.getGarden(BlockRegistry.shadedGarden), world, random, x, z);
         }
 
         if (config.enablesoggygardenGeneration && (BiomeDictionary.hasType(biome, BiomeDictionary.Type.SWAMP)) || (BiomeDictionary.hasType(biome, BiomeDictionary.Type.RIVER))) {
-            generateGarden(BlockRegistry.getGarden(BlockRegistry.soggyGarden), world, blockPos);
+            generateGarden(BlockRegistry.getGarden(BlockRegistry.soggyGarden), world, random, x, z);
         }
 
         if (config.enabletropicalgardenGeneration && (BiomeDictionary.hasType(biome, BiomeDictionary.Type.JUNGLE)) || (BiomeDictionary.hasType(biome, BiomeDictionary.Type.OCEAN))) {
-            generateGarden(BlockRegistry.getGarden(BlockRegistry.tropicalGarden), world, blockPos);
+            generateGarden(BlockRegistry.getGarden(BlockRegistry.tropicalGarden), world, random, x, z);
         }
 
         if (config.enablewindygardenGeneration && (BiomeDictionary.hasType(biome, BiomeDictionary.Type.PLAINS)) || (BiomeDictionary.hasType(biome, BiomeDictionary.Type.SAVANNA))) {
-            generateGarden(BlockRegistry.getGarden(BlockRegistry.windyGarden), world, blockPos);
+            generateGarden(BlockRegistry.getGarden(BlockRegistry.windyGarden), world, random, x, z);
         }
     }
 
-    private void generateGarden(BlockBaseGarden gardenBlock, World world, BlockPos pos) {
+    private void generateGarden(BlockBaseGarden gardenBlock, World world, Random random, int x, int z) {
+        if (random.nextFloat() < HarvestCraft.config.gardenRarity / 8.0f) {
+            final int posX = x + world.rand.nextInt(16);
+            final int posZ = z + world.rand.nextInt(16);
+            final BlockPos newPos = WorldGenHelper.getGroundPos(world, posX, posZ);
 
-        final int tries = 32 * HarvestCraft.config.gardenRarity;
-
-        for (int tryNum = 0; tryNum < tries; tryNum++) {
-            int posX = (pos.getX() + world.rand.nextInt(8)) - world.rand.nextInt(8);
-            int posY = (pos.getY() + world.rand.nextInt(4)) - world.rand.nextInt(4);
-            int posZ = (pos.getZ() + world.rand.nextInt(8)) - world.rand.nextInt(8);
-
-            final BlockPos newPos = new BlockPos(posX, posY, posZ);
-
-            if (gardenBlock.canPlaceBlockAt(world, newPos)) {
+            if (newPos != null && gardenBlock.canPlaceBlockAt(world, newPos)) {
                 world.setBlockState(newPos, gardenBlock.getDefaultState(), 2);
             }
         }

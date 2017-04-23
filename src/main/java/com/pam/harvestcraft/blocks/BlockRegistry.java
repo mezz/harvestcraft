@@ -393,23 +393,22 @@ public final class BlockRegistry {
 
 	private static void addGarden(String gardenName, BlockBaseGarden.Region region) {
 		final BlockBaseGarden garden = new BlockBaseGarden(gardenName, region);
-
 		gardens.put(gardenName, garden);
 	}
 
 	public static void registerBlock(String registerName, ItemBlock itemBlock, Block block) {
 		block.setRegistryName(registerName);
 		block.setUnlocalizedName(registerName);
-
 		GameRegistry.register(block);
 
-		itemBlock.setRegistryName(registerName);
-		itemBlock.setUnlocalizedName(registerName);
-		GameRegistry.register(itemBlock);
+		if(itemBlock != null) {
+			itemBlock.setRegistryName(registerName);
+			itemBlock.setUnlocalizedName(registerName);
+			GameRegistry.register(itemBlock);
+		}
 	}
 
 	public static void registerBlock(String registerName, Block block) {
-		final ItemBlock itemBlock = new ItemBlock(block);
-		registerBlock(registerName, itemBlock, block);
+		registerBlock(registerName, new ItemBlock(block), block);
 	}
 }

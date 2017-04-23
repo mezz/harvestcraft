@@ -102,7 +102,7 @@ public class TileEntityPresser extends TileEntity implements ITickable {
 				return false;
 		}
 
-		if(!results[1].isEmpty() && !itemstackhandler.getStackInSlot(2).isEmpty()) {
+		if(results[1] != null && !results[1].isEmpty() && !itemstackhandler.getStackInSlot(2).isEmpty()) {
 			if(!itemstackhandler.getStackInSlot(2).isItemEqual(results[1]))
 				return false;
 			if(itemstackhandler.getStackInSlot(2).getCount() + results[1].getCount() > itemstackhandler

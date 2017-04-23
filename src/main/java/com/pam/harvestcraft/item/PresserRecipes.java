@@ -16,7 +16,7 @@ public class PresserRecipes {
     private static final Map<ItemStack, ItemStack[]> pressingList = new HashMap<ItemStack, ItemStack[]>();
 
     static {
-        registerItemRecipe(ItemRegistry.waxcombItem, ItemRegistry.beeswaxItem, null);
+        registerItemRecipe(ItemRegistry.waxcombItem, ItemRegistry.beeswaxItem, ItemRegistry.beeswaxItem);
         registerItemRecipe(ItemRegistry.honeycombItem, ItemRegistry.honeyItem, ItemRegistry.beeswaxItem);
         registerItemRecipe(Items.APPLE, ItemRegistry.applejuiceItem, ItemRegistry.fruitbaitItem);
         registerItemRecipe(CropRegistry.getFood(CropRegistry.BLACKBERRY), ItemRegistry.blackberryjuiceItem, ItemRegistry.fruitbaitItem);
@@ -37,11 +37,11 @@ public class PresserRecipes {
         registerItemRecipe(FruitRegistry.getFood(FruitRegistry.POMEGRANATE), ItemRegistry.pomegranatejuiceItem, ItemRegistry.fruitbaitItem);
         registerItemRecipe(FruitRegistry.getFood(FruitRegistry.STARFRUIT), ItemRegistry.starfruitjuiceItem, ItemRegistry.fruitbaitItem);
         registerItemRecipe(CropRegistry.getFood(CropRegistry.STRAWBERRY), ItemRegistry.strawberryjuiceItem, ItemRegistry.fruitbaitItem);
-        registerItemRecipe(Items.REEDS, Items.SUGAR, null);
+        registerItemRecipe(Items.REEDS, Items.SUGAR, Items.SUGAR);
         registerItemRecipe(CropRegistry.getFood(CropRegistry.BEET), Items.SUGAR, ItemRegistry.veggiebaitItem);
-        registerBlockRecipe(Blocks.LOG, Items.PAPER, null);
-        registerBlockRecipe(Blocks.LOG2, Items.PAPER, null);
-        registerItemRecipe(ItemRegistry.freshwaterItem, ItemRegistry.bubblywaterItem, null);
+        registerBlockRecipe(Blocks.LOG, Items.PAPER, Items.PAPER);
+        registerBlockRecipe(Blocks.LOG2, Items.PAPER, Items.PAPER);
+        registerItemRecipe(ItemRegistry.freshwaterItem, ItemRegistry.bubblywaterItem, ItemRegistry.bubblywaterItem);
         registerItemRecipe(CropRegistry.getFood(CropRegistry.SOYBEAN), ItemRegistry.silkentofuItem, ItemRegistry.grainbaitItem);
         registerItemRecipe(ItemRegistry.silkentofuItem, ItemRegistry.firmtofuItem, ItemRegistry.soymilkItem);
         registerItemRecipe(FruitRegistry.getFood(FruitRegistry.PLUM), ItemRegistry.plumjuiceItem, ItemRegistry.fruitbaitItem);

@@ -1,5 +1,5 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/paneertikkamasalaItem"
+		"layer0": "harvestcraft:items/paneertikkamasalaitem"
 	}}

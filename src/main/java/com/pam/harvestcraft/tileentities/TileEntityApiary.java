@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
@@ -21,8 +22,8 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class TileEntityApiary extends TileEntity implements ITickable {
-
+public class TileEntityApiary extends TileEntity implements ITickable{
+    
 	private ItemStackHandler itemstackhandler = new ItemStackHandler(19);
 	public int runTime = 0;
 	public int currentBeeRunTime = 0;
@@ -173,8 +174,9 @@ public class TileEntityApiary extends TileEntity implements ITickable {
 						|| offsetX == radius - 1 && offsetZ == -radius - 1
 						|| offsetX == -radius - 1 && offsetZ == radius - 1)
 					continue;
-				final Block blockAtCoords =
-						world.getBlockState(new BlockPos(varX + offsetX, varY, varZ + offsetZ)).getBlock();
+				final BlockPos pos = new BlockPos(varX + offsetX, varY, varZ + offsetZ);
+				if (!world.isBlockLoaded(pos)) continue;
+				final Block blockAtCoords = world.getBlockState(pos).getBlock();
 				if(blockAtCoords instanceof BlockFlower || blockAtCoords instanceof BlockCrops
 						|| blockAtCoords instanceof BlockBaseGarden) {
 					speed = (int) (speed * 0.95);
@@ -208,4 +210,5 @@ public class TileEntityApiary extends TileEntity implements ITickable {
 	public String getGuiID() {
 		return "harvestcraft:apiary";
 	}
-}
+
+	}

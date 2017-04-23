@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
+import com.pam.harvestcraft.item.ItemRegistry;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -54,17 +55,32 @@ public class MarketItems {
 		}
 
 		registerAnimalEggs();
-
-		if(HarvestCraft.config.marketsellBonemeal) {
-			registerBonemeal();
-		}
+		registerMisc();
 	}
 
-	private static void registerBonemeal() {
+	private static void registerMisc() {
 		final ItemStack currency = getCurrency(HarvestCraft.config.marketcurrencyBonemeal, CurrencyType.DEFAULT);
+		final ItemStack currency2 = getCurrency(HarvestCraft.config.marketcurrencyLead, CurrencyType.DEFAULT);
+		final ItemStack currency3 = getCurrency(HarvestCraft.config.marketcurrencyNametag, CurrencyType.DEFAULT);
+		final ItemStack currency4 = getCurrency(HarvestCraft.config.marketcurrencyBees, CurrencyType.DEFAULT);
 
+		if (HarvestCraft.config.marketsellBonemeal){
 		registerItems(
 				new MarketData(new ItemStack(Items.DYE, 1, 15), currency, HarvestCraft.config.marketbonemealPrice));
+		}
+		if (HarvestCraft.config.marketsellLead){
+			registerItems(
+					new MarketData(new ItemStack(Items.LEAD), currency, HarvestCraft.config.marketleadPrice));
+			}
+		if (HarvestCraft.config.marketsellNametag){
+			registerItems(
+					new MarketData(new ItemStack(Items.NAME_TAG), currency, HarvestCraft.config.marketnametagPrice));
+			}
+		
+		if (HarvestCraft.config.marketsellQueenbee){
+			registerItems(
+					new MarketData(new ItemStack(ItemRegistry.queenbeeItem), currency, HarvestCraft.config.marketqueenbeePrice));
+			}
 	}
 
 	private static void registerAnimalEggs() {
@@ -74,6 +90,10 @@ public class MarketItems {
 		final ItemStack cowEgg = new ItemStack(Items.SPAWN_EGG, 1, 92);
 		final ItemStack chickenEgg = new ItemStack(Items.SPAWN_EGG, 1, 93);
 		final ItemStack horseEgg = new ItemStack(Items.SPAWN_EGG, 1, 100);
+		final ItemStack llamaEgg = new ItemStack(Items.SPAWN_EGG, 1, 103);
+		final ItemStack ocelotEgg = new ItemStack(Items.SPAWN_EGG, 1, 98);
+		final ItemStack wolfEgg = new ItemStack(Items.SPAWN_EGG, 1, 95);
+		final ItemStack rabbitEgg = new ItemStack(Items.SPAWN_EGG, 1, 101);
 
 		if(FMLCommonHandler.instance().getEffectiveSide().isClient()) {
 			ItemMonsterPlacer.applyEntityIdToItemStack(pigEgg, new ResourceLocation("minecraft", "pig"));
@@ -81,6 +101,9 @@ public class MarketItems {
 			ItemMonsterPlacer.applyEntityIdToItemStack(cowEgg, new ResourceLocation("minecraft", "cow"));
 			ItemMonsterPlacer.applyEntityIdToItemStack(chickenEgg, new ResourceLocation("minecraft", "chicken"));
 			ItemMonsterPlacer.applyEntityIdToItemStack(horseEgg, new ResourceLocation("minecraft", "horse"));
+			ItemMonsterPlacer.applyEntityIdToItemStack(ocelotEgg, new ResourceLocation("minecraft", "ocelot"));
+			ItemMonsterPlacer.applyEntityIdToItemStack(wolfEgg, new ResourceLocation("minecraft", "wolf"));
+			ItemMonsterPlacer.applyEntityIdToItemStack(rabbitEgg, new ResourceLocation("minecraft", "rabbit"));
 		}
 
 		if(HarvestCraft.config.marketsellPig) {
@@ -106,6 +129,23 @@ public class MarketItems {
 		if(HarvestCraft.config.marketsellHorse) {
 			final ItemStack currency = getCurrency(HarvestCraft.config.marketcurrencyHorse, CurrencyType.ANIMAL);
 			registerItems(new MarketData(horseEgg, currency, HarvestCraft.config.markethorsePrice));
+		}
+		
+		if(HarvestCraft.config.marketsellLlama) {
+			final ItemStack currency = getCurrency(HarvestCraft.config.marketcurrencyLlama, CurrencyType.ANIMAL);
+			registerItems(new MarketData(llamaEgg, currency, HarvestCraft.config.marketllamaPrice));
+		}
+		if(HarvestCraft.config.marketsellOcelot) {
+			final ItemStack currency = getCurrency(HarvestCraft.config.marketcurrencyOcelot, CurrencyType.ANIMAL);
+			registerItems(new MarketData(ocelotEgg, currency, HarvestCraft.config.marketocelotPrice));
+		}
+		if(HarvestCraft.config.marketsellWolf) {
+			final ItemStack currency = getCurrency(HarvestCraft.config.marketcurrencyWolf, CurrencyType.ANIMAL);
+			registerItems(new MarketData(wolfEgg, currency, HarvestCraft.config.marketwolfPrice));
+		}
+		if(HarvestCraft.config.marketsellRabbit) {
+			final ItemStack currency = getCurrency(HarvestCraft.config.marketcurrencyRabbit, CurrencyType.ANIMAL);
+			registerItems(new MarketData(rabbitEgg, currency, HarvestCraft.config.marketrabbitPrice));
 		}
 	}
 
@@ -166,6 +206,7 @@ public class MarketItems {
 		registerItems(
 				new MarketData(new ItemStack(Items.BEETROOT_SEEDS), currency, HarvestCraft.config.marketseedPrice));
 	}
+	
 
 	private static ItemStack getCurrency(int config, CurrencyType currencyType) {
 		switch(config) {

@@ -20,9 +20,19 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class WailaPamHandler implements IWailaDataProvider {
+
 	@Override
 	public ItemStack getWailaStack(IWailaDataAccessor accessor, IWailaConfigHandler config) {
-		return null;
+		if(accessor.getBlock() instanceof BlockPamCrop) {
+			BlockPamCrop crop = (BlockPamCrop) accessor.getBlock();
+			return new ItemStack(crop.getCrop());
+		}
+		else if(accessor.getBlock() instanceof BlockPamFruit) {
+			BlockPamFruit fruit = (BlockPamFruit) accessor.getBlock();
+			return new ItemStack(fruit.getFruitItem());
+		}
+		else
+			return ItemStack.EMPTY;
 	}
 
 	@Override

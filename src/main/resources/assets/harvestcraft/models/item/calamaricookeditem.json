@@ -1,5 +1,5 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/calamaricookedItem"
+		"layer0": "harvestcraft:items/calamaricookeditem"
 	}}

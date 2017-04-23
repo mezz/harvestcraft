@@ -4,6 +4,7 @@ import java.text.MessageFormat;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Map;
 
 import com.pam.harvestcraft.HarvestCraft;
@@ -11,7 +12,6 @@ import com.pam.harvestcraft.blocks.growables.BlockPamFruit;
 import com.pam.harvestcraft.blocks.growables.BlockPamFruitLog;
 import com.pam.harvestcraft.blocks.growables.BlockPamSapling;
 import com.pam.harvestcraft.blocks.growables.BlockPamSapling.SaplingType;
-import com.pam.harvestcraft.blocks.growables.ItemBlockCropFruit;
 import com.pam.harvestcraft.item.ItemRegistry;
 import com.pam.harvestcraft.item.items.ItemPamFood;
 
@@ -237,14 +237,11 @@ public class FruitRegistry {
 
 		sapling.setFruit(pamFruit);
 
-		final ItemBlock itemBlock = new ItemBlockCropFruit(pamFruit);
-
-		BlockRegistry.registerBlock(getFruitBlockName(fruitName), itemBlock, pamFruit);
+		BlockRegistry.registerBlock(getFruitBlockName(fruitName), new ItemBlock(pamFruit), pamFruit);
 	}
 
 	private static String getFruitBlockName(String fruitName) {
-		return MessageFormat.format(FRUIT_BLOCK_NAME,
-				fruitName.substring(0, 1).toUpperCase() + fruitName.substring(1).toLowerCase());
+		return MessageFormat.format(FRUIT_BLOCK_NAME, fruitName);
 	}
 
 	private static String getItemName(String fruitName) {
@@ -257,6 +254,7 @@ public class FruitRegistry {
 	}
 
 	private static void registerLogFruit(String fruitName, SaplingType saplingType) {
+		fruitName.toLowerCase(Locale.ROOT);
 		final String saplingName = MessageFormat.format(SAPLING_NAME, fruitName);
 		final BlockPamSapling sapling = new BlockPamSapling(saplingName, saplingType);
 		final ItemBlock saplingItemBlock = new ItemBlock(sapling);
@@ -305,8 +303,6 @@ public class FruitRegistry {
 		logs.put(fruitName, logFruit);
 		sapling.setFruit(logFruit);
 
-		final ItemBlock fruitItemBlock = new ItemBlockCropFruit(logFruit);
-
-		BlockRegistry.registerBlock(getFruitBlockName(fruitName), fruitItemBlock, logFruit);
+		BlockRegistry.registerBlock(getFruitBlockName(fruitName), new ItemBlock(logFruit), logFruit);
 	}
 }

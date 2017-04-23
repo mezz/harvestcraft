@@ -1,9 +1,47 @@
-HarvestCraft 1.11
+HarvestCraft 1.11.2h
 -----------------
-- Added: Beetroot Seeds to Market Block
-- Changed fully from IInventory to IItemHandler #204
-- Fixed candles not giving light #153 #184
-- Fixed Chinese language file 
-- Fixed minor spelling errors in the american language file #194
-- Fixed crop blocks having the wrong plant type. #154
-- Fixed missing cake block textures #206 #190
+Add option to get more salt per craft
+
+HarvestCraft 1.11.2g
+-----------------
+- Changed: Recipes: Queen Bees of any durability can now be turned into Royal Jelly
+- Changed: Recipes: All juice recipes now require two fruits (presser recipes unchanged)
+- Changed: Recipes: All smoothies recipes now require two fruits (presser recipes unchanged)
+- Changed: Recipes: Changed Bubbly Water recipe to require two Fresh Waters to fix clashing recipes
+- Changed: Items: All juice items now restore 3 food points, snack-level saturation
+- Changed: Items: All smoothies new restore 4 food points, snack-level saturation
+- Fixed: Bug: Using a Glass Bottle on the Well now uses up the bottle and gives back Water Bottle
+- Added: Languages: fr_FR.lang by Xandoria 
+- Added: Market: Added Llama, Wolf, Ocelot, Rabbit, Queen Bee, Lead, and Name Tag
+
+
+HarvestCraft 1.11.2f
+-----------------
+- Changed: Recipes: Breaded Porkchops, Fish Sticks, Chili Poppers, Fish Dinner, Pancakes, Waffles, Fried Chicken, Sunflower Wheat Rolls, Pumpkin Muffins, Creeper Cookie, Durian Muffin, Peanut Butter Cookies, Raisin Cookies, Blueberry Muffin, Cheese Cake, Ginger Bread, Brownie, Red Velvet Cake, Yorkshire Pudding, Lemon Drizzle Cake now all use Batter instead of the flour and/or egg previously in their recipe
+- Fixed: Mislabel: Added Tofish to the raw fish listing
+- Added: Option: Apple, Nether Wart, Chorus Fruit, Reeds, Cactus, Red & Brown Mushrooms to Shipping Bin
+- Added: Option: Raw Vanilla and HC fish/water critters to Shipping Bin
+- Added: Option: Raw Vanilla and HC meats to Shipping Bin
+- Added: Option: Eggs, Rotten Flesh, Spider Eye, and Bones to Shipping Bin
+- Added: Config: All new options for Shipping Bin stuff
+
+HarvestCraft 1.11.2e
+-----------------
+- Fixed: Presser no longer crashes
+- Changed: All presser recipes now give two items (Waxcomb = 2 wax, Reeds = 2 sugar, etc)
+- Fixed: Bush/Tree spawn rarity issues
+- Config: Set enablelistAllwatervanillawaterbucket to False if you want to have multiple Fresh Waters from a single bucket but with this you can't use Water Buckets in food recipes
+
+HarvestCraft 1.11.2d
+-----------------
+- Fruit Trees and Bushes should no longer generate on top/right next to each other anymore (thanks mezz)
+
+HarvestCraft 1.11.2c
+-----------------
+- World Gen Changes/Fixes for Beehives, Trees, Bushes, and others by mezz
+- Recipe Addition: Pizza can now be made with Pepperoni instead of Raw Pork
+- Recipe Change: Hot Wings are now made with Mixing Bowl, Cooked Chicken, and Hot Sauce
+- Added: Sardines to Fishing, Water Trap
+- Added: Mussels to Water Trap
+- Note: Lemon Drizzle Cake CANNOT be placed (yet)
+- Food Added: Anchovy Pepperoni Pizza, Choco Voxels Cereal, Cinnamon Toast, Corned Beef Hash, Corned Beef, Cotton Candy, Crackers, Creeper Wings, Dhal, Durian Milkshake, Durian Muffin, Homestyle Lunch, Hot Sauce, Hummus, Iron Brew, Lasanga, Lemon Drizzle Cake, Meatloaf, Monte Cristo Sandwich, Mushroom Lasanga, Cooked Mussel, Raw Mussel, Nether Wings, Pizza Soup, Poutine, Salsa, Raw Sardine, Sardines in Hot Sauce, Teriyaki Chicken, Toasted Western, Turkish Delight

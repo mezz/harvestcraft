@@ -11,11 +11,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Items;
 import net.minecraft.init.PotionTypes;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionUtils;
+import net.minecraft.stats.StatList;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -58,21 +61,25 @@ public class WellBlock extends Block {
 			}
 			else if(item == Items.GLASS_BOTTLE) {
 
-				ItemStack itemstack1 =
-						PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WATER);
+                        ItemStack itemstack3 = PotionUtils.addPotionToItemStack(new ItemStack(Items.POTIONITEM), PotionTypes.WATER);
+                        heldItem.shrink(1);
 
-				if(heldItem.isEmpty()) {
-					playerIn.setHeldItem(hand, itemstack1);
-				}
-				else if(!playerIn.inventory.addItemStackToInventory(itemstack1)) {
-					playerIn.dropItem(itemstack1, false);
-				}
-				else if(playerIn instanceof EntityPlayerMP) {
-					((EntityPlayerMP) playerIn).sendContainerToPlayer(playerIn.inventoryContainer);
-				}
+                        if (itemstack3.isEmpty())
+                        {
+                            playerIn.setHeldItem(hand, itemstack3);
+                        }
+                        else if (!playerIn.inventory.addItemStackToInventory(itemstack3))
+                        {
+                            playerIn.dropItem(itemstack3, false);
+                        }
+                        else if (playerIn instanceof EntityPlayerMP)
+                        {
+                            ((EntityPlayerMP)playerIn).sendContainerToPlayer(playerIn.inventoryContainer);
+                        }
 
-				return true;
-			}
+
+                return true;
+            }
 			else if(item == ItemRegistry.freshwaterItem) {
 				{
 					playerIn.inventory.addItemStackToInventory(new ItemStack(ItemRegistry.freshwaterItem));

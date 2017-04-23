@@ -4,8 +4,6 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.pam.harvestcraft.HarvestCraft;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -44,7 +42,6 @@ public class BlockPamCake extends Block {
 		this.setDefaultState(this.blockState.getBaseState().withProperty(BITES, Integer.valueOf(0)));
 		this.setTickRandomly(true);
 		this.CUSTOMBITES = CUSTOMBITES;
-		setCreativeTab(HarvestCraft.modTab);
 	}
 
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {

@@ -28,177 +28,183 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockPamFruit extends Block implements IGrowable, PamCropGrowable {
 
-    private static final int MATURE_AGE = 2;
+	private static final int MATURE_AGE = 2;
 
-    private final BlockPamSapling sapling;
+	private final BlockPamSapling sapling;
 
-    private final Item fruitItem;
+	private final Item fruitItem;
 
-    public static final PropertyInteger AGE = PropertyInteger.create("age", 0, MATURE_AGE);
-    public String BASE_STAGE_ID = null;
+	public static final PropertyInteger AGE = PropertyInteger.create("age", 0, MATURE_AGE);
+	public String BASE_STAGE_ID = null;
 
-    public BlockPamFruit(BlockPamSapling sapling, Item fruit) {
-        super(Material.PLANTS);
-        this.setTickRandomly(true);
-        setSoundType(SoundType.WOOD);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, 0));
-        this.sapling = sapling;
-        this.fruitItem = fruit;
-    }
+	public BlockPamFruit(BlockPamSapling sapling, Item fruit) {
+		super(Material.PLANTS);
+		this.setTickRandomly(true);
+		setSoundType(SoundType.WOOD);
+		this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, 0));
+		this.sapling = sapling;
+		this.fruitItem = fruit;
+	}
 
-    @Override
-    public PropertyInteger getAgeProperty() {
-        return AGE;
-    }
+	@Override
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+		return NULL_AABB;
+	}
 
-    public Item getFruitItem() {
-        if (fruitItem == null) {
-            FMLLog.bigWarning("Cannot get fruit %s.", getUnlocalizedName());
-        }
+	@Override
+	public PropertyInteger getAgeProperty() {
+		return AGE;
+	}
 
-        return fruitItem;
-    }
+	public Item getFruitItem() {
+		if(fruitItem == null) {
+			FMLLog.bigWarning("Cannot get fruit %s.", getUnlocalizedName());
+		}
 
-    public BlockPamSapling getSapling() {
-        if (sapling == null) {
-            FMLLog.bigWarning("Cannot get sapling for fruit %s.", getUnlocalizedName());
-        }
+		return fruitItem;
+	}
 
-        return sapling;
-    }
+	public BlockPamSapling getSapling() {
+		if(sapling == null) {
+			FMLLog.bigWarning("Cannot get sapling for fruit %s.", getUnlocalizedName());
+		}
 
-    @Override
-    public float getBlockHardness(IBlockState blockState, World worldIn, BlockPos pos) {
-        if (getMetaFromState(blockState) >= MATURE_AGE) {
-            return 0f;
-        }
+		return sapling;
+	}
 
-        return 5f;
-    }
+	@Override
+	public float getBlockHardness(IBlockState blockState, World worldIn, BlockPos pos) {
+		if(getMetaFromState(blockState) >= MATURE_AGE) {
+			return 0f;
+		}
 
-    public String getStageId(int stage) {
-        if (BASE_STAGE_ID == null) {
-            BASE_STAGE_ID = getUnlocalizedName().replaceFirst("pam", "").replaceFirst("tile.", "").toLowerCase() + "_stage";
-        }
+		return 5f;
+	}
 
-        return BASE_STAGE_ID + stage;
-    }
+	public String getStageId(int stage) {
+		if(BASE_STAGE_ID == null) {
+			BASE_STAGE_ID =
+					getUnlocalizedName().replaceFirst("pam", "").replaceFirst("tile.", "").toLowerCase() + "_stage";
+		}
 
-    @Override
-    public int getMatureAge() {
-        return MATURE_AGE;
-    }
+		return BASE_STAGE_ID + stage;
+	}
 
-    @Override
-    public boolean isMature(IBlockState state) {
-        return getMetaFromState(state) >= MATURE_AGE;
-    }
+	@Override
+	public int getMatureAge() {
+		return MATURE_AGE;
+	}
 
-    @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-    }
+	@Override
+	public boolean isMature(IBlockState state) {
+		return getMetaFromState(state) >= MATURE_AGE;
+	}
 
-    @Nullable
-    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos) {
-        return NULL_AABB;
-    }
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		return new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+	}
 
-    @Override
-    public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
-        final List<ItemStack> drops = new ArrayList<ItemStack>();
-        if (getMetaFromState(state) >= MATURE_AGE) {
-            drops.add(new ItemStack(getFruitItem(), 1));
-            drops.add(new ItemStack(getFruitItem(), 1));
-        }
-        return drops;
-    }
+	@Nullable
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos) {
+		return NULL_AABB;
+	}
 
-    @Override
-    public boolean canPlaceBlockAt(World world, BlockPos pos) {
-        final Block leafBlock = world.getBlockState(pos.up()).getBlock();
+	@Override
+	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+		final List<ItemStack> drops = new ArrayList<ItemStack>();
+		if(getMetaFromState(state) >= MATURE_AGE) {
+			drops.add(new ItemStack(getFruitItem(), 1));
+			drops.add(new ItemStack(getFruitItem(), 1));
+		}
+		return drops;
+	}
 
-        return isSuitableSoilBlock(leafBlock);
-    }
+	@Override
+	public boolean canPlaceBlockAt(World world, BlockPos pos) {
+		final Block leafBlock = world.getBlockState(pos.up()).getBlock();
 
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn) {
-        validatePosition(worldIn, pos);
-    }
+		return isSuitableSoilBlock(leafBlock);
+	}
 
-    public void validatePosition(World world, BlockPos pos) {
+	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn) {
+		validatePosition(worldIn, pos);
+	}
 
-        if (!this.canPlaceBlockAt(world, pos)) {
-            world.setBlockToAir(pos);
-        }
-    }
+	public void validatePosition(World world, BlockPos pos) {
 
-    @Override
-    public boolean isOpaqueCube(IBlockState state) {
-        return false;
-    }
+		if(!this.canPlaceBlockAt(world, pos)) {
+			world.setBlockToAir(pos);
+		}
+	}
 
-    @Override
-    public boolean isFullCube(IBlockState state) {
-        return false;
-    }
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
+		return false;
+	}
 
-    private boolean isSuitableSoilBlock(Block leafBlock) {
-        return leafBlock == Blocks.LEAVES || leafBlock == Blocks.LEAVES2;
-    }
+	@Override
+	public boolean isFullCube(IBlockState state) {
+		return false;
+	}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
+	private boolean isSuitableSoilBlock(Block leafBlock) {
+		return leafBlock == Blocks.LEAVES || leafBlock == Blocks.LEAVES2;
+	}
 
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(AGE, meta);
-    }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.CUTOUT;
+	}
 
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return state.getValue(AGE);
-    }
+	@Override
+	public IBlockState getStateFromMeta(int meta) {
+		return this.getDefaultState().withProperty(AGE, meta);
+	}
 
-    @Override
-    protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, AGE);
-    }
+	@Override
+	public int getMetaFromState(IBlockState state) {
+		return state.getValue(AGE);
+	}
 
-    @Override
-    public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
-        int i = state.getValue(AGE);
+	@Override
+	protected BlockStateContainer createBlockState() {
+		return new BlockStateContainer(this, AGE);
+	}
 
-        if (i < MATURE_AGE && rand.nextInt(25) == 0) {
-            state = state.withProperty(AGE, i + 1);
-            worldIn.setBlockState(pos, state, 2);
-        }
+	@Override
+	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
+		int i = state.getValue(AGE);
 
-        super.updateTick(worldIn, pos, state, rand);
-    }
+		if(i < MATURE_AGE && rand.nextInt(25) == 0) {
+			state = state.withProperty(AGE, i + 1);
+			worldIn.setBlockState(pos, state, 2);
+		}
 
-    private void grow(World worldIn, BlockPos pos, IBlockState state) {
-        int i = state.getValue(AGE) + MathHelper.getInt(worldIn.rand, 1, 2);
-        if (i > MATURE_AGE) {
-            i = MATURE_AGE;
-        }
-        worldIn.setBlockState(pos, state.withProperty(AGE, i), 2);
-    }
+		super.updateTick(worldIn, pos, state, rand);
+	}
 
-    @Override
-    public boolean canGrow(World worldIn, BlockPos pos, IBlockState state, boolean isClient) {
-        return state.getValue(AGE) < MATURE_AGE;
-    }
+	private void grow(World worldIn, BlockPos pos, IBlockState state) {
+		int i = state.getValue(AGE) + MathHelper.getInt(worldIn.rand, 1, 2);
+		if(i > MATURE_AGE) {
+			i = MATURE_AGE;
+		}
+		worldIn.setBlockState(pos, state.withProperty(AGE, i), 2);
+	}
 
-    @Override
-    public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state) {
-        return true;
-    }
+	@Override
+	public boolean canGrow(World worldIn, BlockPos pos, IBlockState state, boolean isClient) {
+		return state.getValue(AGE) < MATURE_AGE;
+	}
 
-    @Override
-    public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state) {
-        this.grow(worldIn, pos, state);
-    }
+	@Override
+	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state) {
+		return true;
+	}
+
+	@Override
+	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state) {
+		this.grow(worldIn, pos, state);
+	}
 }

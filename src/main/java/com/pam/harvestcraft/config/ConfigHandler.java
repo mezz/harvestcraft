@@ -141,6 +141,13 @@ public class ConfigHandler {
     public boolean marketsellCow;
     public boolean marketsellChicken;
     public boolean marketsellHorse;
+    public boolean marketsellLlama;
+    public boolean marketsellOcelot;
+    public boolean marketsellWolf;
+    public boolean marketsellRabbit;
+    public boolean marketsellLead;
+    public boolean marketsellNametag;
+    public boolean marketsellQueenbee;
     public boolean marketsellBonemeal;
     public int marketblockrecipeItem;
     public int marketseedPrice;
@@ -150,7 +157,14 @@ public class ConfigHandler {
     public int marketcowPrice;
     public int marketchickenPrice;
     public int markethorsePrice;
+    public int marketllamaPrice;
+    public int marketocelotPrice;
+    public int marketwolfPrice;
+    public int marketrabbitPrice;
+    public int marketleadPrice;
+    public int marketnametagPrice;
     public int marketbonemealPrice;
+    public int marketqueenbeePrice;
     public int marketcurrencySeeds;
     public int marketcurrencytemperateSaplings;
     public int marketcurrencytropicalSaplings;
@@ -160,14 +174,35 @@ public class ConfigHandler {
     public int marketcurrencyCow;
     public int marketcurrencyChicken;
     public int marketcurrencyHorse;
+    public int marketcurrencyLlama;
+    public int marketcurrencyOcelot;
+    public int marketcurrencyWolf;
+    public int marketcurrencyRabbit;
+    public int marketcurrencyLead;
+    public int marketcurrencyNametag;
     public int marketcurrencyBonemeal;
+    public int marketcurrencyFish;
+    public int marketcurrencyMeat;
+    public int marketcurrencyBees;
+    
     public boolean enableEasyHarvest;
     
     //Shipping Bin
     public boolean shippingbinbuyCrops;
     public int shippingbincropPrice;
+    public boolean shippingbinbuyFish;
+    public int shippingbinfishPrice;
+    public boolean shippingbinbuyMeat;
+    public int shippingbinmeatPrice;
+    public boolean shippingbinbuyBees;
+    public int shippingbinbeesPrice;
     public static boolean shippingbinenablevanillaMCCrops;
-
+    public static boolean shippingbinenablevanillaMCFish;
+    public static boolean shippingbinenablevanillaMCMeat;
+    public static boolean shippingbinenablevanillaMCEgg;
+    public static boolean shippingbinenablevanillaMCMonsterParts;
+    public static boolean shippingbinenablevanillaMCBees;
+    
     // Beehive config
     public boolean enableBeehiveGeneration;
     public int beehiveRarity;
@@ -313,7 +348,14 @@ public class ConfigHandler {
         marketsellCow = config.get(CATEGORY_MARKET_SALES, "marketsellCow", true).getBoolean();
         marketsellChicken = config.get(CATEGORY_MARKET_SALES, "marketsellChicken", true).getBoolean();
         marketsellHorse = config.get(CATEGORY_MARKET_SALES, "marketsellHorse", true).getBoolean();
+        marketsellLlama = config.get(CATEGORY_MARKET_SALES, "marketsellLlama", true).getBoolean();
+        marketsellOcelot = config.get(CATEGORY_MARKET_SALES, "marketsellOcelot", true).getBoolean();
+        marketsellWolf = config.get(CATEGORY_MARKET_SALES, "marketsellWolf", true).getBoolean();
+        marketsellRabbit = config.get(CATEGORY_MARKET_SALES, "marketsellRabbit", true).getBoolean();
+        marketsellLead = config.get(CATEGORY_MARKET_SALES, "marketsellLead", true).getBoolean();
+        marketsellNametag = config.get(CATEGORY_MARKET_SALES, "marketsellNametag", true).getBoolean();
         marketsellBonemeal = config.get(CATEGORY_MARKET_SALES, "marketsellBonemeal", true).getBoolean();
+        marketsellQueenbee = config.get(CATEGORY_MARKET_SALES, "marketsellQueenbee", true).getBoolean();
         marketseedPrice = config.get(CATEGORY_MARKET_PRICES, "marketseedPrice", 1).getInt();
         marketsaplingPrice = config.get(CATEGORY_MARKET_PRICES, "marketsaplingPrice", 3).getInt();
         marketpigPrice = config.get(CATEGORY_MARKET_PRICES, "marketpigPrice", 6).getInt();
@@ -321,7 +363,14 @@ public class ConfigHandler {
         marketcowPrice = config.get(CATEGORY_MARKET_PRICES, "marketcowPrice", 9).getInt();
         marketchickenPrice = config.get(CATEGORY_MARKET_PRICES, "marketchickenPrice", 3).getInt();
         markethorsePrice = config.get(CATEGORY_MARKET_PRICES, "markethorsePrice", 12).getInt();
+        marketllamaPrice = config.get(CATEGORY_MARKET_PRICES, "marketllamaPrice", 12).getInt();
+        marketocelotPrice = config.get(CATEGORY_MARKET_PRICES, "marketocelotPrice", 9).getInt();
+        marketwolfPrice = config.get(CATEGORY_MARKET_PRICES, "marketwolfPrice", 9).getInt();
+        marketrabbitPrice = config.get(CATEGORY_MARKET_PRICES, "marketrabbitPrice", 3).getInt();
+        marketleadPrice = config.get(CATEGORY_MARKET_PRICES, "marketleadPrice", 1).getInt();
+        marketnametagPrice = config.get(CATEGORY_MARKET_PRICES, "marketnametagPrice", 1).getInt();
         marketbonemealPrice = config.get(CATEGORY_MARKET_PRICES, "marketbonemealPrice", 3).getInt();
+        marketqueenbeePrice = config.get(CATEGORY_MARKET_PRICES, "marketqueenbeePrice", 3).getInt();
         marketcurrencySeeds = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencySeeds", 0).getInt();
         marketcurrencytemperateSaplings = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencytemperateSaplings", 0).getInt();
         marketcurrencytropicalSaplings = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencytropicalSaplings", 0).getInt();
@@ -331,11 +380,31 @@ public class ConfigHandler {
         marketcurrencyCow = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyCow", 0).getInt();
         marketcurrencyChicken = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyChicken", 0).getInt();
         marketcurrencyHorse = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyHorse", 0).getInt();
+        marketcurrencyLlama = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyLlama", 0).getInt();
+        marketcurrencyOcelot = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyOcelot", 0).getInt();
+        marketcurrencyWolf = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyWolf", 0).getInt();
+        marketcurrencyRabbit = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyRabbit", 0).getInt();
+        marketcurrencyLead = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyLead", 0).getInt();
+        marketcurrencyNametag = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyNametag", 0).getInt();
         marketcurrencyBonemeal = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyBonemeal", 0).getInt();
+        marketcurrencyFish = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyFish", 0).getInt();
+        marketcurrencyMeat = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyMeat", 0).getInt();
+        marketcurrencyBees = config.get(CATEGORY_MARKET_CURRENCY, "marketcurrencyBees", 0).getInt();
         
         shippingbinbuyCrops = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinbuyCrops", true).getBoolean();
         shippingbincropPrice = config.get(CATEGORY_SHIPPINGBIN_PRICES, "shippingbincropPrice", 32).getInt();
+        shippingbinbuyFish = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinbuyFish", true).getBoolean();
+        shippingbinfishPrice = config.get(CATEGORY_SHIPPINGBIN_PRICES, "shippingbinfishPrice", 16).getInt();
+        shippingbinbuyMeat = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinbuyMeat", true).getBoolean();
+        shippingbinmeatPrice = config.get(CATEGORY_SHIPPINGBIN_PRICES, "shippingbinmeatPrice", 16).getInt();
+        shippingbinbuyBees = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinbuyBees", true).getBoolean();
+        shippingbinbeesPrice = config.get(CATEGORY_SHIPPINGBIN_PRICES, "shippingbinbeesPrice", 16).getInt();
         shippingbinenablevanillaMCCrops = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinenablevanillaMCCrops", true).getBoolean();
+        shippingbinenablevanillaMCFish = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinenablevanillaMCFish", true).getBoolean();
+        shippingbinenablevanillaMCMeat = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinenablevanillaMCMeat", true).getBoolean();
+        shippingbinenablevanillaMCEgg = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinenablevanillaMCEgg", true).getBoolean();
+        shippingbinenablevanillaMCMonsterParts = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinenablevanillaMCMonsterParts", true).getBoolean();
+        shippingbinenablevanillaMCBees = config.get(CATEGORY_SHIPPINGBIN_PURCHASES, "shippingbinenablevanillaMCBees", true).getBoolean();
     }
 
     private void initSeedDropSettings() {

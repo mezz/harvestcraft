@@ -1,5 +1,5 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "harvestcraft:items/scrambledeggItem"
+		"layer0": "harvestcraft:items/scrambledeggitem"
 	}}

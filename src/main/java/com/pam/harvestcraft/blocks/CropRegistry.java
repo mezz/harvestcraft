@@ -5,13 +5,11 @@ import java.util.HashMap;
 
 import com.pam.harvestcraft.HarvestCraft;
 import com.pam.harvestcraft.blocks.growables.BlockPamCrop;
-import com.pam.harvestcraft.blocks.growables.ItemBlockCropFruit;
 import com.pam.harvestcraft.item.ItemRegistry;
 import com.pam.harvestcraft.item.items.ItemPamSeedFood;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemSeedFood;
 import net.minecraft.item.ItemSeeds;
 import net.minecraftforge.fml.common.FMLLog;
@@ -173,9 +171,8 @@ public class CropRegistry {
 	private static void registerCrop(String cropName) {
 		final String registryName = MessageFormat.format(CROP_BLOCK_NAME, cropName);
 		final BlockPamCrop cropBlock = new BlockPamCrop(registryName, cropName);
-		final ItemBlock cropItemBlock = new ItemBlockCropFruit(cropBlock);
 
-		BlockRegistry.registerBlock(registryName, cropItemBlock, cropBlock);
+		BlockRegistry.registerBlock(registryName, null, cropBlock);
 
 		final ItemSeedFood item = createItem(cropBlock);
 		ItemRegistry.registerItem(item, MessageFormat.format(ITEM_NAME, cropName));
@@ -188,7 +185,6 @@ public class CropRegistry {
 		seeds.put(cropName, seedItem);
 		foods.put(cropName, item);
 		crops.put(cropName, cropBlock);
-
 	}
 
 	private static String getSeedName(String cropName) {

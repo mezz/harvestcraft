@@ -38,17 +38,21 @@ public class MessageShippingBinBrowse implements IMessage, IMessageHandler<Messa
 		buf.writeInt(this.z);
 	}
 
-	public IMessage onMessage(MessageShippingBinBrowse message, MessageContext ctx) {
-		EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+	public IMessage onMessage(final MessageShippingBinBrowse message, MessageContext ctx) {
+		final EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+		player.getServerWorld().addScheduledTask(new Runnable() {
+			@Override
+			public void run() {
+				TileEntity tile_entity = player.world.getTileEntity(new BlockPos(message.x, message.y, message.z));
+				if((tile_entity instanceof TileEntityShippingBin)) {
+					TileEntityShippingBin tileEntityShippingBin = (TileEntityShippingBin) tile_entity;
+					tileEntityShippingBin.setBrowsingInfo(message.itemNum);
+				}
 
-		TileEntity tile_entity = player.world.getTileEntity(new BlockPos(message.x, message.y, message.z));
-		if((tile_entity instanceof TileEntityShippingBin)) {
-			TileEntityShippingBin tileEntityShippingBin = (TileEntityShippingBin) tile_entity;
-			tileEntityShippingBin.setBrowsingInfo(message.itemNum);
-		}
-
-		final IBlockState state = player.world.getBlockState(new BlockPos(message.x, message.y, message.z));
-		player.world.notifyBlockUpdate(new BlockPos(message.x, message.y, message.z), state, state, 3);
+				final IBlockState state = player.world.getBlockState(new BlockPos(message.x, message.y, message.z));
+				player.world.notifyBlockUpdate(new BlockPos(message.x, message.y, message.z), state, state, 3);
+			}
+		});
 		return null;
 	}
 

@@ -35,24 +35,28 @@ public class MessageMarketClosed implements IMessage, IMessageHandler<MessageMar
 		buf.writeInt(this.z);
 	}
 
-	public IMessage onMessage(MessageMarketClosed message, MessageContext ctx) {
-		EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+	public IMessage onMessage(final MessageMarketClosed message, MessageContext ctx) {
+		final EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+		player.getServerWorld().addScheduledTask(new Runnable() {
+			@Override
+			public void run() {
+				TileEntity tile_entity = player.world.getTileEntity(new BlockPos(message.x, message.y, message.z));
+				if((tile_entity instanceof TileEntityMarket)) {
+					TileEntityMarket tileEntityMarket = (TileEntityMarket) tile_entity;
 
-		TileEntity tile_entity = player.world.getTileEntity(new BlockPos(message.x, message.y, message.z));
-		if((tile_entity instanceof TileEntityMarket)) {
-			TileEntityMarket tileEntityMarket = (TileEntityMarket) tile_entity;
+					if(!tileEntityMarket.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(0)
+							.isEmpty()) {
+						player.entityDropItem(tileEntityMarket
+								.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(0), 1.0F);
+						tileEntityMarket.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(0)
+								.setCount(0);
+					}
+				}
 
-			if(!tileEntityMarket.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(0)
-					.isEmpty()) {
-				player.entityDropItem(tileEntityMarket
-						.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(0), 1.0F);
-				tileEntityMarket.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(0)
-						.setCount(0);
+				final IBlockState state = player.world.getBlockState(new BlockPos(message.x, message.y, message.z));
+				player.world.notifyBlockUpdate(new BlockPos(message.x, message.y, message.z), state, state, 3);
 			}
-		}
-
-		final IBlockState state = player.world.getBlockState(new BlockPos(message.x, message.y, message.z));
-		player.world.notifyBlockUpdate(new BlockPos(message.x, message.y, message.z), state, state, 3);
+		});
 		return null;
 	}
 }
